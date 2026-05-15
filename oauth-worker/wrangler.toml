@@ -1,8 +1,0 @@
-name = "rubato-oauth"
-main = "src/index.ts"
-compatibility_date = "2026-05-15"
-
-[vars]
-OAUTH_PROVIDER = "github"
-SCOPES = "repo"
-ORIGINS = "rubato-one.vercel.app"

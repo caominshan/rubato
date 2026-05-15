@@ -1,0 +1,14 @@
+[
+  {
+    "id": "exhibition-001",
+    "title": "Monet Immersive Exhibition",
+    "region": "international",
+    "country": "France",
+    "city": "Paris",
+    "date": "2026",
+    "status": "seen",
+    "description": "Immersive light and color experience.",
+    "cover": "https://cdn.xxx.com/exhibitions/monet.webp",
+    "gallery": ["https://cdn.xxx.com/exhibitions/monet-1.webp"]
+  }
+]

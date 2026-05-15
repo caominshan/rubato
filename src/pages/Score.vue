@@ -48,7 +48,7 @@
   <Teleport to="body">
     <transition name="fade">
       <div
-        v-if="isDrawerOpen || isEditorOpen || isDetailOpen || confirmState.isOpen"
+        v-if="isDrawerOpen || isDetailOpen"
         class="fixed inset-0 z-[50] bg-black/10 backdrop-blur-[3px]"
         @click="handleBackdropClick"
       ></div>
@@ -128,9 +128,6 @@
             <div class="mt-2 text-sm opacity-70 leading-relaxed">
               {{ emptyHint }}
             </div>
-            <button v-if="canInlineEdit" class="mt-5 rubato-primary" @click="openCreateFromDrawer">
-              Add first item
-            </button>
           </div>
 
           <div v-else class="space-y-4">
@@ -171,16 +168,7 @@
                         </div>
                       </div>
 
-                      <button
-                        v-if="canInlineEdit"
-                        class="rubato-toggle"
-                        :class="item.status === 'done' ? 'is-on' : ''"
-                        @click.stop="toggleItemStatus(item.id)"
-                        :aria-label="item.status === 'done' ? 'Mark as undone' : 'Mark as done'"
-                      >
-                        <span class="rubato-toggle-knob"></span>
-                      </button>
-                      <div v-else class="rubato-toggle" :class="item.status === 'done' ? 'is-on' : ''" aria-hidden="true">
+                      <div class="rubato-toggle" :class="item.status === 'done' ? 'is-on' : ''" aria-hidden="true">
                         <span class="rubato-toggle-knob"></span>
                       </div>
                     </div>
@@ -200,20 +188,12 @@
                 <div class="text-xs uppercase tracking-[0.26em] opacity-35">
                   {{ item.status === 'done' ? doneLabel(item) : undoneLabel(item) }}
                 </div>
-                <div v-if="canInlineEdit" class="flex items-center gap-2">
-                  <button class="rubato-mini" @click="openEdit(item.id)">Edit</button>
-                  <button class="rubato-mini rubato-mini-danger" @click="requestDelete(item.id)">Delete</button>
-                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="px-7 sm:px-8 py-6 border-t border-black/5">
-          <button v-if="canInlineEdit" class="rubato-primary w-full" @click="openCreateFromDrawer">
-            + Add
-          </button>
-        </div>
+        <div class="px-7 sm:px-8 py-6 border-t border-black/5"></div>
       </aside>
     </transition>
   </Teleport>
@@ -277,150 +257,13 @@
             </div>
           </div>
 
-          <div class="px-7 sm:px-8 py-6 border-t border-black/5 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between">
-            <button
-              class="rubato-toggle rubato-toggle-lg"
-              :class="detailItem?.status === 'done' ? 'is-on' : ''"
-              @click="detailItem && toggleItemStatus(detailItem.id)"
-            >
-              <span class="rubato-toggle-knob"></span>
-              <span class="ml-3 text-xs uppercase tracking-[0.28em] opacity-55">
+          <div class="px-7 sm:px-8 py-6 border-t border-black/5 flex items-center justify-between gap-3">
+            <div class="text-xs uppercase tracking-[0.28em] opacity-45">Status</div>
+            <div class="rubato-seg">
+              <div class="rubato-seg-btn is-active">
                 {{ detailItem ? (detailItem.status === 'done' ? doneLabel(detailItem) : undoneLabel(detailItem)) : '' }}
-              </span>
-            </button>
-
-            <div class="flex items-center gap-2 justify-end">
-              <button class="rubato-secondary" @click="detailItem && openEdit(detailItem.id)">Edit</button>
-              <button class="rubato-secondary rubato-secondary-danger" @click="detailItem && requestDelete(detailItem.id)">Delete</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </transition>
-  </Teleport>
-
-  <Teleport v-if="canInlineEdit" to="body">
-    <transition :css="false" @enter="modalEnter" @leave="modalLeave">
-      <div v-if="isEditorOpen" class="fixed inset-0 z-[75] flex items-center justify-center p-5 sm:p-8">
-        <div class="w-full max-w-[720px] rounded-3xl bg-white/38 backdrop-blur-2xl border border-white/40 shadow-[0_30px_80px_rgba(0,0,0,0.14)] overflow-hidden">
-          <div class="px-7 sm:px-8 py-6 border-b border-black/5 flex items-start justify-between gap-4">
-            <div class="min-w-0">
-              <div class="text-xs uppercase tracking-[0.28em] opacity-45">Rubato</div>
-              <div class="mt-2 font-editorial text-2xl tracking-tight">{{ editorTitle }}</div>
-              <div class="mt-2 text-xs uppercase tracking-[0.26em] opacity-40">
-                JSON-driven · localStorage-first
               </div>
             </div>
-            <button
-              class="mt-1 w-10 h-10 flex items-center justify-center rounded-full bg-white/30 hover:bg-white/50 transition-colors border border-white/40 shadow-sm"
-              @click="closeEditor"
-            >
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M13 1L1 13M1 1L13 13"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
-          </div>
-
-          <form class="px-7 sm:px-8 py-6 max-h-[70vh] overflow-y-auto space-y-5" @submit.prevent="saveDraft">
-            <div v-if="formError" class="rounded-2xl border border-white/30 bg-white/20 px-4 py-3 text-sm opacity-75">
-              {{ formError }}
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <label class="rubato-field">
-                <span class="rubato-label">Title</span>
-                <input v-model="draft.title" class="rubato-input" type="text" placeholder="Title" />
-              </label>
-
-              <label v-if="draft.type === 'exhibition'" class="rubato-field">
-                <span class="rubato-label">Category</span>
-                <select v-model="draft.category" class="rubato-input">
-                  <option value="domestic">Domestic</option>
-                  <option value="international">International</option>
-                </select>
-              </label>
-
-              <label v-if="draft.type === 'book'" class="rubato-field">
-                <span class="rubato-label">Author</span>
-                <input v-model="draft.meta.author" class="rubato-input" type="text" placeholder="Author" />
-              </label>
-
-              <label v-if="draft.type === 'book'" class="rubato-field">
-                <span class="rubato-label">Country</span>
-                <input v-model="draft.meta.country" class="rubato-input" type="text" placeholder="Country" />
-              </label>
-
-              <label v-if="draft.type === 'book'" class="rubato-field">
-                <span class="rubato-label">Language</span>
-                <input v-model="draft.meta.language" class="rubato-input" type="text" placeholder="Language" />
-              </label>
-
-              <label v-if="draft.type === 'exhibition'" class="rubato-field">
-                <span class="rubato-label">Country</span>
-                <input v-model="draft.meta.country" class="rubato-input" type="text" placeholder="Country" />
-              </label>
-
-              <label v-if="draft.type === 'exhibition'" class="rubato-field">
-                <span class="rubato-label">City</span>
-                <input v-model="draft.meta.city" class="rubato-input" type="text" placeholder="City" />
-              </label>
-
-              <label v-if="draft.type === 'exhibition'" class="rubato-field">
-                <span class="rubato-label">Date</span>
-                <input v-model="draft.meta.date" class="rubato-input" type="text" placeholder="Optional" />
-              </label>
-            </div>
-
-            <label class="rubato-field">
-              <span class="rubato-label">Description</span>
-              <textarea v-model="draft.meta.description" class="rubato-input rubato-textarea" rows="3" placeholder="One sentence (optional)"></textarea>
-            </label>
-
-            <label class="rubato-field">
-              <span class="rubato-label">Status</span>
-              <select v-model="draft.status" class="rubato-input">
-                <option value="undone">{{ draft.type === 'book' ? 'Unread' : 'Unseen' }}</option>
-                <option value="done">{{ draft.type === 'book' ? 'Read' : 'Seen' }}</option>
-              </select>
-            </label>
-
-            <label class="rubato-field">
-              <span class="rubato-label">Images</span>
-              <textarea v-model="draft.imagesText" class="rubato-input rubato-textarea" rows="4" placeholder="One URL per line"></textarea>
-            </label>
-
-            <div class="flex items-center justify-between gap-4 pt-2">
-              <button type="button" class="rubato-secondary rubato-secondary-danger" v-if="draft.id" @click="requestDelete(draft.id)">
-                Delete
-              </button>
-              <div class="flex-1"></div>
-              <button type="button" class="rubato-secondary" @click="closeEditor">Cancel</button>
-              <button type="submit" class="rubato-primary">Save</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </transition>
-  </Teleport>
-
-  <Teleport v-if="canInlineEdit" to="body">
-    <transition :css="false" @enter="modalEnter" @leave="modalLeave">
-      <div v-if="confirmState.isOpen" class="fixed inset-0 z-[85] flex items-center justify-center p-6">
-        <div class="w-full max-w-[520px] rounded-3xl bg-white/40 backdrop-blur-2xl border border-white/40 shadow-[0_30px_90px_rgba(0,0,0,0.16)] overflow-hidden">
-          <div class="px-7 sm:px-8 py-6 border-b border-black/5">
-            <div class="text-xs uppercase tracking-[0.28em] opacity-45">Confirm</div>
-            <div class="mt-2 font-editorial text-xl tracking-tight">Are you sure?</div>
-            <div class="mt-3 text-sm opacity-75 leading-relaxed">{{ confirmState.message }}</div>
-          </div>
-          <div class="px-7 sm:px-8 py-6 flex items-center justify-end gap-2">
-            <button class="rubato-secondary" @click="cancelConfirm">Cancel</button>
-            <button class="rubato-primary" @click="confirmProceed">Delete</button>
           </div>
         </div>
       </div>
@@ -433,6 +276,8 @@ import { computed, nextTick, onMounted, ref } from 'vue'
 import gsap from 'gsap'
 import MainSvg from '../components/MainSvg.vue'
 import FloatingPanel from '../components/FloatingPanel.vue'
+import booksJson from '../../content/books.json'
+import exhibitionsJson from '../../content/exhibitions.json'
 
 const svgContainer = ref<HTMLElement | null>(null)
 
@@ -487,10 +332,6 @@ const currentIndex = ref(0)
 
 const currentTitle = computed(() => notesData[currentIndex.value].title)
 const currentContent = computed(() => notesData[currentIndex.value].content)
-
-const canInlineEdit = import.meta.env.DEV
-
-const STORAGE_KEY = 'rubato.score.items.v1'
 const exhibitionsNoteIndex = 1
 const readingNoteIndex = 4
 
@@ -513,35 +354,6 @@ const detailEl = ref<HTMLElement | null>(null)
 const detailItemId = ref<string | null>(null)
 const isDetailOpen = computed(() => detailItemId.value !== null)
 const detailItem = computed(() => items.value.find(i => i.id === detailItemId.value) ?? null)
-
-const isEditorOpen = ref(false)
-const formError = ref<string | null>(null)
-
-type Draft = {
-  id: string | null
-  type: ItemType
-  category: Exclude<Category, null>
-  title: string
-  meta: Record<string, string>
-  imagesText: string
-  status: ItemStatus
-}
-
-const draft = ref<Draft>({
-  id: null,
-  type: 'exhibition',
-  category: 'domestic',
-  title: '',
-  meta: {},
-  imagesText: '',
-  status: 'undone',
-})
-
-const confirmState = ref<{ isOpen: boolean; message: string; onConfirm: null | (() => void) }>({
-  isOpen: false,
-  message: '',
-  onConfirm: null,
-})
 
 const drawerTitle = computed(() => {
   if (drawerKind.value === 'exhibitions') return 'Exhibitions'
@@ -567,10 +379,10 @@ const undoneFilterLabel = computed(() => {
 
 const emptyHint = computed(() => {
   if (drawerKind.value === 'exhibitions') {
-    return canInlineEdit ? 'Collect exhibitions as a living archive. Add title, location, time, and images.' : 'No entries yet. Manage content in /admin.'
+    return 'No entries yet. Edit content/exhibitions.json and redeploy.'
   }
   if (drawerKind.value === 'reading') {
-    return canInlineEdit ? 'Grow a reading list with author, country, language, and covers.' : 'No entries yet. Manage content in /admin.'
+    return 'No entries yet. Edit content/books.json and redeploy.'
   }
   return ''
 })
@@ -648,39 +460,9 @@ const detailFields = computed(() => {
   ]
 })
 
-const editorTitle = computed(() => {
-  const base = draft.value.type === 'exhibition' ? 'Exhibition' : 'Book'
-  return draft.value.id ? `Edit ${base}` : `New ${base}`
-})
-
 const getUUID = () => {
   if (typeof crypto !== 'undefined' && 'randomUUID' in crypto) return crypto.randomUUID()
   return `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`
-}
-
-const sanitizeItem = (raw: unknown): RubatoItem | null => {
-  if (!raw || typeof raw !== 'object') return null
-  const r = raw as Partial<RubatoItem>
-  if (!r.id || typeof r.id !== 'string') return null
-  if (r.type !== 'exhibition' && r.type !== 'book') return null
-  const category: Category =
-    r.type === 'book' ? null : r.category === 'domestic' || r.category === 'international' ? r.category : null
-  const title = typeof r.title === 'string' ? r.title : ''
-  const status: ItemStatus = r.status === 'done' || r.status === 'undone' ? r.status : 'undone'
-  const meta = r.meta && typeof r.meta === 'object' ? (r.meta as Record<string, string>) : {}
-  const images = Array.isArray(r.images) ? r.images.filter(v => typeof v === 'string') : []
-  const now = Date.now()
-  return {
-    id: r.id,
-    type: r.type,
-    category,
-    title,
-    meta,
-    images,
-    status,
-    createdAt: typeof r.createdAt === 'number' ? r.createdAt : now,
-    updatedAt: typeof r.updatedAt === 'number' ? r.updatedAt : now,
-  }
 }
 
 type ExhibitionContent = {
@@ -718,11 +500,8 @@ const loadItemsFromContent = (): RubatoItem[] => {
   const now = Date.now()
   const list: RubatoItem[] = []
 
-  const bookMods = import.meta.glob('../../content/books/*.json', { eager: true, import: 'default' }) as Record<
-    string,
-    BookContent
-  >
-  for (const v of Object.values(bookMods)) {
+  const books = Array.isArray(booksJson) ? (booksJson as BookContent[]) : []
+  for (const v of books) {
     const id = (v.id || '').trim() || getUUID()
     const title = (v.title || '').trim()
     if (!title) continue
@@ -745,11 +524,8 @@ const loadItemsFromContent = (): RubatoItem[] => {
     })
   }
 
-  const exhMods = import.meta.glob('../../content/exhibitions/*.json', { eager: true, import: 'default' }) as Record<
-    string,
-    ExhibitionContent
-  >
-  for (const v of Object.values(exhMods)) {
+  const exhibitions = Array.isArray(exhibitionsJson) ? (exhibitionsJson as ExhibitionContent[]) : []
+  for (const v of exhibitions) {
     const id = (v.id || '').trim() || getUUID()
     const title = (v.title || '').trim()
     if (!title) continue
@@ -776,71 +552,13 @@ const loadItemsFromContent = (): RubatoItem[] => {
   return list
 }
 
-const loadItemsFromLocalStorage = (): RubatoItem[] => {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY)
-    if (!raw) return []
-    const parsed = JSON.parse(raw) as unknown
-    if (!Array.isArray(parsed)) return []
-    return parsed.map(sanitizeItem).filter((v): v is RubatoItem => Boolean(v))
-  } catch {
-    return []
-  }
-}
-
 const initItems = () => {
-  const content = loadItemsFromContent()
-  if (!canInlineEdit) {
-    items.value = content
-    return
-  }
-
-  const local = loadItemsFromLocalStorage()
-  items.value = local.length ? local : content
-}
-
-const saveItems = () => {
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(items.value))
-  } catch {
-    return
-  }
-}
-
-const upsertItem = (next: RubatoItem) => {
-  const idx = items.value.findIndex(i => i.id === next.id)
-  if (idx >= 0) {
-    items.value.splice(idx, 1, next)
-  } else {
-    items.value.unshift(next)
-  }
-  saveItems()
-}
-
-const removeItem = (id: string) => {
-  const idx = items.value.findIndex(i => i.id === id)
-  if (idx >= 0) items.value.splice(idx, 1)
-  saveItems()
-}
-
-const toggleItemStatus = (id: string) => {
-  const idx = items.value.findIndex(i => i.id === id)
-  if (idx < 0) return
-  const cur = items.value[idx]
-  const next: RubatoItem = {
-    ...cur,
-    status: cur.status === 'done' ? 'undone' : 'done',
-    updatedAt: Date.now(),
-  }
-  items.value.splice(idx, 1, next)
-  saveItems()
+  items.value = loadItemsFromContent()
 }
 
 const openDrawer = async (kind: NonNullable<typeof drawerKind.value>, anchor: { x: number; y: number }) => {
   isPanelOpen.value = false
   detailItemId.value = null
-  isEditorOpen.value = false
-  confirmState.value = { isOpen: false, message: '', onConfirm: null }
   drawerKind.value = kind
   statusFilter.value = 'all'
   if (kind === 'exhibitions') drawerExhibitionCategory.value = 'domestic'
@@ -866,110 +584,7 @@ const closeDetail = () => {
   detailItemId.value = null
 }
 
-const openCreateFromDrawer = () => {
-  if (drawerKind.value === 'exhibitions') openCreate('exhibition')
-  if (drawerKind.value === 'reading') openCreate('book')
-}
-
-const openCreate = (type: ItemType) => {
-  formError.value = null
-  const baseMeta: Record<string, string> =
-    type === 'exhibition'
-      ? { country: '', city: '', date: '', description: '' }
-      : { author: '', country: '', language: '', description: '' }
-  draft.value = {
-    id: null,
-    type,
-    category: type === 'exhibition' ? (drawerExhibitionCategory.value ?? 'domestic') : 'domestic',
-    title: '',
-    meta: baseMeta,
-    imagesText: '',
-    status: 'undone',
-  }
-  isEditorOpen.value = true
-}
-
-const openEdit = (id: string) => {
-  const item = items.value.find(i => i.id === id)
-  if (!item) return
-  formError.value = null
-  draft.value = {
-    id: item.id,
-    type: item.type,
-    category: item.type === 'exhibition' ? ((item.category ?? 'domestic') as Exclude<Category, null>) : 'domestic',
-    title: item.title,
-    meta: { ...item.meta },
-    imagesText: item.images.join('\n'),
-    status: item.status,
-  }
-  isEditorOpen.value = true
-}
-
-const closeEditor = () => {
-  isEditorOpen.value = false
-  formError.value = null
-}
-
-const saveDraft = () => {
-  const title = draft.value.title.trim()
-  if (!title) {
-    formError.value = 'Title is required.'
-    return
-  }
-
-  const now = Date.now()
-  const type = draft.value.type
-  const id = draft.value.id ?? getUUID()
-  const images = draft.value.imagesText
-    .split('\n')
-    .map(s => s.trim())
-    .filter(Boolean)
-
-  const next: RubatoItem = {
-    id,
-    type,
-    category: type === 'exhibition' ? draft.value.category : null,
-    title,
-    meta: Object.fromEntries(Object.entries(draft.value.meta).map(([k, v]) => [k, (v ?? '').trim()])),
-    images,
-    status: draft.value.status,
-    createdAt: draft.value.id ? (items.value.find(i => i.id === id)?.createdAt ?? now) : now,
-    updatedAt: now,
-  }
-
-  upsertItem(next)
-  isEditorOpen.value = false
-  formError.value = null
-  if (drawerKind.value) nextTick().then(staggerCards)
-}
-
-const requestDelete = (id: string) => {
-  const item = items.value.find(i => i.id === id)
-  if (!item) return
-  confirmState.value = {
-    isOpen: true,
-    message: `Delete “${item.title}”? This cannot be undone.`,
-    onConfirm: () => {
-      removeItem(id)
-      if (detailItemId.value === id) detailItemId.value = null
-      if (draft.value.id === id) isEditorOpen.value = false
-      confirmState.value = { isOpen: false, message: '', onConfirm: null }
-    },
-  }
-}
-
-const cancelConfirm = () => {
-  confirmState.value = { isOpen: false, message: '', onConfirm: null }
-}
-
-const confirmProceed = () => {
-  const fn = confirmState.value.onConfirm
-  if (fn) fn()
-}
-
 const handleBackdropClick = () => {
-  if (confirmState.value.isOpen) return cancelConfirm()
-  if (isEditorOpen.value) return closeEditor()
   if (isDetailOpen.value) return closeDetail()
   if (isDrawerOpen.value) return closeDrawer()
 }

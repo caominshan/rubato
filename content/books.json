@@ -1,0 +1,13 @@
+[
+  {
+    "id": "book-001",
+    "title": "Norwegian Wood",
+    "author": "Haruki Murakami",
+    "country": "Japan",
+    "language": "Japanese",
+    "status": "read",
+    "description": "A quiet and melancholic novel.",
+    "cover": "https://cdn.xxx.com/books/norwegian-wood.webp",
+    "gallery": ["https://cdn.xxx.com/books/norwegian-wood-1.webp"]
+  }
+]
