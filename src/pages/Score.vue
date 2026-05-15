@@ -113,10 +113,10 @@
                 All
               </button>
               <button class="rubato-seg-btn" :class="statusFilter === 'undone' ? 'is-active' : ''" @click="statusFilter = 'undone'">
-                Undone
+                {{ undoneFilterLabel }}
               </button>
               <button class="rubato-seg-btn" :class="statusFilter === 'done' ? 'is-active' : ''" @click="statusFilter = 'done'">
-                Done
+                {{ doneFilterLabel }}
               </button>
             </div>
           </div>
@@ -128,7 +128,7 @@
             <div class="mt-2 text-sm opacity-70 leading-relaxed">
               {{ emptyHint }}
             </div>
-            <button class="mt-5 rubato-primary" @click="openCreateFromDrawer">
+            <button v-if="canInlineEdit" class="mt-5 rubato-primary" @click="openCreateFromDrawer">
               Add first item
             </button>
           </div>
@@ -172,6 +172,7 @@
                       </div>
 
                       <button
+                        v-if="canInlineEdit"
                         class="rubato-toggle"
                         :class="item.status === 'done' ? 'is-on' : ''"
                         @click.stop="toggleItemStatus(item.id)"
@@ -179,6 +180,9 @@
                       >
                         <span class="rubato-toggle-knob"></span>
                       </button>
+                      <div v-else class="rubato-toggle" :class="item.status === 'done' ? 'is-on' : ''" aria-hidden="true">
+                        <span class="rubato-toggle-knob"></span>
+                      </div>
                     </div>
 
                     <div class="mt-2 text-xs opacity-55 leading-relaxed">
@@ -196,7 +200,7 @@
                 <div class="text-xs uppercase tracking-[0.26em] opacity-35">
                   {{ item.status === 'done' ? doneLabel(item) : undoneLabel(item) }}
                 </div>
-                <div class="flex items-center gap-2">
+                <div v-if="canInlineEdit" class="flex items-center gap-2">
                   <button class="rubato-mini" @click="openEdit(item.id)">Edit</button>
                   <button class="rubato-mini rubato-mini-danger" @click="requestDelete(item.id)">Delete</button>
                 </div>
@@ -206,7 +210,7 @@
         </div>
 
         <div class="px-7 sm:px-8 py-6 border-t border-black/5">
-          <button class="rubato-primary w-full" @click="openCreateFromDrawer">
+          <button v-if="canInlineEdit" class="rubato-primary w-full" @click="openCreateFromDrawer">
             + Add
           </button>
         </div>
@@ -295,7 +299,7 @@
     </transition>
   </Teleport>
 
-  <Teleport to="body">
+  <Teleport v-if="canInlineEdit" to="body">
     <transition :css="false" @enter="modalEnter" @leave="modalLeave">
       <div v-if="isEditorOpen" class="fixed inset-0 z-[75] flex items-center justify-center p-5 sm:p-8">
         <div class="w-full max-w-[720px] rounded-3xl bg-white/38 backdrop-blur-2xl border border-white/40 shadow-[0_30px_80px_rgba(0,0,0,0.14)] overflow-hidden">
@@ -358,13 +362,18 @@
               </label>
 
               <label v-if="draft.type === 'exhibition'" class="rubato-field">
-                <span class="rubato-label">Location</span>
-                <input v-model="draft.meta.location" class="rubato-input" type="text" placeholder="Country / City" />
+                <span class="rubato-label">Country</span>
+                <input v-model="draft.meta.country" class="rubato-input" type="text" placeholder="Country" />
               </label>
 
               <label v-if="draft.type === 'exhibition'" class="rubato-field">
-                <span class="rubato-label">Time</span>
-                <input v-model="draft.meta.time" class="rubato-input" type="text" placeholder="Optional" />
+                <span class="rubato-label">City</span>
+                <input v-model="draft.meta.city" class="rubato-input" type="text" placeholder="City" />
+              </label>
+
+              <label v-if="draft.type === 'exhibition'" class="rubato-field">
+                <span class="rubato-label">Date</span>
+                <input v-model="draft.meta.date" class="rubato-input" type="text" placeholder="Optional" />
               </label>
             </div>
 
@@ -400,7 +409,7 @@
     </transition>
   </Teleport>
 
-  <Teleport to="body">
+  <Teleport v-if="canInlineEdit" to="body">
     <transition :css="false" @enter="modalEnter" @leave="modalLeave">
       <div v-if="confirmState.isOpen" class="fixed inset-0 z-[85] flex items-center justify-center p-6">
         <div class="w-full max-w-[520px] rounded-3xl bg-white/40 backdrop-blur-2xl border border-white/40 shadow-[0_30px_90px_rgba(0,0,0,0.16)] overflow-hidden">
@@ -479,6 +488,8 @@ const currentIndex = ref(0)
 const currentTitle = computed(() => notesData[currentIndex.value].title)
 const currentContent = computed(() => notesData[currentIndex.value].content)
 
+const canInlineEdit = import.meta.env.DEV
+
 const STORAGE_KEY = 'rubato.score.items.v1'
 const exhibitionsNoteIndex = 1
 const readingNoteIndex = 4
@@ -544,12 +555,22 @@ const drawerSubtitle = computed(() => {
   return ''
 })
 
+const doneFilterLabel = computed(() => {
+  if (drawerKind.value === 'reading') return 'Read'
+  return 'Seen'
+})
+
+const undoneFilterLabel = computed(() => {
+  if (drawerKind.value === 'reading') return 'Unread'
+  return 'Unseen'
+})
+
 const emptyHint = computed(() => {
   if (drawerKind.value === 'exhibitions') {
-    return 'Collect exhibitions as a living archive. Add title, location, time, and images.'
+    return canInlineEdit ? 'Collect exhibitions as a living archive. Add title, location, time, and images.' : 'No entries yet. Manage content in /admin.'
   }
   if (drawerKind.value === 'reading') {
-    return 'Grow a reading list with author, country, language, and covers.'
+    return canInlineEdit ? 'Grow a reading list with author, country, language, and covers.' : 'No entries yet. Manage content in /admin.'
   }
   return ''
 })
@@ -588,12 +609,16 @@ const undoneLabel = (item: RubatoItem) => {
 
 const itemMetaLine = (item: RubatoItem) => {
   if (item.type === 'exhibition') {
-    const loc = item.meta.location?.trim()
-    const time = item.meta.time?.trim()
-    if (loc && time) return `${loc} · ${time}`
-    if (loc) return loc
-    if (time) return time
-    return '—'
+    const country = item.meta.country?.trim()
+    const city = item.meta.city?.trim()
+    const date = item.meta.date?.trim()
+    const location = [country, city].filter(Boolean).join(' / ')
+
+    const fallbackLoc = item.meta.location?.trim()
+    const fallbackTime = item.meta.time?.trim()
+
+    const parts = [location || fallbackLoc, date || fallbackTime].filter(Boolean)
+    return parts.length ? parts.join(' · ') : '—'
   }
   const author = item.meta.author?.trim()
   const country = item.meta.country?.trim()
@@ -608,8 +633,9 @@ const detailFields = computed(() => {
 
   if (item.type === 'exhibition') {
     return [
-      { key: 'location', label: 'Location', value: item.meta.location || '—' },
-      { key: 'time', label: 'Time', value: item.meta.time || '—' },
+      { key: 'country', label: 'Country', value: item.meta.country || item.meta.location || '—' },
+      { key: 'city', label: 'City', value: item.meta.city || '—' },
+      { key: 'date', label: 'Date', value: item.meta.date || item.meta.time || '—' },
       { key: 'status', label: 'Status', value: item.status === 'done' ? 'Seen' : 'Unseen' },
     ]
   }
@@ -657,16 +683,120 @@ const sanitizeItem = (raw: unknown): RubatoItem | null => {
   }
 }
 
-const loadItems = () => {
+type ExhibitionContent = {
+  id?: string
+  title?: string
+  region?: 'domestic' | 'international'
+  country?: string
+  city?: string
+  date?: string
+  status?: 'done' | 'undone' | 'seen' | 'unseen'
+  description?: string
+  cover?: string
+  gallery?: string[]
+}
+
+type BookContent = {
+  id?: string
+  title?: string
+  author?: string
+  country?: string
+  language?: string
+  status?: 'done' | 'undone' | 'read' | 'unread'
+  description?: string
+  cover?: string
+  gallery?: string[]
+}
+
+const normalizeStatus = (type: ItemType, raw: unknown): ItemStatus => {
+  if (raw === 'done' || raw === 'undone') return raw
+  if (type === 'exhibition') return raw === 'seen' ? 'done' : raw === 'unseen' ? 'undone' : 'undone'
+  return raw === 'read' ? 'done' : raw === 'unread' ? 'undone' : 'undone'
+}
+
+const loadItemsFromContent = (): RubatoItem[] => {
+  const now = Date.now()
+  const list: RubatoItem[] = []
+
+  const bookMods = import.meta.glob('../../content/books/*.json', { eager: true, import: 'default' }) as Record<
+    string,
+    BookContent
+  >
+  for (const v of Object.values(bookMods)) {
+    const id = (v.id || '').trim() || getUUID()
+    const title = (v.title || '').trim()
+    if (!title) continue
+    const images = [v.cover, ...(v.gallery ?? [])].map(s => (s || '').trim()).filter(Boolean)
+    list.push({
+      id,
+      type: 'book',
+      category: null,
+      title,
+      meta: {
+        author: (v.author || '').trim(),
+        country: (v.country || '').trim(),
+        language: (v.language || '').trim(),
+        description: (v.description || '').trim(),
+      },
+      images,
+      status: normalizeStatus('book', v.status),
+      createdAt: now,
+      updatedAt: now,
+    })
+  }
+
+  const exhMods = import.meta.glob('../../content/exhibitions/*.json', { eager: true, import: 'default' }) as Record<
+    string,
+    ExhibitionContent
+  >
+  for (const v of Object.values(exhMods)) {
+    const id = (v.id || '').trim() || getUUID()
+    const title = (v.title || '').trim()
+    if (!title) continue
+    const category: Category = v.region === 'domestic' || v.region === 'international' ? v.region : null
+    const images = [v.cover, ...(v.gallery ?? [])].map(s => (s || '').trim()).filter(Boolean)
+    list.push({
+      id,
+      type: 'exhibition',
+      category,
+      title,
+      meta: {
+        country: (v.country || '').trim(),
+        city: (v.city || '').trim(),
+        date: (v.date || '').trim(),
+        description: (v.description || '').trim(),
+      },
+      images,
+      status: normalizeStatus('exhibition', v.status),
+      createdAt: now,
+      updatedAt: now,
+    })
+  }
+
+  return list
+}
+
+const loadItemsFromLocalStorage = (): RubatoItem[] => {
   try {
     const raw = localStorage.getItem(STORAGE_KEY)
-    if (!raw) return
+    if (!raw) return []
     const parsed = JSON.parse(raw) as unknown
-    if (!Array.isArray(parsed)) return
-    items.value = parsed.map(sanitizeItem).filter((v): v is RubatoItem => Boolean(v))
+    if (!Array.isArray(parsed)) return []
+    return parsed.map(sanitizeItem).filter((v): v is RubatoItem => Boolean(v))
   } catch {
-    items.value = []
+    return []
   }
+}
+
+const initItems = () => {
+  const content = loadItemsFromContent()
+  if (!canInlineEdit) {
+    items.value = content
+    return
+  }
+
+  const local = loadItemsFromLocalStorage()
+  items.value = local.length ? local : content
 }
 
 const saveItems = () => {
@@ -745,7 +875,7 @@ const openCreate = (type: ItemType) => {
   formError.value = null
   const baseMeta: Record<string, string> =
     type === 'exhibition'
-      ? { location: '', time: '', description: '' }
+      ? { country: '', city: '', date: '', description: '' }
       : { author: '', country: '', language: '', description: '' }
   draft.value = {
     id: null,
@@ -934,7 +1064,7 @@ const handleNoteClick = (payload: NoteClickPayload) => {
 onMounted(() => {
   if (!svgContainer.value) return
   gsap.to(svgContainer.value, { opacity: 1, duration: 1.6, ease: 'power2.out' })
-  loadItems()
+  initItems()
 })
 </script>
 

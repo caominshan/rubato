@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "oauth:dev": "wrangler dev --config oauth-worker/wrangler.toml",
+    "oauth:deploy": "wrangler deploy --config oauth-worker/wrangler.toml"
   },
   "dependencies": {
     "vue": "^3.5.34",
@@ -25,6 +27,7 @@
     "typescript": "~6.0.2",
     "vite": "^8.0.12",
     "vite-svg-loader": "^5.1.1",
+    "wrangler": "^4.22.0",
     "vue-tsc": "^3.2.8"
   }
 }
