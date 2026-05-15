@@ -57,7 +57,11 @@
 
   <Teleport to="body">
     <transition :css="false" @enter="drawerEnter" @leave="drawerLeave">
-      <aside v-if="isDrawerOpen" ref="drawerEl" class="fixed inset-y-0 right-0 z-[60] w-full sm:w-[420px] glass-panel flex flex-col">
+      <aside
+        v-if="isDrawerOpen"
+        ref="drawerEl"
+        class="fixed inset-y-0 right-0 z-[60] w-full sm:w-[clamp(380px,35vw,520px)] glass-panel flex flex-col"
+      >
         <div class="px-7 sm:px-8 pt-7 sm:pt-8 pb-5 border-b border-black/5">
           <div class="flex items-start justify-between gap-4">
             <div class="min-w-0">
@@ -208,71 +212,80 @@
   </FloatingPanel>
 
   <Teleport to="body">
-    <transition :css="false" @enter="modalEnter" @leave="modalLeave">
-      <div v-if="isDetailOpen" class="fixed inset-0 z-[70] flex items-center justify-center p-5 sm:p-8">
-        <div ref="detailEl" class="w-full max-w-[720px] rounded-3xl bg-white/35 backdrop-blur-2xl border border-white/40 shadow-[0_30px_80px_rgba(0,0,0,0.12)] overflow-hidden">
-          <div class="px-7 sm:px-8 py-6 border-b border-black/5 flex items-start justify-between gap-4">
-            <div class="min-w-0">
-              <div class="text-xs uppercase tracking-[0.28em] opacity-45">{{ detailItem ? itemLabel(detailItem) : '' }}</div>
-              <div class="mt-2 font-editorial text-2xl tracking-tight truncate">{{ detailItem?.title }}</div>
-              <div class="mt-2 text-xs uppercase tracking-[0.26em] opacity-40">
-                {{ detailItem ? itemMetaLine(detailItem) : '' }}
+    <transition :css="false" @enter="receiptSheetEnter" @leave="receiptSheetLeave">
+      <section
+        v-if="isDetailOpen"
+        class="fixed inset-y-0 left-0 top-0 z-[65] pointer-events-none sm:right-[clamp(380px,35vw,520px)]"
+      >
+        <div class="receipt-sheet pointer-events-auto">
+          <div class="receipt-scroll h-[100vh] w-full flex items-start justify-center px-5 sm:px-10 pt-0 pb-10" @click.self="closeDetail">
+            <article ref="receiptEl" class="receipt-paper">
+              <div class="absolute inset-0 rubato-img-grain"></div>
+              <div class="relative px-7 pt-8 pb-7">
+                <div class="flex items-start justify-between gap-5">
+                  <div class="min-w-0">
+                    <div class="receipt-line text-[11px] uppercase tracking-[0.34em] opacity-55">Rubato Archive</div>
+                    <div class="receipt-line mt-3 font-editorial text-[34px] leading-[1.05] tracking-tight receipt-accent break-words">
+                      {{ detailItem?.title }}
+                    </div>
+                    <div class="receipt-line mt-4 text-[12px] uppercase tracking-[0.22em] receipt-accent opacity-80">
+                      {{ detailItem ? itemLabel(detailItem) : '' }}
+                    </div>
+                  </div>
+                </div>
+
+                <div class="receipt-line mt-5 text-[11px] font-mono uppercase tracking-[0.26em] opacity-45">
+                  {{ receiptMetaLine }}
+                </div>
+
+                <div class="receipt-line mt-5 receipt-dotbar" aria-hidden="true"></div>
+
+                <div class="mt-6 space-y-2.5">
+                  <div v-for="field in detailFields" :key="field.key" class="receipt-line receipt-row">
+                    <div class="receipt-k">{{ field.label }}</div>
+                    <div class="receipt-v">{{ field.value }}</div>
+                  </div>
+                </div>
+
+                <div v-if="receiptGallery.length" class="receipt-line mt-6">
+                  <div class="text-[11px] font-mono uppercase tracking-[0.26em] opacity-55">Gallery</div>
+                  <div v-if="receiptCarouselSlides.length" class="mt-3">
+                    <div class="receipt-carousel-frame w-full aspect-[4/5]">
+                      <div ref="receiptCarouselStripEl" class="receipt-carousel-strip">
+                        <div v-for="(src, idx) in receiptCarouselSlides" :key="`${idx}-${src}`" class="receipt-carousel-cell">
+                          <img :src="src" alt="" class="w-full h-full object-cover" loading="lazy" draggable="false" @error="handleReceiptImgError" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div v-if="receiptGallery.length > 1" class="mt-2 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.24em] opacity-50">
+                      <div>{{ receiptGalleryIndex + 1 }} / {{ receiptGallery.length }}</div>
+                      <div class="select-none">Auto</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div v-if="detailItem?.meta?.description" class="receipt-line mt-6 text-sm leading-relaxed opacity-75">
+                  {{ detailItem.meta.description }}
+                </div>
+
+                <div class="receipt-line mt-7 receipt-dotbar" aria-hidden="true"></div>
+
+                <div class="receipt-line mt-5 flex items-center justify-between font-mono text-[11px] uppercase tracking-[0.22em] opacity-50">
+                  <div>Printed</div>
+                  <div>{{ printedAtText }}</div>
+                </div>
               </div>
-            </div>
-
-            <button
-              class="mt-1 w-10 h-10 flex items-center justify-center rounded-full bg-white/30 hover:bg-white/50 transition-colors border border-white/40 shadow-sm"
-              @click="closeDetail"
-            >
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M13 1L1 13M1 1L13 13"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
-          </div>
-
-          <div class="px-7 sm:px-8 py-6 max-h-[70vh] overflow-y-auto">
-            <div v-if="detailItem?.images?.length" class="grid grid-cols-2 sm:grid-cols-3 gap-3">
-              <div v-for="(src, idx) in detailItem.images" :key="idx" class="relative overflow-hidden rounded-2xl border border-white/30 bg-white/10">
-                <img :src="src" alt="" class="w-full aspect-[4/5] object-cover" loading="lazy" draggable="false" />
-                <div class="absolute inset-0 rubato-img-vignette"></div>
-                <div class="absolute inset-0 rubato-img-grain"></div>
-              </div>
-            </div>
-
-            <div v-if="detailItem?.meta?.description" class="mt-6 text-sm leading-relaxed opacity-75">
-              {{ detailItem.meta.description }}
-            </div>
-
-            <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-              <div v-for="field in detailFields" :key="field.key" class="rounded-2xl border border-white/30 bg-white/15 p-4">
-                <div class="text-xs uppercase tracking-[0.28em] opacity-45">{{ field.label }}</div>
-                <div class="mt-2 opacity-80">{{ field.value }}</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="px-7 sm:px-8 py-6 border-t border-black/5 flex items-center justify-between gap-3">
-            <div class="text-xs uppercase tracking-[0.28em] opacity-45">Status</div>
-            <div class="rubato-seg">
-              <div class="rubato-seg-btn is-active">
-                {{ detailItem ? (detailItem.status === 'done' ? doneLabel(detailItem) : undoneLabel(detailItem)) : '' }}
-              </div>
-            </div>
+            </article>
           </div>
         </div>
-      </div>
+      </section>
     </transition>
   </Teleport>
 </template>
 
 <script setup lang="ts">
-import { computed, nextTick, onMounted, ref } from 'vue'
+import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import gsap from 'gsap'
 import MainSvg from '../components/MainSvg.vue'
 import FloatingPanel from '../components/FloatingPanel.vue'
@@ -350,10 +363,35 @@ const flow = ref<{ isActive: boolean; key: number; paths: string[]; anchor: { x:
   anchor: null,
 })
 
-const detailEl = ref<HTMLElement | null>(null)
+const receiptEl = ref<HTMLElement | null>(null)
 const detailItemId = ref<string | null>(null)
 const isDetailOpen = computed(() => detailItemId.value !== null)
 const detailItem = computed(() => items.value.find(i => i.id === detailItemId.value) ?? null)
+const printedAt = ref<number>(Date.now())
+const printedAtText = computed(() => new Date(printedAt.value).toLocaleString())
+const receiptMetaLine = computed(() => (detailItem.value ? itemMetaLine(detailItem.value) : '—'))
+const brokenReceiptImages = ref<Record<string, true>>({})
+const receiptGallery = computed(() => {
+  const raw = detailItem.value?.images ?? []
+  const uniq = Array.from(new Set(raw.map(s => (s || '').trim()).filter(Boolean)))
+  return uniq.filter(src => !brokenReceiptImages.value[src])
+})
+const receiptGalleryIndex = ref(0)
+const receiptCarouselStripEl = ref<HTMLElement | null>(null)
+const receiptCarouselTween = ref<gsap.core.Tween | null>(null)
+const receiptCarouselSlides = computed(() => {
+  const base = receiptGallery.value
+  if (base.length <= 1) return base
+  return base.concat(base)
+})
+
+watch(
+  () => receiptGallery.value.length,
+  len => {
+    if (len <= 0) receiptGalleryIndex.value = 0
+    else if (receiptGalleryIndex.value >= len) receiptGalleryIndex.value = 0
+  }
+)
 
 const drawerTitle = computed(() => {
   if (drawerKind.value === 'exhibitions') return 'Exhibitions'
@@ -556,6 +594,100 @@ const initItems = () => {
   items.value = loadItemsFromContent()
 }
 
+const cubicBezier = (p1x: number, p1y: number, p2x: number, p2y: number) => {
+  const cx = 3 * p1x
+  const bx = 3 * (p2x - p1x) - cx
+  const ax = 1 - cx - bx
+  const cy = 3 * p1y
+  const by = 3 * (p2y - p1y) - cy
+  const ay = 1 - cy - by
+  const sampleCurveX = (t: number) => ((ax * t + bx) * t + cx) * t
+  const sampleCurveY = (t: number) => ((ay * t + by) * t + cy) * t
+  const sampleCurveDerivativeX = (t: number) => (3 * ax * t + 2 * bx) * t + cx
+  const solveCurveX = (x: number) => {
+    let t2 = x
+    for (let i = 0; i < 8; i += 1) {
+      const x2 = sampleCurveX(t2) - x
+      if (Math.abs(x2) < 1e-6) return t2
+      const d2 = sampleCurveDerivativeX(t2)
+      if (Math.abs(d2) < 1e-6) break
+      t2 -= x2 / d2
+    }
+    let t0 = 0
+    let t1 = 1
+    t2 = x
+    for (let i = 0; i < 20; i += 1) {
+      const x2 = sampleCurveX(t2)
+      if (Math.abs(x2 - x) < 1e-6) return t2
+      if (x > x2) t0 = t2
+      else t1 = t2
+      t2 = (t1 - t0) * 0.5 + t0
+    }
+    return t2
+  }
+  return (x: number) => sampleCurveY(solveCurveX(x))
+}
+
+const receiptEase = cubicBezier(0.25, 1, 0.5, 1)
+
+const animateReceipt = () => {
+  const paper = receiptEl.value
+  if (!paper) return
+  gsap.killTweensOf(paper)
+  gsap.set(paper, { clipPath: 'inset(0% 0% 100% 0%)' })
+
+  const lines = paper.querySelectorAll<HTMLElement>('.receipt-line')
+  gsap.killTweensOf(lines)
+  gsap.set(lines, { opacity: 0, y: 10 })
+
+  gsap.to(paper, { clipPath: 'inset(0% 0% 0% 0%)', duration: 1.0, ease: receiptEase })
+  gsap.to(lines, { opacity: 1, y: 0, duration: 0.55, ease: receiptEase, delay: 0.12, stagger: 0.03 })
+}
+
+const handleReceiptImgError = (ev: Event) => {
+  const img = ev.target as HTMLImageElement | null
+  if (!img) return
+  const failing = (img.currentSrc || img.src || '').trim()
+  if (!failing) return
+  brokenReceiptImages.value = { ...brokenReceiptImages.value, [failing]: true }
+}
+
+const stopReceiptCarousel = () => {
+  if (receiptCarouselTween.value) {
+    receiptCarouselTween.value.kill()
+    receiptCarouselTween.value = null
+  }
+}
+
+const startReceiptCarousel = () => {
+  stopReceiptCarousel()
+  if (!isDetailOpen.value) return
+  const n = receiptGallery.value.length
+  if (n <= 1) return
+  const strip = receiptCarouselStripEl.value
+  if (!strip) return
+
+  const secondsPerSlide = 2.6
+  const total = n * secondsPerSlide
+  let lastIdx = -1
+
+  gsap.set(strip, { xPercent: 0 })
+  receiptCarouselTween.value = gsap.to(strip, {
+    xPercent: -100 * n,
+    duration: total,
+    ease: 'none',
+    repeat: -1,
+    onUpdate: () => {
+      const xp = Number(gsap.getProperty(strip, 'xPercent'))
+      const idx = n > 0 ? Math.floor((-xp) / 100) % n : 0
+      if (idx !== lastIdx) {
+        lastIdx = idx
+        receiptGalleryIndex.value = idx
+      }
+    },
+  })
+}
+
 const openDrawer = async (kind: NonNullable<typeof drawerKind.value>, anchor: { x: number; y: number }) => {
   isPanelOpen.value = false
   detailItemId.value = null
@@ -569,15 +701,17 @@ const openDrawer = async (kind: NonNullable<typeof drawerKind.value>, anchor: { 
 
 const closeDrawer = () => {
   drawerKind.value = null
+  closeDetail()
 }
 
 const openDetail = async (id: string) => {
+  printedAt.value = Date.now()
+  receiptGalleryIndex.value = 0
+  if (window.innerWidth < 640) drawerKind.value = null
   detailItemId.value = id
   await nextTick()
-  if (detailEl.value) {
-    const children = detailEl.value.querySelectorAll('.rubato-img-grain, img, .font-editorial, .rubato-secondary, .rubato-toggle')
-    gsap.fromTo(children, { y: 10, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: 'power2.out', stagger: 0.04 })
-  }
+  animateReceipt()
+  startReceiptCarousel()
 }
 
 const closeDetail = () => {
@@ -659,12 +793,16 @@ const drawerLeave = (el: Element, done: () => void) => {
   gsap.to(el, { x: '100%', opacity: 0, duration: 0.5, ease: 'power3.in', onComplete: done })
 }
 
-const modalEnter = (el: Element, done: () => void) => {
-  gsap.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.35, ease: 'power2.out', onComplete: done })
+const receiptSheetEnter = (el: Element, done: () => void) => {
+  gsap.fromTo(el, { yPercent: -110, opacity: 0 }, { yPercent: 0, opacity: 1, duration: 0.62, ease: 'power3.out', onComplete: done })
 }
 
-const modalLeave = (el: Element, done: () => void) => {
-  gsap.to(el, { opacity: 0, duration: 0.28, ease: 'power2.inOut', onComplete: done })
+const receiptSheetLeave = (el: Element, done: () => void) => {
+  gsap.to(el, { yPercent: -110, opacity: 0, duration: 0.5, ease: 'power3.in', onComplete: done })
+}
+
+const onKeydown = (ev: KeyboardEvent) => {
+  if (ev.key === 'Escape' && isDetailOpen.value) closeDetail()
 }
 
 const handleNoteClick = (payload: NoteClickPayload) => {
@@ -680,7 +818,28 @@ onMounted(() => {
   if (!svgContainer.value) return
   gsap.to(svgContainer.value, { opacity: 1, duration: 1.6, ease: 'power2.out' })
   initItems()
+  window.addEventListener('keydown', onKeydown)
 })
+
+onUnmounted(() => {
+  window.removeEventListener('keydown', onKeydown)
+  stopReceiptCarousel()
+})
+
+watch(
+  () => isDetailOpen.value,
+  open => {
+    if (open) startReceiptCarousel()
+    else stopReceiptCarousel()
+  }
+)
+
+watch(
+  () => receiptGallery.value.join('|'),
+  () => {
+    if (isDetailOpen.value) startReceiptCarousel()
+  }
+)
 </script>
 
 <style scoped>
@@ -924,5 +1083,90 @@ onMounted(() => {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+.receipt-paper {
+  width: 380px;
+  max-width: calc(100vw - 48px);
+  position: relative;
+  overflow: hidden;
+  border-radius: 0px;
+  background: #fbfbfa;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.12);
+  clip-path: inset(0% 0% 100% 0%);
+  will-change: clip-path;
+}
+
+.receipt-sheet {
+  width: 100%;
+  height: 100vh;
+}
+
+.receipt-accent {
+  color: rgba(93, 165, 110, 0.9);
+}
+
+.receipt-scroll {
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.receipt-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.receipt-dotbar {
+  height: 10px;
+  border-radius: 0px;
+  background-image: radial-gradient(circle, rgba(93, 165, 110, 0.75) 2px, transparent 2.6px);
+  background-size: 14px 10px;
+  background-position: 0 0;
+  opacity: 0.95;
+}
+
+.receipt-carousel-frame {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.receipt-carousel-strip {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+.receipt-carousel-cell {
+  flex: 0 0 100%;
+  height: 100%;
+}
+
+.receipt-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.25rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.receipt-k {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  opacity: 0.58;
+}
+
+.receipt-v {
+  text-align: right;
+  opacity: 0.78;
+  word-break: break-word;
+  max-width: 60%;
 }
 </style>
