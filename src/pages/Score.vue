@@ -667,7 +667,7 @@ const startReceiptCarousel = () => {
   const strip = receiptCarouselStripEl.value
   if (!strip) return
 
-  const secondsPerSlide = 2.6
+  const secondsPerSlide = 4.2
   const total = n * secondsPerSlide
   let lastIdx = -1
 

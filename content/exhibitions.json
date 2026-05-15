@@ -14,5 +14,22 @@
       "https://rubatoarchive.oss-cn-shenzhen.aliyuncs.com/UFAN190002.jpg",
       "https://rubatoarchive.oss-cn-shenzhen.aliyuncs.com/screen-shot-2018-07-30-at-1-54-11-pm-e1532924591534.webp"
     ]
+  },
+  {
+    "id": "exhibition-002",
+    "title": "李昢：一九九八年至今的創作",
+    "region": "domestic",
+    "country": "中国",
+    "city": "香港",
+    "date": "2026",
+    "status": "unseen",
+    "description": "Lee Bul (South Korean, born 1964) is one of the most prominent contemporary artists to emerge from Asia in recent decades. Lee Bul: From 1998 to Now is a comprehensive survey of her career to date, featuring major works from the artist’s studio and collections across Asia and beyond.",
+    "cover": "https://rubatoarchive.oss-cn-shenzhen.aliyuncs.com/leebul.webp",
+    "gallery": [
+      "https://rubatoarchive.oss-cn-shenzhen.aliyuncs.com/leebul.webp",
+      "https://rubatoarchive.oss-cn-shenzhen.aliyuncs.com/lb1.webp",
+      "https://rubatoarchive.oss-cn-shenzhen.aliyuncs.com/lb2.webp",
+      "https://rubatoarchive.oss-cn-shenzhen.aliyuncs.com/lb3.webp"
+    ]
   }
 ]

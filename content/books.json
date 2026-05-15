@@ -1,13 +1,15 @@
 [
   {
     "id": "book-001",
-    "title": "Norwegian Wood",
-    "author": "Haruki Murakami",
-    "country": "Japan",
-    "language": "Japanese",
+    "title": "十六夜膳房",
+    "author": "毛無",
+    "country": "中国",
+    "language": "中文",
     "status": "read",
-    "description": "A quiet and melancholic novel.",
-    "cover": "",
-    "gallery": []
+    "description": "這是一家開在忘川河邊的料理店，名叫「地獄膳房」。每天都有客人沿河而來，帶着一段段或滿足或遺憾的記憶，在孟婆這里留下他的故事用以交換，重溫一生當中*無法忘懷的味道。",
+    "cover": "https://rubatoarchive.oss-cn-shenzhen.aliyuncs.com/getImage.jpg",
+    "gallery": [
+      "https://rubatoarchive.oss-cn-shenzhen.aliyuncs.com/getImage.jpg"
+    ]
   }
 ]
