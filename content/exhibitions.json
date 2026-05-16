@@ -31,5 +31,53 @@
       "https://rubatoarchive.oss-cn-shenzhen.aliyuncs.com/lb2.webp",
       "https://rubatoarchive.oss-cn-shenzhen.aliyuncs.com/lb3.webp"
     ]
+  },
+  {
+    "id": "exhibition-003",
+    "title": "Art Basel Hong Kong",
+    "region": "domestic",
+    "country": "中国",
+    "city": "香港",
+    "date": "2026",
+    "status": "seen",
+    "description": "Our Hong Kong fair features premier galleries from Asia and beyond. It provides an in-depth overview of Asia-Pacific's astonishing diversity, as well as global artistic perspectives through Modern and contemporary works.",
+    "cover": "https://rubatoarchive.oss-cn-shenzhen.aliyuncs.com/basel.png",
+    "gallery": [
+      "https://rubatoarchive.oss-cn-shenzhen.aliyuncs.com/ba1.png",
+      "https://rubatoarchive.oss-cn-shenzhen.aliyuncs.com/ba2.png",
+      "https://rubatoarchive.oss-cn-shenzhen.aliyuncs.com/ba3.png"
+    ]
+  },
+  {
+    "id": "exhibition-004",
+    "title": "MMCA Collection: Korean Contemporary Art",
+    "region": "international",
+    "country": "韩国",
+    "city": "首尔",
+    "date": "2025",
+    "status": "seen",
+    "description": "This exhibition is the first permanent exhibition since the opening of the Seoul branch of the National Museum of Modern and Contemporary Art, Korea (MMCA) in 2013. Since beginning its acquisition activities with its original opening in 1969, MMCA has collected and researched a body of significant artwork and archival materials with a focus on art history and contemporary art trends spanning more than 50 years. ",
+    "cover": "https://rubatoarchive.oss-cn-shenzhen.aliyuncs.com/mmsas.jpg",
+    "gallery": [
+      "https://rubatoarchive.oss-cn-shenzhen.aliyuncs.com/mmca1.png",
+      "https://rubatoarchive.oss-cn-shenzhen.aliyuncs.com/mmca2.png",
+      "https://rubatoarchive.oss-cn-shenzhen.aliyuncs.com/mmca3.png"
+    ]
+  },
+  {
+    "id": "exhibition-005",
+    "title": "三星美術館Leeum",
+    "region": "international",
+    "country": "韩国",
+    "city": "首尔",
+    "date": "2025",
+    "status": "seen",
+    "description": "三星美術館Leeum由展示韓國古代美術的MUSEUM1，及展示韓國和外國的近現代美術的MUSEUM 2組成。美術館也爲未來的主人翁開放三星兒童教育文化中心，形成複合式文化園區。結合過去和現代，以及未來藝術和文化的三星美術館Leeum建築，由世界級建築師馬利歐‧波塔、強‧努維爾、庫哈斯設計，為三位建築師的風格調和表現出來的藝術作品。",
+    "cover": "https://rubatoarchive.oss-cn-shenzhen.aliyuncs.com/leeum.png",
+    "gallery": [
+      "https://rubatoarchive.oss-cn-shenzhen.aliyuncs.com/lee1.jpg",
+      "https://rubatoarchive.oss-cn-shenzhen.aliyuncs.com/lee2.jpg",
+      "https://rubatoarchive.oss-cn-shenzhen.aliyuncs.com/lee3.jpg"
+    ]
   }
 ]
