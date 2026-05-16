@@ -3,13 +3,11 @@ import vue from '@vitejs/plugin-vue'
 import tailwindcss from '@tailwindcss/vite'
 import svgLoader from 'vite-svg-loader'
 
+import { cloudflare } from "@cloudflare/vite-plugin";
+
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    vue(),
-    tailwindcss(),
-    svgLoader({
-      defaultImport: 'component'
-    })
-  ],
+  plugins: [vue(), tailwindcss(), svgLoader({
+    defaultImport: 'component'
+  }), cloudflare()],
 })
