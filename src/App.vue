@@ -3,10 +3,10 @@
     <div class="digital-glow"></div>
     <RouterView />
     <div class="fixed bottom-8 left-8 text-xs uppercase tracking-[0.3em] opacity-40 mix-blend-multiply z-10 pointer-events-none">
-      AI / Art / Design
+      archive of passing time
     </div>
     <div class="fixed bottom-8 right-8 text-xs uppercase tracking-[0.3em] opacity-40 mix-blend-multiply z-10 pointer-events-none">
-      Digital Space
+      for quiet rhythms
     </div>
   </div>
 </template>

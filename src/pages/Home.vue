@@ -120,7 +120,7 @@
                 text-anchor="middle"
                 class="dial-sub"
                 fill="rgba(92, 85, 78, 0.58)"
-              >MECHANICAL SYSTEM</text>
+              >DIGITAL SPACE</text>
             </g>
 
             <g :transform="`rotate(${hourAngle} ${cx} ${cy})`" filter="url(#handShadow)">
@@ -274,7 +274,7 @@
 
       <div class="pointer-events-none relative z-10 min-h-[100svh] flex items-end justify-center pb-10 sm:pb-14">
         <div class="text-[11px] uppercase tracking-[0.32em] text-[#5c554e] opacity-40">
-          Tap the dial for status
+          not every note needs sound
         </div>
       </div>
     </div>

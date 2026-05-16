@@ -1,4 +1,8 @@
 <template>
+  <nav class="score-nav fixed left-6 top-6 z-[90] pointer-events-auto">
+    <RouterLink to="/" class="score-nav-link">Home</RouterLink>
+  </nav>
+
   <main class="flex-1 flex items-center justify-center p-8 sm:p-16 relative z-10">
     <div ref="svgContainer" class="w-full max-w-6xl aspect-[2/1] relative flex items-center justify-center opacity-0">
       <MainSvg @note-click="handleNoteClick" />
@@ -1083,6 +1087,44 @@ watch(
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+.score-nav-link {
+  position: relative;
+  display: inline-block;
+  padding: 2px 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(43, 38, 35, 0.78);
+  opacity: 0.5;
+  transition: opacity 0.22s ease;
+}
+
+.score-nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 1px;
+  background: rgba(43, 38, 35, 0.55);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.28s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.score-nav-link:hover {
+  opacity: 0.85;
+}
+
+.score-nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.score-nav-link:not(:hover)::after {
+  transform-origin: right;
 }
 
 .receipt-paper {
