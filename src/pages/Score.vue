@@ -532,10 +532,108 @@ type BookContent = {
   gallery?: string[]
 }
 
+type SupabaseBookRow = {
+  id: string
+  title: string | null
+  author: string | null
+  country: string | null
+  language: string | null
+  description: string | null
+  cover: string | null
+  status: 'read' | 'unread' | null
+  created_at: string | null
+}
+
+type SupabaseExhibitionRow = {
+  id: string
+  title: string | null
+  region: 'domestic' | 'international' | null
+  country: string | null
+  city: string | null
+  date: string | null
+  description: string | null
+  cover: string | null
+  status: 'seen' | 'unseen' | null
+  created_at: string | null
+}
+
 const normalizeStatus = (type: ItemType, raw: unknown): ItemStatus => {
   if (raw === 'done' || raw === 'undone') return raw
   if (type === 'exhibition') return raw === 'seen' ? 'done' : raw === 'unseen' ? 'undone' : 'undone'
   return raw === 'read' ? 'done' : raw === 'unread' ? 'undone' : 'undone'
+}
+
+const supabaseUrl = String(import.meta.env.VITE_SUPABASE_URL || '').trim()
+const supabaseAnonKey = String(import.meta.env.VITE_SUPABASE_ANON_KEY || '').trim()
+const canUseSupabase = Boolean(supabaseUrl && supabaseAnonKey)
+
+const supaFetch = async <T,>(path: string): Promise<T> => {
+  const res = await fetch(`${supabaseUrl}/rest/v1${path}`, {
+    method: 'GET',
+    headers: { apikey: supabaseAnonKey, Authorization: `Bearer ${supabaseAnonKey}` },
+  })
+  if (!res.ok) throw new Error(`Supabase (${res.status})`)
+  return (await res.json()) as T
+}
+
+const loadItemsFromSupabase = async (): Promise<RubatoItem[]> => {
+  const now = Date.now()
+  const list: RubatoItem[] = []
+
+  const books = await supaFetch<SupabaseBookRow[]>(
+    '/books?select=id,title,author,country,language,description,cover,status,created_at&order=created_at.desc',
+  )
+  for (const v of Array.isArray(books) ? books : []) {
+    const title = (v.title || '').trim()
+    if (!title) continue
+    const createdAt = v.created_at ? Date.parse(v.created_at) : now
+    const images = [(v.cover || '').trim()].filter(Boolean)
+    list.push({
+      id: v.id,
+      type: 'book',
+      category: null,
+      title,
+      meta: {
+        author: (v.author || '').trim(),
+        country: (v.country || '').trim(),
+        language: (v.language || '').trim(),
+        description: (v.description || '').trim(),
+      },
+      images,
+      status: normalizeStatus('book', v.status),
+      createdAt: Number.isFinite(createdAt) ? createdAt : now,
+      updatedAt: Number.isFinite(createdAt) ? createdAt : now,
+    })
+  }
+
+  const exhibitions = await supaFetch<SupabaseExhibitionRow[]>(
+    '/exhibitions?select=id,title,region,country,city,date,description,cover,status,created_at&order=created_at.desc',
+  )
+  for (const v of Array.isArray(exhibitions) ? exhibitions : []) {
+    const title = (v.title || '').trim()
+    if (!title) continue
+    const createdAt = v.created_at ? Date.parse(v.created_at) : now
+    const category: Category = v.region === 'domestic' || v.region === 'international' ? v.region : null
+    const images = [(v.cover || '').trim()].filter(Boolean)
+    list.push({
+      id: v.id,
+      type: 'exhibition',
+      category,
+      title,
+      meta: {
+        country: (v.country || '').trim(),
+        city: (v.city || '').trim(),
+        date: (v.date || '').trim(),
+        description: (v.description || '').trim(),
+      },
+      images,
+      status: normalizeStatus('exhibition', v.status),
+      createdAt: Number.isFinite(createdAt) ? createdAt : now,
+      updatedAt: Number.isFinite(createdAt) ? createdAt : now,
+    })
+  }
+
+  return list
 }
 
 const loadItemsFromContent = (): RubatoItem[] => {
@@ -594,8 +692,13 @@ const loadItemsFromContent = (): RubatoItem[] => {
   return list
 }
 
-const initItems = () => {
+const initItems = async () => {
   items.value = loadItemsFromContent()
+  if (!canUseSupabase) return
+  try {
+    const remote = await loadItemsFromSupabase()
+    if (remote.length) items.value = remote
+  } catch {}
 }
 
 const cubicBezier = (p1x: number, p1y: number, p2x: number, p2y: number) => {
@@ -821,9 +924,10 @@ const handleNoteClick = (payload: NoteClickPayload) => {
 onMounted(() => {
   if (!svgContainer.value) return
   gsap.to(svgContainer.value, { opacity: 1, duration: 1.6, ease: 'power2.out' })
-  initItems()
+  void initItems()
   window.addEventListener('keydown', onKeydown)
 })
+
 
 onUnmounted(() => {
   window.removeEventListener('keydown', onKeydown)
