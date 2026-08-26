@@ -53,6 +53,22 @@
       <path class="cls-5" d="M1537.11,338.82c-.26-.11-.91-.42-1.12.18,0,0-.16.32.15,1.73,0,0,2.81,11.37-2.34,26.18,0,0-4.94,17.18-26.07,25.28,0,0-13.02,5.28-31.16,8.49l27.08-70.95c6.52,7.67,22.66,9.52,37.63,3.94,16.07-5.99,24.7-18.25,19.28-27.39-5.42-9.14-22.84-11.7-38.91-5.72-10.74,4-18.13,10.8-20.25,17.61h0s-57.18,149.82-57.18,149.82l6.11,1.46,2.6-6.8s5.07-10.87,17.47-15.13c0,0,3.42-1.04,6.49-2.43,0,0,43.9-16.45,46.84-55.2,2.05-1.92,4.02-3.97,5.79-6.21,0,0,17.42-21.54,8.23-44.18,0,0-.17-.49-.64-.69ZM1494.19,426.15s-10.87,7.35-31.75,11.59l2.19-5.74c.77-1.86,4.58-9.5,17.82-17.36,0,0,11.45-6.52,14.39-7.89,0,0,12.27-4.68,23.41-13.81-.13,2.62-1.95,18.12-26.07,33.21Z"/>
     </g>
 
+    <g class="note-label-layer" aria-hidden="true">
+      <g
+        v-for="label in noteLabels"
+        :key="label.id"
+        class="note-edge-label"
+        :data-note-label="label.noteIndex"
+      >
+        <path :id="label.id" :d="label.path" />
+        <text>
+          <textPath :href="`#${label.id}`" startOffset="5%">
+            {{ label.title }}
+          </textPath>
+        </text>
+      </g>
+    </g>
+
     <g class="small-dots">
       <path class="cls-6 opacity-30" d="M26.45,12.11c16.68.55,33.39-.15,49.96-2.14,4.68-.56,9.35-1.22,14-1.98,1.9-.31,1.09-3.2-.8-2.89-16.26,2.64-32.71,4.04-49.19,4.19-4.66.04-9.32-.02-13.98-.17-1.93-.06-1.93,2.94,0,3h0Z"/>
       <path class="cls-6 opacity-30" d="M141,3c1.93,0,1.93-3,0-3s-1.93,3,0,3h0Z"/>
@@ -62,14 +78,20 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, onUnmounted } from 'vue';
+import { nextTick, onMounted, onUnmounted, ref } from 'vue';
 import gsap from 'gsap';
+
+const props = defineProps<{
+  titles: readonly string[];
+}>();
 
 const emit = defineEmits<{
   (e: 'note-click', payload: { index: number; anchor: { x: number; y: number } }): void;
 }>();
 
 let floatTweens: gsap.core.Tween[] = [];
+type NoteLabel = { id: string; noteIndex: number; title: string; path: string };
+const noteLabels = ref<NoteLabel[]>([]);
 const floatTweenByEl = new WeakMap<SVGGraphicsElement, gsap.core.Tween>();
 const hoverState = new WeakMap<SVGGraphicsElement, boolean>();
 const leaveTimeoutByEl = new WeakMap<SVGGraphicsElement, number>();
@@ -151,14 +173,48 @@ const handleNoteClick = (target: EventTarget | null) => {
   });
 };
 
-onMounted(() => {
-  const notes = document.querySelectorAll('.interactive-note');
+const edgePath = (box: DOMRect) => {
+  const padding = Math.max(13, Math.min(28, Math.min(box.width, box.height) * 0.18));
+  const x = box.x - padding;
+  const y = box.y - padding;
+  const width = box.width + padding * 2;
+  const height = box.height + padding * 2;
+  const radius = Math.min(30, width / 4, height / 4);
+
+  return [
+    `M ${x + radius} ${y}`,
+    `H ${x + width - radius}`,
+    `Q ${x + width} ${y} ${x + width} ${y + radius}`,
+    `V ${y + height - radius}`,
+    `Q ${x + width} ${y + height} ${x + width - radius} ${y + height}`,
+    `H ${x + radius}`,
+    `Q ${x} ${y + height} ${x} ${y + height - radius}`,
+    `V ${y + radius}`,
+    `Q ${x} ${y} ${x + radius} ${y}`,
+  ].join(' ');
+};
+
+onMounted(async () => {
+  const notes = Array.from(document.querySelectorAll<SVGGraphicsElement>('.interactive-note'));
+
+  noteLabels.value = notes.map((note, noteIndex) => {
+    const panelIndex = Number(note.dataset.panel ?? 0);
+    return {
+      id: `note-edge-${noteIndex}`,
+      noteIndex,
+      title: props.titles[panelIndex] ?? '',
+      path: edgePath(note.getBBox()),
+    };
+  });
+  await nextTick();
   
   notes.forEach((note, index) => {
-    const el = note as SVGGraphicsElement;
+    const el = note;
+    const label = document.querySelector<SVGGElement>(`[data-note-label="${index}"]`);
     const bbox = el.getBBox();
-    gsap.killTweensOf(el);
-    gsap.set(el, {
+    const animatedTargets = label ? [el, label] : [el];
+    gsap.killTweensOf(animatedTargets);
+    gsap.set(animatedTargets, {
       opacity: 0,
       x: 0,
       y: 0,
@@ -170,7 +226,7 @@ onMounted(() => {
     const duration = 4.2 + (index % 4) * 1.1;
     const delay = index * 0.5;
 
-    const tween = gsap.to(el, {
+    const tween = gsap.to(animatedTargets, {
       y: -yRange,
       duration: duration,
       yoyo: true,
@@ -182,7 +238,7 @@ onMounted(() => {
     floatTweenByEl.set(el, tween);
     
     gsap.fromTo(
-      el,
+      animatedTargets,
       { opacity: 0, y: 6 },
       {
         opacity: 1,
@@ -270,5 +326,32 @@ onUnmounted(() => {
 
 .interactive-note:hover {
   opacity: 1;
+}
+
+.note-label-layer {
+  pointer-events: none;
+}
+
+.note-edge-label {
+  fill: none;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.note-edge-label > path {
+  fill: none;
+  stroke: none;
+}
+
+.note-edge-label text {
+  fill: rgba(43, 38, 35, 0.62);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  font-style: italic;
+  letter-spacing: 0.14em;
+}
+
+.note-edge-label textPath {
+  dominant-baseline: middle;
 }
 </style>
