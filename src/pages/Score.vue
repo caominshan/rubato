@@ -368,7 +368,7 @@ const notesData = [
       '<p>Experiments at the intersection of human intuition and machine intelligence. Exploring latent spaces, prompt engineering, and algorithmic serendipity.</p><br><p>The machine is not a replacement, but a collaborator—a mirror reflecting our own complexities back at us.</p>',
   },
   {
-    title: 'Projects',
+    title: 'RM Archive',
     content:
       '<p>Structured endeavors and shipped products. From concept to execution, a timeline of digital artifacts built with intention and precision.</p><br><p>Every project is a hypothesis tested against reality.</p>',
   },
@@ -396,6 +396,7 @@ const isPanelOpen = ref(false)
 const currentIndex = ref(0)
 const isHeyTabloOpen = ref(false)
 const heytabloUrl = `${import.meta.env.BASE_URL}heytablo.html`
+const rmArchiveUrl = 'https://rm-archive-museum.vxbhp492t8.chatgpt.site'
 
 const currentTitle = computed(() => notesData[currentIndex.value].title)
 const currentContent = computed(() => notesData[currentIndex.value].content)
@@ -980,6 +981,10 @@ const handleNoteClick = (payload: NoteClickPayload) => {
   if (index === 0) {
     isPanelOpen.value = false
     isHeyTabloOpen.value = true
+    return
+  }
+  if (index === 2) {
+    window.location.assign(rmArchiveUrl)
     return
   }
   if (index === exhibitionsNoteIndex) return openDrawer('exhibitions', payload.anchor)
