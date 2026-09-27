@@ -1,0 +1,3807 @@
+[
+  {
+    "id": "hey_tablo_01",
+    "episodeNumber": 1,
+    "series": "HEY TABLO",
+    "title": "It's 2026 and we are officially OLD | Hey Tablo Ep. 1",
+    "publishedDate": "2026-01-13",
+    "duration": "51 min",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep1",
+    "coreThemeZh": "年龄、怀旧与时间加速感",
+    "summaryZh": "从新年和女儿长大聊到《江南 Style》、iPhone、Born Hater 与《哈利·波特》，用怀旧和幽默讨论变老、信息过载以及时间为何越过越快。",
+    "formatType": "reflective_monologue",
+    "mainTopics": [
+      "aging",
+      "nostalgia",
+      "time_perception",
+      "internet_culture",
+      "epik_high_memory"
+    ],
+    "bestForSituations": [
+      "age_anxiety",
+      "feeling_time_fly",
+      "nostalgia",
+      "new_listener"
+    ],
+    "emotionsBefore": [
+      "nostalgic",
+      "confused",
+      "anxious"
+    ],
+    "desiredEffects": [
+      "company",
+      "reflection",
+      "comfort",
+      "hope"
+    ],
+    "toneTags": [
+      "nostalgic",
+      "warm",
+      "witty",
+      "reflective"
+    ],
+    "sensitiveTopics": [],
+    "contentWarning": "",
+    "scores": {
+      "funny": 3,
+      "comfort": 4,
+      "reflection": 4,
+      "energy": 2,
+      "attentionRequired": 3,
+      "backgroundFriendly": 3,
+      "emotionalIntensity": 2,
+      "newFanFriendly": 5,
+      "shareCardPotential": 4
+    },
+    "memberOrGuestFocus": "Tablo｜Haru｜Epik High 回忆",
+    "editorNote": "适合突然觉得时间过得太快、开始年龄焦虑的人；它不强迫你“保持年轻”，而是把大家共同经历的变老说得轻松又有希望。",
+    "recommendationCopy": "你可能不是落后了，只是突然发现时间真的走了很远。这一集会用怀旧和笑点陪你重新看待变老。",
+    "backupAngle": "若用户更需要具体的人生建议，可备用推荐 EP14。",
+    "sampleQueries": [
+      "怎么突然就变老了？",
+      "我感觉时间越过越快",
+      "想听一点怀旧但不伤感的内容"
+    ],
+    "shareCardTitle": "时间怎么突然快进了？",
+    "shareCardNote": "今晚不追赶时间，先和过去打个招呼。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=0Up8hZyfLWg",
+    "curation": {
+      "hiddenQuestionZh": "为什么长大以后，时间像突然加速了，而我还没准备好？",
+      "coreNeedPrimary": "Need_Perspective",
+      "coreNeedSecondary": [
+        "Need_SelfAcceptance",
+        "Need_Connection"
+      ],
+      "emotionalValidationZh": "突然感到时间过得很快，不只是你一个人的错觉；很多人都会在新的生命阶段重新看见成长和变老。",
+      "primaryOffer": "Offer_Perspective",
+      "secondaryOffers": [
+        "Offer_Reflection",
+        "Offer_Company"
+      ],
+      "emotionalAftertasteZh": "对变老少一点慌张，也更愿意回头看看自己已经走过的路。",
+      "transformationBeforeZh": "时间一直在追我，我是不是已经落后了？",
+      "transformationAfterZh": "我可以把时间加速感理解为人生阶段正在变化，而不是自己出了问题。",
+      "menuCategory": "Slow Brew",
+      "menuEmoji": "☕",
+      "conversationEnergy": 2,
+      "cognitiveLoad": 3,
+      "emotionalIntensity": 2,
+      "bestServedWith": [
+        "周日下午",
+        "回家路上",
+        "雨天",
+        "一个人整理旧照片时"
+      ],
+      "recommendedWhen": [
+        "age_anxiety",
+        "feeling_time_fly",
+        "nostalgia",
+        "life_stage_transition"
+      ],
+      "avoidWhen": [
+        "Need_Laughter",
+        "Need_HighEnergyEscape"
+      ],
+      "curatorNoteZh": "这集真正陪伴的不是“怀旧”，而是第一次清楚意识到时间已经走了很远的人。它用共同记忆和幽默把年龄焦虑变成一种可以一起惊讶、一起接受的经验。",
+      "whyTodayZh": "今天推荐它，因为你需要的不是追赶时间，而是重新理解自己正在经历的成长。",
+      "whyThisWorksZh": "节目不断从女儿长大、旧歌、旧科技和电影记忆回到时间感，让“我是不是突然老了”变成一段大家共同经历的人生变化。",
+      "curatorPriority": 4,
+      "alternativeEpisodes": [
+        14,
+        29
+      ],
+      "evidenceSummary": "围绕 Haru 长大、《江南 Style》、iPhone、Born Hater、《哈利·波特》和信息过载反复讨论时间流逝与年龄感。",
+      "evidenceTimestamps": [
+        "00:49",
+        "05:04",
+        "16:47",
+        "26:05",
+        "33:36"
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_02",
+    "episodeNumber": 2,
+    "series": "HEY TABLO",
+    "title": "Do this and you'll be MENTALLY BULLETPROOF | Hey Tablo Ep. 2",
+    "publishedDate": "2026-01-13",
+    "duration": "1:07:00",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep2",
+    "coreThemeZh": "韧性、归零重建与日常选择",
+    "summaryZh": "Tablo 从自己对速度、高处和水的恐惧出发，区分“没有恐惧”和心理韧性；再以童年送报、积蓄被拿走、运动挫败和人生低谷等经历，说明韧性常来自失去后仍然在第二天继续做该做的事。",
+    "formatType": "personal_story_advice",
+    "mainTopics": [
+      "resilience",
+      "rock_bottom",
+      "rebuilding",
+      "childhood",
+      "fear",
+      "self_assurance"
+    ],
+    "bestForSituations": [
+      "rock_bottom",
+      "failure",
+      "feeling_discouraged",
+      "starting_over",
+      "need_courage"
+    ],
+    "emotionsBefore": [
+      "frustrated",
+      "anxious",
+      "hopeless",
+      "insecure"
+    ],
+    "desiredEffects": [
+      "motivation",
+      "comfort",
+      "reflection",
+      "hope"
+    ],
+    "toneTags": [
+      "candid",
+      "warm",
+      "motivational",
+      "reflective"
+    ],
+    "sensitiveTopics": [
+      "past_public_harassment",
+      "family_conflict",
+      "childhood_hardship"
+    ],
+    "contentWarning": "涉及长期网络攻击、家庭冲突和童年挫折；节目明确说明内容来自个人经验而非专业建议。",
+    "scores": {
+      "funny": 3,
+      "comfort": 5,
+      "reflection": 5,
+      "energy": 3,
+      "attentionRequired": 4,
+      "backgroundFriendly": 2,
+      "emotionalIntensity": 4,
+      "newFanFriendly": 4,
+      "shareCardPotential": 5
+    },
+    "memberOrGuestFocus": "Tablo 个人经历｜Haru｜童年与低谷",
+    "editorNote": "这一集的安慰点不是“你应该更坚强”，而是：韧性可以是失去一切以后，第二天仍然起床继续送报。具体故事很多，适合需要重新相信自己能重建的人。",
+    "recommendationCopy": "你不需要现在就回到原来的状态。先做明天必须做的那一件小事，重建往往就是这样开始的。",
+    "backupAngle": "若用户更需要短期临场能量，可备用推荐 EP22；若只想轻松转移注意力，则推荐 EP29。",
+    "sampleQueries": [
+      "我跌到谷底了怎么办？",
+      "失败后怎么重新开始？",
+      "我觉得自己一点都不坚强"
+    ],
+    "shareCardTitle": "归零以后，也可以重新长回来",
+    "shareCardNote": "先过完明天，再慢慢把失去的东西拿回来。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=ylrAnE3qW3I",
+    "curation": {
+      "hiddenQuestionZh": "当我已经跌到谷底，我真的还能重新建立生活吗？",
+      "coreNeedPrimary": "Need_Hope",
+      "coreNeedSecondary": [
+        "Need_Courage",
+        "Need_Restart"
+      ],
+      "emotionalValidationZh": "韧性不等于没有恐惧，也不要求你立刻恢复；很多重建只是从第二天继续完成一件该做的小事开始。",
+      "primaryOffer": "Offer_Hope",
+      "secondaryOffers": [
+        "Offer_Perspective",
+        "Offer_Validation"
+      ],
+      "emotionalAftertasteZh": "不会突然变得无所畏惧，但会重新相信自己有能力一点点把生活建回来。",
+      "transformationBeforeZh": "我失去了很多，说明我已经失败了。",
+      "transformationAfterZh": "失去以后仍能继续做下一件事，本身就是重建能力。",
+      "menuCategory": "Chef's Special",
+      "menuEmoji": "🍷",
+      "conversationEnergy": 2,
+      "cognitiveLoad": 4,
+      "emotionalIntensity": 4,
+      "bestServedWith": [
+        "清晨",
+        "写日记时",
+        "一个人喝咖啡",
+        "重要决定之后"
+      ],
+      "recommendedWhen": [
+        "rock_bottom",
+        "failure",
+        "starting_over",
+        "feeling_discouraged",
+        "need_courage"
+      ],
+      "avoidWhen": [
+        "Need_Laughter",
+        "Need_LightEscape",
+        "avoid_heavy_personal_stories"
+      ],
+      "curatorNoteZh": "这集不是成功学，也不是要求用户变得坚强。它通过童年送报、失去积蓄、恐惧和低谷经历，把韧性解释成“失去以后仍然继续生活”的缓慢能力。",
+      "whyTodayZh": "今天推荐这一集，因为你不需要马上恢复原状，只需要重新相信自己还能从下一件小事开始。",
+      "whyThisWorksZh": "节目区分了没有恐惧与心理韧性，并用反复承担日常责任的故事说明：重建并不华丽，但可以真实发生。",
+      "curatorPriority": 5,
+      "alternativeEpisodes": [
+        6,
+        22,
+        29
+      ],
+      "evidenceSummary": "从身体恐惧、童年送报与积蓄被拿走、运动挫败和人生低谷，讨论心理韧性、日常责任与归零后的重建。",
+      "evidenceTimestamps": [
+        "00:51",
+        "04:06",
+        "11:08",
+        "23:11",
+        "35:12"
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_03",
+    "episodeNumber": 3,
+    "series": "HEY TABLO",
+    "title": "Why movies these days SUCK (and why I hate horses) | Hey Tablo Ep. 3",
+    "publishedDate": "2026-01-13",
+    "duration": "45 min",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep3",
+    "coreThemeZh": "电影工业疲劳、原创风险与影院共同体验",
+    "summaryZh": "从 2026 年大片几乎全是续集、重启和既有 IP 开始，Tablo 讨论流媒体订阅、票房风险与电影公司为何趋向安全选择；同时表达对电影院集体观看体验的热爱，并穿插共享 Netflix 账号、Fruit Ninja 电影脑洞和对马的恐惧。",
+    "formatType": "opinionated_culture_talk",
+    "mainTopics": [
+      "movies",
+      "franchises",
+      "streaming",
+      "creative_risk",
+      "movie_theaters",
+      "horses"
+    ],
+    "bestForSituations": [
+      "movie_fatigue",
+      "creative_block",
+      "want_pop_culture_chat",
+      "casual_watching"
+    ],
+    "emotionsBefore": [
+      "bored",
+      "frustrated",
+      "curious"
+    ],
+    "desiredEffects": [
+      "laugh",
+      "discover",
+      "reflection",
+      "validation"
+    ],
+    "toneTags": [
+      "opinionated",
+      "chaotic",
+      "witty",
+      "nostalgic"
+    ],
+    "sensitiveTopics": [],
+    "contentWarning": "",
+    "scores": {
+      "funny": 4,
+      "comfort": 2,
+      "reflection": 4,
+      "energy": 4,
+      "attentionRequired": 3,
+      "backgroundFriendly": 3,
+      "emotionalIntensity": 1,
+      "newFanFriendly": 4,
+      "shareCardPotential": 5
+    },
+    "memberOrGuestFocus": "Tablo｜电影文化｜Tukutz Netflix 梗",
+    "editorNote": "比普通影评更像一场关于“为什么现在所有东西都像续集”的文化吐槽。既有产业逻辑，也有非常离谱的游戏改编脑洞，适合电影疲劳或创作卡住时。",
+    "recommendationCopy": "当你觉得所有内容都像重新加热的旧菜，这一集会替你吐槽，也会提醒你为什么原创值得冒险。",
+    "backupAngle": "若用户想直接得到电影片单，备用推荐 EP24。",
+    "sampleQueries": [
+      "为什么现在电影全是续集？",
+      "想听 Tablo 聊电影",
+      "最近创作很没灵感"
+    ],
+    "shareCardTitle": "续集太多，原创去哪了？",
+    "shareCardNote": "安全的菜单能卖票，但未必让人记住。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=LHsObkqN5-g",
+    "curation": {
+      "hiddenQuestionZh": "为什么现在的电影越来越像重复加热的旧故事，原创还值得冒险吗？",
+      "coreNeedPrimary": "Need_Perspective",
+      "coreNeedSecondary": [
+        "Need_Curiosity",
+        "Need_CreativeInspiration",
+        "Need_Release"
+      ],
+      "emotionalValidationZh": "对续集、重启和既有 IP 感到疲劳，不一定是你太挑剔；创作行业确实会因为风险而不断选择更安全的答案。",
+      "primaryOffer": "Offer_Perspective",
+      "secondaryOffers": [
+        "Offer_Curiosity",
+        "Offer_CreativeInspiration",
+        "Offer_Laugh"
+      ],
+      "emotionalAftertasteZh": "被替你吐槽了一轮，也会重新想起为什么原创作品和电影院里的共同体验仍然值得。",
+      "transformationBeforeZh": "是不是我越来越难被电影打动了？",
+      "transformationAfterZh": "我的疲劳感有产业原因，而原创和共同观看仍然值得被争取。",
+      "menuCategory": "Roast Special",
+      "menuEmoji": "🌶",
+      "conversationEnergy": 4,
+      "cognitiveLoad": 3,
+      "emotionalIntensity": 1,
+      "bestServedWith": [
+        "看完一部续集之后",
+        "周末晚上",
+        "和影迷朋友聊天",
+        "创作卡住时"
+      ],
+      "recommendedWhen": [
+        "movie_fatigue",
+        "creative_block",
+        "want_pop_culture_chat",
+        "casual_watching"
+      ],
+      "avoidWhen": [
+        "Need_DeepComfort",
+        "Need_LowStimulation",
+        "grief_loss"
+      ],
+      "curatorNoteZh": "这集不是单纯骂电影变差。它把观众的审美疲劳连接到商业风险、流媒体和既有 IP 的安全逻辑，再用荒诞脑洞保留聊天感。适合需要被理解，也想重新获得创作好奇心的人。",
+      "whyTodayZh": "今天推荐它，因为你可能不是失去品味了，只是已经厌倦所有内容都像同一道菜。",
+      "whyThisWorksZh": "节目既解释了续集和重启为何占据市场，也强调影院共同体验和原创冒险的价值，让吐槽不只停在抱怨。",
+      "curatorPriority": 4,
+      "alternativeEpisodes": [
+        24,
+        26
+      ],
+      "evidenceSummary": "从 2026 年大片清单、系列 IP 的商业风险、流媒体与影院体验，延伸到音乐行业和原创解决方案。",
+      "evidenceTimestamps": [
+        "00:01",
+        "02:24",
+        "19:40",
+        "38:39",
+        "42:50"
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_04",
+    "episodeNumber": 4,
+    "series": "HEY TABLO",
+    "title": "Is it \"okay\" to laugh during loss & heartbreak? | Hey Tablo Ep. 4",
+    "publishedDate": "2026-01-20",
+    "duration": "1 hr",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep4",
+    "coreThemeZh": "失去、心碎与黑色幽默的疗愈作用",
+    "summaryZh": "从尴尬饭局和喜剧片段进入更私人的丧失经历，讨论人在悲伤和心碎中笑出来是否合适，以及朋友如何用幽默陪伴彼此。",
+    "formatType": "personal_story_reflection",
+    "mainTopics": [
+      "grief",
+      "heartbreak",
+      "friendship",
+      "dark_humor",
+      "loss"
+    ],
+    "bestForSituations": [
+      "grief_loss",
+      "heartbreak",
+      "missing_someone",
+      "supporting_a_friend"
+    ],
+    "emotionsBefore": [
+      "sad",
+      "grieving",
+      "lonely",
+      "confused"
+    ],
+    "desiredEffects": [
+      "comfort",
+      "company",
+      "reflection",
+      "permission_to_feel"
+    ],
+    "toneTags": [
+      "tender",
+      "dark_humor",
+      "candid",
+      "reflective"
+    ],
+    "sensitiveTopics": [
+      "grief",
+      "bereavement",
+      "death",
+      "heartbreak"
+    ],
+    "contentWarning": "涉及亲友离世、葬礼和失去经历；不适合只想看轻松内容的时刻。",
+    "scores": {
+      "funny": 3,
+      "comfort": 5,
+      "reflection": 5,
+      "energy": 2,
+      "attentionRequired": 4,
+      "backgroundFriendly": 1,
+      "emotionalIntensity": 5,
+      "newFanFriendly": 4,
+      "shareCardPotential": 5
+    },
+    "memberOrGuestFocus": "Tablo｜家人｜朋友｜Tukutz",
+    "editorNote": "这是非常适合“我明明难过却又笑了，会不会不尊重自己的悲伤”这类状态的一集。它承认幽默和悲伤可以同时存在。",
+    "recommendationCopy": "笑出来并不代表你不在乎。也许那只是身体在最难的时候，替你留下一点呼吸的空间。",
+    "backupAngle": "若用户正处于强烈悲痛、只想安静陪伴，备用推荐可选择更轻的 EP1，而非继续深入。",
+    "sampleQueries": [
+      "失去重要的人后还能笑吗？",
+      "分手后偶尔开心会不会很奇怪",
+      "想听关于悲伤和友情的真话"
+    ],
+    "shareCardTitle": "悲伤里也可以有笑声",
+    "shareCardNote": "这一餐不要求你停止难过，只给你一点呼吸。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=ihdTLREmBAg",
+    "curation": {
+      "hiddenQuestionZh": "在失去和心碎里笑出来，是不是说明我不够在乎？",
+      "coreNeedPrimary": "Need_Validation",
+      "coreNeedSecondary": [
+        "Need_Company",
+        "Need_PermissionToFeel"
+      ],
+      "emotionalValidationZh": "幽默和悲伤可以同时存在；笑出来不等于否认失去，也不代表你的感情不够真实。",
+      "primaryOffer": "Offer_Validation",
+      "secondaryOffers": [
+        "Offer_Company",
+        "Offer_Reflection"
+      ],
+      "emotionalAftertasteZh": "不一定会立刻好起来，但会少一点因为偶尔笑出来而产生的内疚。",
+      "transformationBeforeZh": "我应该一直难过，否则就是不尊重这段失去。",
+      "transformationAfterZh": "我可以同时悲伤和呼吸，复杂情绪不需要互相取消。",
+      "menuCategory": "Comfort Soup",
+      "menuEmoji": "🥣",
+      "conversationEnergy": 1,
+      "cognitiveLoad": 4,
+      "emotionalIntensity": 5,
+      "bestServedWith": [
+        "独处的深夜",
+        "雨天",
+        "戴耳机散步",
+        "想念某个人的时候"
+      ],
+      "recommendedWhen": [
+        "grief_loss",
+        "heartbreak",
+        "missing_someone",
+        "supporting_a_friend",
+        "guilt_about_laughing"
+      ],
+      "avoidWhen": [
+        "Need_LaughterOnly",
+        "Need_Escape",
+        "avoid_grief_or_death_topics"
+      ],
+      "curatorNoteZh": "这集最珍贵的地方，是它没有把幽默当成逃避，也没有把悲伤当成唯一正确的反应。它允许用户在心碎里偶尔笑一下，并把这种矛盾变成被理解的经验。",
+      "whyTodayZh": "今天推荐它，不是为了让你放下，而是让你知道：悲伤里出现一点笑声，也不代表你不在乎。",
+      "whyThisWorksZh": "节目通过尴尬故事、黑色幽默、朋友与失去的个人经历，反复证明多种情绪可以同时存在，而无需被纠正。",
+      "curatorPriority": 5,
+      "alternativeEpisodes": [
+        1,
+        24
+      ],
+      "evidenceSummary": "从尴尬饭局和喜剧进入失去与葬礼经历，讨论幽默在悲伤中的位置，以及朋友如何陪伴彼此。",
+      "evidenceTimestamps": [
+        "02:03",
+        "03:25",
+        "07:50",
+        "12:01",
+        "13:20"
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_05",
+    "episodeNumber": 5,
+    "series": "HEY TABLO",
+    "title": "I'm sick of snobs, leeches, reply guys, attention-seekers, and… Tukutz | Hey ...",
+    "publishedDate": "2026-01-27",
+    "duration": "51 min",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep5",
+    "coreThemeZh": "社交烦躁、文化偏见与数字沟通",
+    "summaryZh": "从播客泛滥和艺术鄙视链聊到演唱会行为、回复文化、数字戒断和 Tukutz 式社交轰炸，是一集有观点的集中吐槽。",
+    "formatType": "rant_commentary",
+    "mainTopics": [
+      "snobbery",
+      "social_media",
+      "communication",
+      "concert_etiquette",
+      "tukutz"
+    ],
+    "bestForSituations": [
+      "social_media_fatigue",
+      "feeling_irritated",
+      "need_to_vent",
+      "want_tukutz_story"
+    ],
+    "emotionsBefore": [
+      "irritated",
+      "frustrated",
+      "overstimulated"
+    ],
+    "desiredEffects": [
+      "validation",
+      "laugh",
+      "reflection",
+      "distraction"
+    ],
+    "toneTags": [
+      "opinionated",
+      "witty",
+      "chaotic",
+      "candid"
+    ],
+    "sensitiveTopics": [],
+    "contentWarning": "",
+    "scores": {
+      "funny": 4,
+      "comfort": 3,
+      "reflection": 4,
+      "energy": 4,
+      "attentionRequired": 3,
+      "backgroundFriendly": 3,
+      "emotionalIntensity": 2,
+      "newFanFriendly": 4,
+      "shareCardPotential": 4
+    },
+    "memberOrGuestFocus": "Tablo｜Tukutz",
+    "editorNote": "适合被网络、社交礼仪或周围人的低质量沟通惹烦时看。它会先替你骂一轮，再把烦躁背后的文化逻辑讲清楚。",
+    "recommendationCopy": "今天不需要假装所有人都很可爱。这一集可以先替你把烦人的事说出来，再帮你笑着放下。",
+    "backupAngle": "若用户只想纯粹笑、不想听观点，可备用推荐 EP11。",
+    "sampleQueries": [
+      "最近所有人都好烦",
+      "被社交媒体榨干了",
+      "想听 Tablo 吐槽 Tukutz"
+    ],
+    "shareCardTitle": "今天允许你嫌弃全世界",
+    "shareCardNote": "先把烦恼端上桌，再一口一口吐槽掉。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=-JDqWACR9RQ",
+    "curation": {
+      "hiddenQuestionZh": "为什么网络、社交礼仪和低质量表达越来越让我烦；是不是我太刻薄了？",
+      "coreNeedPrimary": "Need_Release",
+      "coreNeedSecondary": [
+        "Need_Validation",
+        "Need_Perspective",
+        "Need_Laughter"
+      ],
+      "emotionalValidationZh": "被空洞表达、社交轰炸和糟糕礼仪消耗，不一定代表你难相处；沟通环境本身确实可能太吵、太敷衍。",
+      "primaryOffer": "Offer_Release",
+      "secondaryOffers": [
+        "Offer_Validation",
+        "Offer_Perspective",
+        "Offer_Laugh"
+      ],
+      "emotionalAftertasteZh": "先痛快吐槽，再稍微拉开距离看这些烦人现象，心里的火会小一点。",
+      "transformationBeforeZh": "所有人都好烦，我是不是变得越来越刻薄？",
+      "transformationAfterZh": "我的烦躁有具体来源；说出来以后，也可以用更宽的角度看待它。",
+      "menuCategory": "Roast Special",
+      "menuEmoji": "🌶",
+      "conversationEnergy": 4,
+      "cognitiveLoad": 3,
+      "emotionalIntensity": 2,
+      "bestServedWith": [
+        "刷完社交媒体后",
+        "通勤",
+        "打扫房间",
+        "想听 Tukutz 梗的时候"
+      ],
+      "recommendedWhen": [
+        "social_media_fatigue",
+        "feeling_irritated",
+        "need_to_vent",
+        "communication_fatigue",
+        "want_tukutz_story"
+      ],
+      "avoidWhen": [
+        "Need_QuietComfort",
+        "Need_Hope",
+        "acute_grief"
+      ],
+      "curatorNoteZh": "这集先替用户把烦人的人和行为说出来，再把鄙视链、表达质量和数字沟通放进更大的文化观察里。它提供的不是纯粹攻击，而是“你确实被消耗了”的认可与释放。",
+      "whyTodayZh": "今天推荐它，因为你可能不需要继续礼貌地忍耐，而是需要有人先把那些烦人的事说清楚。",
+      "whyThisWorksZh": "节目从播客泛滥、艺术鄙视链、演唱会礼仪、回复文化和 Tukutz 的社交方式切入，让私人烦躁变成可以一起笑、一起分析的共同经验。",
+      "curatorPriority": 4,
+      "alternativeEpisodes": [
+        11,
+        29
+      ],
+      "evidenceSummary": "集中讨论播客与艺术鄙视链、演唱会黑名单、语言与观点、社交问候和数字沟通，并穿插 Tukutz 式社交轰炸。",
+      "evidenceTimestamps": [
+        "00:21",
+        "01:40",
+        "05:34",
+        "12:07",
+        "21:20",
+        "28:19"
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_06",
+    "episodeNumber": 6,
+    "series": "HEY TABLO",
+    "title": "Tech Bros watch out, the Humanities GANG is coming for you | Hey Tablo Ep. 6",
+    "publishedDate": "2026-02-03",
+    "duration": "30 min",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep6",
+    "coreThemeZh": "长期主义、延迟回报与人文学科价值",
+    "summaryZh": "以《Love Love Love》和《Fan》在十九年后重新进入年轻世代为起点，Tablo 讨论作品何时被看见、持续产出的意义，以及努力并不保证立即回报；后半段再进入“最令人后悔的专业”榜单，为人文学科、新闻和创意能力辩护。",
+    "formatType": "career_commentary",
+    "mainTopics": [
+      "persistence",
+      "delayed_recognition",
+      "humanities",
+      "career_anxiety",
+      "creative_work",
+      "love_love_love"
+    ],
+    "bestForSituations": [
+      "career_uncertainty",
+      "humanities_major",
+      "want_to_give_up",
+      "lack_of_recognition",
+      "creative_block"
+    ],
+    "emotionsBefore": [
+      "insecure",
+      "unmotivated",
+      "anxious",
+      "frustrated"
+    ],
+    "desiredEffects": [
+      "motivation",
+      "validation",
+      "reflection",
+      "hope"
+    ],
+    "toneTags": [
+      "encouraging",
+      "opinionated",
+      "warm",
+      "witty"
+    ],
+    "sensitiveTopics": [
+      "career_pressure",
+      "academic_insecurity"
+    ],
+    "contentWarning": "涉及专业选择、职业回报和“努力是否会被看见”的焦虑。",
+    "scores": {
+      "funny": 4,
+      "comfort": 5,
+      "reflection": 5,
+      "energy": 3,
+      "attentionRequired": 4,
+      "backgroundFriendly": 2,
+      "emotionalIntensity": 3,
+      "newFanFriendly": 5,
+      "shareCardPotential": 5
+    },
+    "memberOrGuestFocus": "Tablo｜Love Love Love 逆行｜人文学科",
+    "editorNote": "全文补齐后，这集的推荐价值明显高于单纯“文科辩护”：旧歌十九年后重新走红，成为延迟回报和持续创作最具体的案例。",
+    "recommendationCopy": "现在没有被看见，不代表你做的事不会在未来找到自己的听众。持续本身，会增加世界重新发现你的机会。",
+    "backupAngle": "若用户需要更具体的职业探索方法，备用推荐 EP25。",
+    "sampleQueries": [
+      "努力很久都没结果怎么办？",
+      "读文科是不是没用？",
+      "我的作品没人看想放弃"
+    ],
+    "shareCardTitle": "有些回报会迟到十九年",
+    "shareCardNote": "没被看见，不等于没有在生长。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=66q-UdkEEas",
+    "curation": {
+      "hiddenQuestionZh": "我已经努力了这么久，却还是没人看见；是不是说明我选错了方向？",
+      "coreNeedPrimary": "Need_Hope",
+      "coreNeedSecondary": [
+        "Need_CreativeInspiration",
+        "Need_Validation"
+      ],
+      "emotionalValidationZh": "没有被立刻看见，不代表你做的事没有价值；有些作品和能力只是需要更长的时间找到自己的听众。",
+      "primaryOffer": "Offer_Hope",
+      "secondaryOffers": [
+        "Offer_CreativeInspiration",
+        "Offer_Perspective",
+        "Offer_Validation"
+      ],
+      "emotionalAftertasteZh": "会愿意再给正在做的事一点时间，也不再把“还没得到回报”直接理解成失败。",
+      "transformationBeforeZh": "迟迟没有结果，说明我的坚持可能毫无意义。",
+      "transformationAfterZh": "即时回报不是唯一证明；持续留下作品，本身会增加未来被重新发现的可能。",
+      "menuCategory": "Chef's Special",
+      "menuEmoji": "🍷",
+      "conversationEnergy": 3,
+      "cognitiveLoad": 4,
+      "emotionalIntensity": 3,
+      "bestServedWith": [
+        "被拒绝之后",
+        "创作到深夜",
+        "想放弃一个长期项目时",
+        "对专业价值产生怀疑时"
+      ],
+      "recommendedWhen": [
+        "career_uncertainty",
+        "humanities_major",
+        "lack_of_recognition",
+        "creative_block",
+        "want_to_give_up",
+        "delayed_reward"
+      ],
+      "avoidWhen": [
+        "Need_LaughterOnly",
+        "Need_ImmediatePracticalAnswer",
+        "avoid_career_pressure"
+      ],
+      "curatorNoteZh": "这集的核心不只是替人文学科辩护，而是用旧歌十九年后重新被年轻听众发现的事实，说明作品的时间线可能比创作者预想得更长。它不会承诺坚持一定成功，但能让“尚未被看见”不再等同于“没有价值”。",
+      "whyTodayZh": "今天推荐它，因为你需要的不是一句“坚持就会成功”，而是重新相信：有些回报只是比你预想得晚。",
+      "whyThisWorksZh": "节目把《Love Love Love》和《Fan》的延迟走红、长期持续产出，以及人文学科的价值放在一起，让“坚持”从抽象鸡汤变成一个真实、带时间跨度的案例。",
+      "curatorPriority": 5,
+      "alternativeEpisodes": [
+        2,
+        25,
+        26
+      ],
+      "evidenceSummary": "以《Love Love Love》和《Fan》在十九年后重新进入年轻世代为起点，Tablo 讨论作品何时被看见、持续产出的意义，以及努力并不保证立即回报；...",
+      "evidenceTimestamps": [
+        "00:53 The song Tablo wrote 19 years ago is charting in Korea",
+        "04:41 Is the i..."
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_07",
+    "episodeNumber": 7,
+    "series": "HEY TABLO",
+    "title": "The Enneagram test that almost BROKE Tablo | Hey Tablo Ep. 7",
+    "publishedDate": "2026-02-10",
+    "duration": "51:52",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep7",
+    "coreThemeZh": "人格标签、自我批判与关系中的真实自我",
+    "summaryZh": "Tablo 边吃软糖边做九型人格测试，却不断卡在“应该回答理想中的自己、表面的自己，还是真实的自己”；问题进一步引出严格父母带来的自我批判、成员工作冲突、表达关心、亲密关系困难和创作者对反馈的态度。",
+    "formatType": "personality_test_reflection",
+    "mainTopics": [
+      "identity",
+      "enneagram",
+      "self_criticism",
+      "relationships",
+      "feedback",
+      "leadership",
+      "teamwork"
+    ],
+    "bestForSituations": [
+      "identity_reflection",
+      "creative_feedback",
+      "team_conflict",
+      "self_criticism",
+      "want_self_insight"
+    ],
+    "emotionsBefore": [
+      "curious",
+      "confused",
+      "insecure",
+      "self_critical"
+    ],
+    "desiredEffects": [
+      "reflection",
+      "self_insight",
+      "laugh",
+      "validation"
+    ],
+    "toneTags": [
+      "self_deprecating",
+      "reflective",
+      "chaotic",
+      "candid"
+    ],
+    "sensitiveTopics": [
+      "critical_parenting",
+      "childhood_physical_discipline",
+      "self_criticism"
+    ],
+    "contentWarning": "涉及严格家庭教育、童年体罚和强烈自我批判。",
+    "scores": {
+      "funny": 4,
+      "comfort": 4,
+      "reflection": 5,
+      "energy": 3,
+      "attentionRequired": 5,
+      "backgroundFriendly": 2,
+      "emotionalIntensity": 4,
+      "newFanFriendly": 4,
+      "shareCardPotential": 5
+    },
+    "memberOrGuestFocus": "Tablo｜Mithra｜Tukutz｜家庭与团队关系",
+    "editorNote": "它不是一个真正高效的人格测试视频，而是一集关于“我们回答问题时究竟在展示谁”的自我剖析。对自我批判、亲密关系和团队反馈的内容比测试结果本身更有价值。",
+    "recommendationCopy": "你不需要被一个人格数字解释清楚。更重要的是，你在哪些问题上反复犹豫，以及为什么。",
+    "backupAngle": "若用户更想了解成员关系和成团历史，备用推荐 EP23。",
+    "sampleQueries": [
+      "我为什么总是批评自己？",
+      "人格测试真的能解释我吗？",
+      "团队反馈让我很难受"
+    ],
+    "shareCardTitle": "人格测试卡在第一题",
+    "shareCardNote": "答案不一定是一个数字，也可能是你犹豫的原因。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=Op_tUFacYeI",
+    "curation": {
+      "hiddenQuestionZh": "我到底应该相信人格标签、别人眼中的我，还是那个连自己都说不清的真实自我？",
+      "coreNeedPrimary": "Need_SelfAcceptance",
+      "coreNeedSecondary": [
+        "Need_Clarity",
+        "Need_Perspective",
+        "Need_Validation"
+      ],
+      "emotionalValidationZh": "面对人格问题反复犹豫，并不代表你不够了解自己；它可能只是说明理想自我、习惯性角色和真实感受并不完全一致。",
+      "primaryOffer": "Offer_Reflection",
+      "secondaryOffers": [
+        "Offer_Validation",
+        "Offer_Perspective",
+        "Offer_SelfInsight"
+      ],
+      "emotionalAftertasteZh": "会少一点把自己塞进单一标签的冲动，也更愿意观察自我批判和关系反应从哪里来。",
+      "transformationBeforeZh": "我应该有一个稳定、明确、没有矛盾的人格答案。",
+      "transformationAfterZh": "真实的我可以矛盾，也会随关系和处境变化；犹豫本身就是有价值的信息。",
+      "menuCategory": "Slow Brew",
+      "menuEmoji": "☕",
+      "conversationEnergy": 3,
+      "cognitiveLoad": 5,
+      "emotionalIntensity": 4,
+      "bestServedWith": [
+        "做完人格测试后",
+        "收到尖锐反馈后",
+        "团队冲突之后",
+        "想认真理解自己时"
+      ],
+      "recommendedWhen": [
+        "identity_reflection",
+        "self_criticism",
+        "creative_feedback",
+        "team_conflict",
+        "relationship_difficulty",
+        "want_self_insight"
+      ],
+      "avoidWhen": [
+        "Need_LaughterOnly",
+        "Need_LowCognitiveLoad",
+        "avoid_family_or_critical_parenting_topics"
+      ],
+      "curatorNoteZh": "人格测试只是入口。更深的一层是：为什么我们面对同一个问题，会在“应该成为的人”“对外展示的人”和“真实反应”之间不断摇摆。它适合愿意认真看见自我批判、反馈与亲密关系模式的人。",
+      "whyTodayZh": "今天推荐它，因为你可能不需要一个更准确的标签，而是需要允许自己暂时没有一个简单答案。",
+      "whyThisWorksZh": "节目从第一道人格题的迟疑一路谈到严格成长环境、成员冲突和创作者如何面对反馈，把“测试结果”转化成对自我叙事来源的观察。",
+      "curatorPriority": 4,
+      "alternativeEpisodes": [
+        14,
+        20,
+        23
+      ],
+      "evidenceSummary": "Tablo 边吃软糖边做九型人格测试，却不断卡在“应该回答理想中的自己、表面的自己，还是真实的自己”；问题进一步引出严格父母带来的自我批判、成员工作冲突、...",
+      "evidenceTimestamps": [
+        "00:00 Introduction",
+        "00:31 MBTI is dead, long live the Enneagram",
+        "02:17 Star..."
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_08",
+    "episodeNumber": 8,
+    "series": "HEY TABLO",
+    "title": "Tablo reads Reddit Shower Thoughts | Hey Tablo Ep. 8",
+    "publishedDate": "2026-02-17",
+    "duration": "34:19",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep8",
+    "coreThemeZh": "荒诞脑洞、互联网行为与共同的人类小问题",
+    "summaryZh": "Tablo 阅读 Reddit Shower Thoughts，从僵尸危机中的社交媒体评论区、龙蛋是否难产、身体设计、世界上最倒霉的人，到睡眠、父母和时间等问题，一路把看似无意义的脑洞推演成互联网观察与生活故事。",
+    "formatType": "reddit_reaction",
+    "mainTopics": [
+      "shower_thoughts",
+      "internet_humor",
+      "zombies",
+      "luck",
+      "sleep",
+      "parenthood",
+      "absurdity"
+    ],
+    "bestForSituations": [
+      "bored",
+      "commuting",
+      "need_distraction",
+      "casual_watching",
+      "want_random_thoughts"
+    ],
+    "emotionsBefore": [
+      "bored",
+      "curious",
+      "restless"
+    ],
+    "desiredEffects": [
+      "laugh",
+      "distraction",
+      "curiosity",
+      "company"
+    ],
+    "toneTags": [
+      "chaotic",
+      "absurd",
+      "witty",
+      "light"
+    ],
+    "sensitiveTopics": [
+      "zombie_humor",
+      "body_humor"
+    ],
+    "contentWarning": "包含僵尸、身体与厕所类玩笑；整体为轻喜剧。",
+    "scores": {
+      "funny": 5,
+      "comfort": 3,
+      "reflection": 3,
+      "energy": 4,
+      "attentionRequired": 2,
+      "backgroundFriendly": 4,
+      "emotionalIntensity": 1,
+      "newFanFriendly": 5,
+      "shareCardPotential": 5
+    },
+    "memberOrGuestFocus": "Tablo｜Reddit 脑洞｜Apple 倒霉故事",
+    "editorNote": "比 metadata 显示得更适合 Shuffle：问题变化快、无需背景知识、任意时间进入都能跟上，而且在纯荒诞之间偶尔有很温柔的观察。",
+    "recommendationCopy": "今天先不处理现实，来讨论僵尸会不会发语音推文，以及世界上最倒霉的人是谁。",
+    "backupAngle": "若用户想要更完整的规则游戏和更高能量，备用推荐 EP18。",
+    "sampleQueries": [
+      "我很无聊随便来点脑洞",
+      "通勤看什么？",
+      "想看 Reddit Shower Thoughts"
+    ],
+    "shareCardTitle": "今天不解决任何重要问题",
+    "shareCardNote": "让脑袋去一个完全没必要的地方散步。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=8EH2mQansj8",
+    "curation": {
+      "hiddenQuestionZh": "我今天能不能不解决任何问题，只让脑袋去一个荒唐又好玩的地方？",
+      "coreNeedPrimary": "Need_Escape",
+      "coreNeedSecondary": [
+        "Need_Curiosity",
+        "Need_Laughter",
+        "Need_Company"
+      ],
+      "emotionalValidationZh": "不是每个念头都必须有用，也不是每段时间都要被拿来成长；无意义的脑洞本身就可以是一种休息。",
+      "primaryOffer": "Offer_Laugh",
+      "secondaryOffers": [
+        "Offer_Escape",
+        "Offer_Curiosity",
+        "Offer_Company"
+      ],
+      "emotionalAftertasteZh": "脑袋会像换了一个频道，现实中的烦恼暂时没那么黏着你。",
+      "transformationBeforeZh": "我停不下过度思考，又没有精力处理真正的问题。",
+      "transformationAfterZh": "我可以用一段无害的荒诞想象，短暂打断现实循环。",
+      "menuCategory": "Sweet Dessert",
+      "menuEmoji": "🍰",
+      "conversationEnergy": 4,
+      "cognitiveLoad": 1,
+      "emotionalIntensity": 1,
+      "bestServedWith": [
+        "洗澡前后",
+        "通勤",
+        "排队",
+        "发呆",
+        "完全不知道看什么时"
+      ],
+      "recommendedWhen": [
+        "bored",
+        "need_distraction",
+        "casual_watching",
+        "commuting",
+        "want_random_thoughts",
+        "low_attention"
+      ],
+      "avoidWhen": [
+        "Need_DeepAdvice",
+        "Need_HeavyReflection",
+        "want_a_specific_topic"
+      ],
+      "curatorNoteZh": "这是一集纯度很高的脑洞陪伴。它不试图把奇怪问题升华成大道理，而是让用户跟着僵尸评论区、龙蛋和倒霉故事不断跑题，适合作为低负担的精神换台。",
+      "whyTodayZh": "今天推荐它，因为你不一定需要答案；你可能只需要让大脑暂时去别的地方玩一会儿。",
+      "whyThisWorksZh": "节目以一连串无需现实后果的荒诞设问持续制造新刺激，注意力会被轻轻带离原本的焦虑或无聊。",
+      "curatorPriority": 5,
+      "alternativeEpisodes": [
+        18,
+        29,
+        11
+      ],
+      "evidenceSummary": "Tablo 阅读 Reddit Shower Thoughts，从僵尸危机中的社交媒体评论区、龙蛋是否难产、身体设计、世界上最倒霉的人，到睡眠、父母和时间...",
+      "evidenceTimestamps": [
+        "00:00 Reddit Shower Thoughts and why the subreddit is dangerous",
+        "00:55 Would..."
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_09",
+    "episodeNumber": 9,
+    "series": "HEY TABLO",
+    "title": "The WORST (& best) Dating Advice EVER | Hey Tablo Ep. 9",
+    "publishedDate": "2026-02-24",
+    "duration": "43:47",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep9",
+    "coreThemeZh": "约会红旗、关系判断与自我尊重",
+    "summaryZh": "通过 Reddit 约会困境讨论 AA、约会软件、收入差异、前任、situationship 和沟通信号，兼具笑点与明确的边界建议。",
+    "formatType": "dating_advice_reaction",
+    "mainTopics": [
+      "dating",
+      "red_flags",
+      "situationship",
+      "ex",
+      "communication",
+      "self_respect"
+    ],
+    "bestForSituations": [
+      "dating_confusion",
+      "first_date",
+      "cant_move_on_from_ex",
+      "relationship_uncertainty"
+    ],
+    "emotionsBefore": [
+      "confused",
+      "anxious",
+      "hurt",
+      "curious"
+    ],
+    "desiredEffects": [
+      "advice",
+      "clarity",
+      "validation",
+      "laugh"
+    ],
+    "toneTags": [
+      "direct",
+      "witty",
+      "candid",
+      "supportive"
+    ],
+    "sensitiveTopics": [
+      "dating",
+      "relationship_conflict"
+    ],
+    "contentWarning": "包含约会、关系边界及部分成人式网络讨论。",
+    "scores": {
+      "funny": 4,
+      "comfort": 4,
+      "reflection": 4,
+      "energy": 3,
+      "attentionRequired": 4,
+      "backgroundFriendly": 2,
+      "emotionalIntensity": 3,
+      "newFanFriendly": 4,
+      "shareCardPotential": 5
+    },
+    "memberOrGuestFocus": "Tablo｜Reddit 约会投稿",
+    "editorNote": "适合约会中看不清信号、纠结对方是否认真，或需要有人直接指出红旗的时候。",
+    "recommendationCopy": "喜欢你的人不一定完美，但通常不会让你一直猜。这集会帮你把混乱的信号分清楚。",
+    "backupAngle": "若用户的问题已经进入长期关系或人生选择，备用推荐 EP25。",
+    "sampleQueries": [
+      "他到底喜不喜欢我？",
+      "分手后还在刷前任",
+      "第一次约会遇到红旗怎么办"
+    ],
+    "shareCardTitle": "这段关系需要退回厨房重做吗？",
+    "shareCardNote": "先看清配料表，再决定要不要继续点单。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=fx3TNXvOwAI",
+    "curation": {
+      "hiddenQuestionZh": "对方到底喜欢我，还是我一直在替这段关系解释不一致的信号？",
+      "coreNeedPrimary": "Need_Clarity",
+      "coreNeedSecondary": [
+        "Need_Boundaries",
+        "Need_Validation",
+        "Need_SelfTrust"
+      ],
+      "emotionalValidationZh": "一段让你长期猜测、比较和自我怀疑的关系，确实会消耗人；你不需要把所有模糊信号都解释成自己的问题。",
+      "primaryOffer": "Offer_PracticalAdvice",
+      "secondaryOffers": [
+        "Offer_Perspective",
+        "Offer_Validation",
+        "Offer_Laugh"
+      ],
+      "emotionalAftertasteZh": "会更愿意相信持续的行为，而不是偶尔出现的希望，也会开始问自己是否喜欢关系里的那个自己。",
+      "transformationBeforeZh": "只要我再多分析一点，就能破解对方真正的意思。",
+      "transformationAfterZh": "真正的兴趣通常不需要无止境解码；我的感受和边界也应该被纳入判断。",
+      "menuCategory": "Chef's Special",
+      "menuEmoji": "🍷",
+      "conversationEnergy": 4,
+      "cognitiveLoad": 4,
+      "emotionalIntensity": 3,
+      "bestServedWith": [
+        "回完暧昧消息后",
+        "第一次约会之后",
+        "又开始反复检查对方动态时",
+        "想听直球意见时"
+      ],
+      "recommendedWhen": [
+        "dating_confusion",
+        "first_date",
+        "situationship",
+        "cant_move_on_from_ex",
+        "relationship_uncertainty",
+        "need_boundaries"
+      ],
+      "avoidWhen": [
+        "Need_NoAdvice",
+        "Need_PureEscape",
+        "acute_heartbreak_needing_quiet_company"
+      ],
+      "curatorNoteZh": "这集不是替用户猜对方在想什么，而是把注意力拉回沟通方式、持续行为与自我感受。笑点能降低羞耻，但核心仍是帮助用户停止用更多猜测填补关系里的空白。",
+      "whyTodayZh": "今天推荐它，因为你可能不是缺少更多线索，而是需要有人提醒你：让你一直猜的关系，本身就是一个信号。",
+      "whyThisWorksZh": "节目用多个具体约会困境比较言语和行为，反复把判断标准从“他到底什么意思”转向“这段互动是否清楚、尊重且让你自在”。",
+      "curatorPriority": 5,
+      "alternativeEpisodes": [
+        14,
+        20,
+        24
+      ],
+      "evidenceSummary": "通过 Reddit 约会困境讨论 AA、约会软件、收入差异、前任、situationship 和沟通信号，兼具笑点与明确的边界建议。",
+      "evidenceTimestamps": [
+        "00:00 I was blocked from my own AMA",
+        "00:25 The guy asked to split the bill t..."
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_10",
+    "episodeNumber": 10,
+    "series": "HEY TABLO",
+    "title": "I will SHUT DOWN this podcast if this guy doesn't win Best Actor (Oscars 2026...",
+    "publishedDate": "2026-03-03",
+    "duration": "",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep10",
+    "coreThemeZh": "电影奖项预测与影迷闲聊",
+    "summaryZh": "逐项预测 2026 奥斯卡结果，以高风险玩笑和个人影评串联演员、导演、技术奖项及电影偏好。",
+    "formatType": "awards_prediction",
+    "mainTopics": [
+      "oscars",
+      "movies",
+      "actors",
+      "predictions",
+      "film_opinions"
+    ],
+    "bestForSituations": [
+      "movie_fan",
+      "award_season",
+      "want_opinionated_fun",
+      "casual_watching"
+    ],
+    "emotionsBefore": [
+      "curious",
+      "excited",
+      "bored"
+    ],
+    "desiredEffects": [
+      "entertainment",
+      "discover",
+      "laugh"
+    ],
+    "toneTags": [
+      "opinionated",
+      "energetic",
+      "witty"
+    ],
+    "sensitiveTopics": [],
+    "contentWarning": "",
+    "scores": {
+      "funny": 4,
+      "comfort": 2,
+      "reflection": 2,
+      "energy": 4,
+      "attentionRequired": 3,
+      "backgroundFriendly": 2,
+      "emotionalIntensity": 1,
+      "newFanFriendly": 3,
+      "shareCardPotential": 4
+    },
+    "memberOrGuestFocus": "Tablo｜2026 奥斯卡提名",
+    "editorNote": "适合影迷、颁奖季讨论或想听高密度个人观点时看；时效性较强，但作为影评聊天仍然成立。",
+    "recommendationCopy": "今晚不用预测人生，只预测谁会拿奖。",
+    "backupAngle": "若用户想要更稳定、跨时间的电影推荐，备用推荐 EP24。",
+    "sampleQueries": [
+      "想听奥斯卡预测",
+      "最近想聊电影",
+      "想看 Tablo 很自信地押答案"
+    ],
+    "shareCardTitle": "今晚押注的是品味",
+    "shareCardNote": "奖项会过期，电影争论不会。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=o4V7iDFnc-8",
+    "curation": {
+      "hiddenQuestionZh": "我今天只想和一个很有意见的朋友聊电影，可以不用把一切都变成人生课题吗？",
+      "coreNeedPrimary": "Need_Company",
+      "coreNeedSecondary": [
+        "Need_Curiosity",
+        "Need_Laughter",
+        "Need_Escape"
+      ],
+      "emotionalValidationZh": "有时候认真争论一部电影、押一个奖项或偏爱某位演员，本身就是一种轻松的连结，不需要更深的理由。",
+      "primaryOffer": "Offer_Company",
+      "secondaryOffers": [
+        "Offer_Laugh",
+        "Offer_Curiosity",
+        "Offer_Escape"
+      ],
+      "emotionalAftertasteZh": "会想打开片单、找朋友争论结果，或者单纯享受有人陪你兴奋地聊电影。",
+      "transformationBeforeZh": "我有点无聊，又不想听太沉重或太有用的内容。",
+      "transformationAfterZh": "一场有偏见、有笑点的影迷闲聊，也足以让晚上变得有趣。",
+      "menuCategory": "Sweet Dessert",
+      "menuEmoji": "🍰",
+      "conversationEnergy": 4,
+      "cognitiveLoad": 2,
+      "emotionalIntensity": 1,
+      "bestServedWith": [
+        "颁奖季",
+        "周末晚上",
+        "看电影前后",
+        "和朋友讨论预测时"
+      ],
+      "recommendedWhen": [
+        "movie_fan",
+        "award_season",
+        "want_opinionated_fun",
+        "casual_watching",
+        "need_company"
+      ],
+      "avoidWhen": [
+        "Need_DeepComfort",
+        "Need_SpecificLifeAdvice",
+        "dislike_awards_or_movie_chat"
+      ],
+      "curatorNoteZh": "这集的价值不是预测一定准确，而是把奖项变成一场有赌注感的朋友聊天。它适合想听鲜明观点、享受影迷兴奋，但不想承担高认知或情绪负担的人。",
+      "whyTodayZh": "今天推荐它，因为你可能只需要有人陪你对电影认真一晚，同时又不必真的承担任何后果。",
+      "whyThisWorksZh": "节目通过逐奖项预测、强烈个人偏好和不断升级的失败惩罚，把信息型影评变成一场节奏轻快的共同观看体验。",
+      "curatorPriority": 3,
+      "alternativeEpisodes": [
+        3,
+        24,
+        12
+      ],
+      "evidenceSummary": "逐项预测 2026 奥斯卡结果，以高风险玩笑和个人影评串联演员、导演、技术奖项及电影偏好。",
+      "evidenceTimestamps": [
+        "00:00 The cost of getting Oscar predictions wrong",
+        "01:25 Major snubs this ye..."
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_11",
+    "episodeNumber": 11,
+    "series": "HEY TABLO",
+    "title": "I made a slideshow of all the things that DRIVE ME NUTS | Hey Tablo Ep. 11",
+    "publishedDate": "2026-03-10",
+    "duration": "",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep11",
+    "coreThemeZh": "日常小事带来的巨大烦躁",
+    "summaryZh": "用幻灯片列出马、AirPods、酒店床、Wi‑Fi 密码、演唱会行为和 Tukutz 等一系列极具体的烦恼，节奏快、笑点密集。",
+    "formatType": "pet_peeves_slideshow",
+    "mainTopics": [
+      "pet_peeves",
+      "daily_annoyances",
+      "technology",
+      "concerts",
+      "tukutz"
+    ],
+    "bestForSituations": [
+      "feeling_irritated",
+      "need_laugh",
+      "bad_day",
+      "want_tukutz_jokes"
+    ],
+    "emotionsBefore": [
+      "irritated",
+      "tired",
+      "bored"
+    ],
+    "desiredEffects": [
+      "laugh",
+      "validation",
+      "distraction",
+      "company"
+    ],
+    "toneTags": [
+      "chaotic",
+      "high_energy",
+      "witty",
+      "relatable"
+    ],
+    "sensitiveTopics": [],
+    "contentWarning": "",
+    "scores": {
+      "funny": 5,
+      "comfort": 3,
+      "reflection": 2,
+      "energy": 5,
+      "attentionRequired": 2,
+      "backgroundFriendly": 4,
+      "emotionalIntensity": 1,
+      "newFanFriendly": 5,
+      "shareCardPotential": 5
+    },
+    "memberOrGuestFocus": "Tablo｜Tukutz｜生活烦恼",
+    "editorNote": "适合今天被很多小事连续惹毛、但又不想认真分析原因的时候。你会发现有人比你更会把小烦恼升级成大事件。",
+    "recommendationCopy": "今天的烦恼不一定值得解决，但非常值得吐槽。",
+    "backupAngle": "若用户偏好更温和的共鸣，备用推荐 EP29。",
+    "sampleQueries": [
+      "今天什么都在惹我",
+      "想看 Tablo 发疯",
+      "想听很多 Tukutz 梗"
+    ],
+    "shareCardTitle": "今日菜单：十七道烦人小菜",
+    "shareCardNote": "有些烦恼不用消化，直接吐槽。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=6aXsZg4jlkQ",
+    "curation": {
+      "hiddenQuestionZh": "为什么最近连一点小事都能把我逼疯；是不是我变得太难相处了？",
+      "coreNeedPrimary": "Need_Release",
+      "coreNeedSecondary": [
+        "Need_Laughter",
+        "Need_Validation",
+        "Need_Escape"
+      ],
+      "emotionalValidationZh": "日常摩擦不断累积，真的会偷走人的耐心；被小事惹烦并不自动说明你脾气差。",
+      "primaryOffer": "Offer_Release",
+      "secondaryOffers": [
+        "Offer_Laugh",
+        "Offer_Validation",
+        "Offer_Escape"
+      ],
+      "emotionalAftertasteZh": "会把心里的烦躁笑出来，并感觉今天至少不是只有自己被这些小事消耗。",
+      "transformationBeforeZh": "我居然被这么小的事情惹怒，肯定是我有问题。",
+      "transformationAfterZh": "具体说出那些摩擦，就是一种释放；很多人都有自己的小型崩溃清单。",
+      "menuCategory": "Roast Special",
+      "menuEmoji": "🌶",
+      "conversationEnergy": 5,
+      "cognitiveLoad": 1,
+      "emotionalIntensity": 1,
+      "bestServedWith": [
+        "糟糕的一天之后",
+        "打扫房间",
+        "堵车",
+        "回完一堆邮件后",
+        "想听 Tukutz 梗时"
+      ],
+      "recommendedWhen": [
+        "feeling_irritated",
+        "bad_day",
+        "need_laugh",
+        "need_to_vent",
+        "low_attention",
+        "want_tukutz_jokes"
+      ],
+      "avoidWhen": [
+        "Need_QuietComfort",
+        "Need_DeepReflection",
+        "acute_grief"
+      ],
+      "curatorNoteZh": "它不是在解决 AirPods、酒店床或 Wi-Fi 密码，而是通过把烦恼说得极其具体，让用户终于可以承认：今天真的被很多微小摩擦磨掉了耐心。",
+      "whyTodayZh": "今天推荐它，因为你不必先成为一个更有耐心的人；先把那些烦人的事痛快说出来。",
+      "whyThisWorksZh": "清单结构让烦躁不断被命名、夸张和共享，用户会从“只有我这样吗”的羞耻，转向“原来大家都有自己的雷点”的释放。",
+      "curatorPriority": 5,
+      "alternativeEpisodes": [
+        5,
+        18,
+        29
+      ],
+      "evidenceSummary": "用幻灯片列出马、AirPods、酒店床、Wi‑Fi 密码、演唱会行为和 Tukutz 等一系列极具体的烦恼，节奏快、笑点密集。",
+      "evidenceTimestamps": [
+        "00:00 Is it just me or do you have a list as well?",
+        "00:35 #1 Horses freak me..."
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_12",
+    "episodeNumber": 12,
+    "series": "HEY TABLO",
+    "title": "Top 10 Korean items YOU WON'T BELIEVE exist | Hey Tablo Ep. 12",
+    "publishedDate": "2026-03-17",
+    "duration": "38:13",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep12",
+    "coreThemeZh": "韩国日常便利、跨文化差异与小型科技惊喜",
+    "summaryZh": "从电梯按键取消、餐厅呼叫铃和桌内餐具抽屉，到桌面电磁炉、数字门锁等日常设施，Tablo 以成员出国经历解释这些设计为什么方便，也反向讨论美国和韩国各自缺少的生活物品。",
+    "formatType": "culture_countdown",
+    "mainTopics": [
+      "korea",
+      "daily_convenience",
+      "technology",
+      "restaurants",
+      "travel",
+      "culture"
+    ],
+    "bestForSituations": [
+      "culture_discovery",
+      "travel_interest",
+      "casual_watching",
+      "commuting",
+      "new_fan"
+    ],
+    "emotionsBefore": [
+      "curious",
+      "bored"
+    ],
+    "desiredEffects": [
+      "discover",
+      "laugh",
+      "company"
+    ],
+    "toneTags": [
+      "informative",
+      "witty",
+      "energetic"
+    ],
+    "sensitiveTopics": [],
+    "contentWarning": "",
+    "scores": {
+      "funny": 4,
+      "comfort": 3,
+      "reflection": 2,
+      "energy": 4,
+      "attentionRequired": 3,
+      "backgroundFriendly": 4,
+      "emotionalIntensity": 1,
+      "newFanFriendly": 5,
+      "shareCardPotential": 5
+    },
+    "memberOrGuestFocus": "Tablo｜Tukutz｜Mithra｜韩国生活文化",
+    "editorNote": "全文确认它是一集非常稳定的文化发现型内容：每个物品都能独立理解，成员出国故事又提供了足够笑点，适合通勤和新粉。",
+    "recommendationCopy": "今天来点看完会立刻想转发给朋友的韩国生活小设计。",
+    "backupAngle": "若用户更想看韩国食物文化，备用推荐 EP19。",
+    "sampleQueries": [
+      "韩国有什么方便的生活设计？",
+      "想看轻松文化内容",
+      "去韩国前看哪一集"
+    ],
+    "shareCardTitle": "这些小按钮为什么全世界没有？",
+    "shareCardNote": "生活变好吃，有时只差一个取消键。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=nYxCy3WAvSE",
+    "curation": {
+      "hiddenQuestionZh": "生活里的小设计为什么能让人轻松这么多；日常真的可以少一点摩擦吗？",
+      "coreNeedPrimary": "Need_Curiosity",
+      "coreNeedSecondary": [
+        "Need_Ease",
+        "Need_Perspective",
+        "Need_Company"
+      ],
+      "emotionalValidationZh": "被琐碎流程弄得疲惫并不是矫情；好的设计本来就应该替普通人和工作人员减少不必要的麻烦。",
+      "primaryOffer": "Offer_Curiosity",
+      "secondaryOffers": [
+        "Offer_Perspective",
+        "Offer_Company",
+        "Offer_Lightness"
+      ],
+      "emotionalAftertasteZh": "会重新注意生活里那些不起眼却很聪明的设计，也会更想和别人分享文化差异。",
+      "transformationBeforeZh": "日常设施太普通，没有什么值得聊。",
+      "transformationAfterZh": "最小的按钮、门锁和桌面设计，也能反映一座城市如何理解便利与照顾。",
+      "menuCategory": "Midnight Ramen",
+      "menuEmoji": "🍜",
+      "conversationEnergy": 3,
+      "cognitiveLoad": 2,
+      "emotionalIntensity": 1,
+      "bestServedWith": [
+        "通勤",
+        "准备旅行时",
+        "做家务",
+        "吃饭",
+        "想看轻知识内容时"
+      ],
+      "recommendedWhen": [
+        "culture_discovery",
+        "travel_interest",
+        "casual_watching",
+        "commuting",
+        "new_fan",
+        "need_light_discovery"
+      ],
+      "avoidWhen": [
+        "Need_DeepEmotionalSupport",
+        "Need_ImmediateMotivation"
+      ],
+      "curatorNoteZh": "这一集用电梯取消键、餐厅呼叫铃和数字门锁等非常具体的生活物件，提供一种没有压力的文化发现。它不是宏大比较，而是让用户从“原来还能这样”里获得轻松和新鲜感。",
+      "whyTodayZh": "今天推荐它，因为你可能不需要处理情绪，只想让日常世界重新变得有一点新鲜。",
+      "whyThisWorksZh": "节目把抽象的文化差异落实到每个人都能想象的按钮、餐桌和门锁，信息密度适中，又能自然产生分享欲。",
+      "curatorPriority": 4,
+      "alternativeEpisodes": [
+        19,
+        23,
+        10
+      ],
+      "evidenceSummary": "从电梯按键取消、餐厅呼叫铃和桌内餐具抽屉，到桌面电磁炉、数字门锁等日常设施，Tablo 以成员出国经历解释这些设计为什么方便，也反向讨论美国和韩国各自缺少...",
+      "evidenceTimestamps": [
+        "00:00 Korean Things the World Needs",
+        "00:22 Breaking News: 2026 Oscars Result..."
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_13",
+    "episodeNumber": 13,
+    "series": "HEY TABLO",
+    "title": "My niece swallowed an AirPod, can I still connect? | Hey Tablo Ep. 13",
+    "publishedDate": "2026-03-24",
+    "duration": "50:52",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep13",
+    "coreThemeZh": "荒诞网络道德困境与边界判断",
+    "summaryZh": "围绕 AirPod、飞机座位、借钱、家人冲突、室友偷吃等 Reddit 式困境作判断，在夸张案例中讨论公平、边界和常识。",
+    "formatType": "aita_reaction",
+    "mainTopics": [
+      "reddit",
+      "moral_dilemmas",
+      "money",
+      "family",
+      "boundaries",
+      "roommates"
+    ],
+    "bestForSituations": [
+      "need_advice",
+      "family_conflict",
+      "money_boundary",
+      "want_absurd_stories"
+    ],
+    "emotionsBefore": [
+      "confused",
+      "irritated",
+      "curious"
+    ],
+    "desiredEffects": [
+      "advice",
+      "laugh",
+      "clarity",
+      "validation"
+    ],
+    "toneTags": [
+      "chaotic",
+      "direct",
+      "witty"
+    ],
+    "sensitiveTopics": [
+      "family_conflict",
+      "money",
+      "relationship_boundaries"
+    ],
+    "contentWarning": "包含家庭、金钱和人际冲突案例。",
+    "scores": {
+      "funny": 5,
+      "comfort": 3,
+      "reflection": 3,
+      "energy": 4,
+      "attentionRequired": 3,
+      "backgroundFriendly": 3,
+      "emotionalIntensity": 2,
+      "newFanFriendly": 4,
+      "shareCardPotential": 5
+    },
+    "memberOrGuestFocus": "Tablo｜Reddit AITA 投稿",
+    "editorNote": "适合想听离谱故事、同时需要快速判断“到底谁有问题”的时候。",
+    "recommendationCopy": "有些人生问题很复杂，有些问题只是需要有人说：这真的太离谱了。",
+    "backupAngle": "若用户需要更严肃的人际边界建议，备用推荐 EP20。",
+    "sampleQueries": [
+      "朋友一直借钱怎么办",
+      "家人做事很离谱",
+      "想听 AITA 类型的故事"
+    ],
+    "shareCardTitle": "这桌到底谁该买单？",
+    "shareCardNote": "边界有时候比礼貌更重要。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=1ZTRIgkvuKo",
+    "curation": {
+      "hiddenQuestionZh": "我是在保护自己的边界，还是太自私；对方到底有没有越界？",
+      "coreNeedPrimary": "Need_Boundaries",
+      "coreNeedSecondary": [
+        "Need_Clarity",
+        "Need_Validation",
+        "Need_Laughter"
+      ],
+      "emotionalValidationZh": "在借钱、家庭、室友或公共空间里感到不舒服，并不代表你缺乏善意；公平和善意都需要清楚的事前沟通。",
+      "primaryOffer": "Offer_PracticalAdvice",
+      "secondaryOffers": [
+        "Offer_Perspective",
+        "Offer_Validation",
+        "Offer_Laugh"
+      ],
+      "emotionalAftertasteZh": "会更容易把“我不舒服”转化成可说清的边界，而不是一直在愧疚和愤怒之间摇摆。",
+      "transformationBeforeZh": "拒绝别人或要求公平，会不会显得我很坏？",
+      "transformationAfterZh": "边界可以清楚而不残忍；模糊和事后改变规则才更容易伤害关系。",
+      "menuCategory": "Roast Special",
+      "menuEmoji": "🌶",
+      "conversationEnergy": 4,
+      "cognitiveLoad": 3,
+      "emotionalIntensity": 2,
+      "bestServedWith": [
+        "刚发生边界冲突后",
+        "和室友或家人闹别扭时",
+        "想听快速判断时",
+        "做家务时"
+      ],
+      "recommendedWhen": [
+        "need_advice",
+        "family_conflict",
+        "money_boundary",
+        "roommate_conflict",
+        "fairness_question",
+        "want_absurd_stories"
+      ],
+      "avoidWhen": [
+        "Need_NoAdvice",
+        "acute_family_crisis",
+        "need_quiet_company"
+      ],
+      "curatorNoteZh": "荒诞案例提供了娱乐感，但真正的策展价值是把“到底谁有问题”拆成事前沟通、规则一致性、责任和边界。它适合需要外部视角，却不想听太沉重说教的人。",
+      "whyTodayZh": "今天推荐它，因为你可能不是需要别人替你站队，而是需要一套更清楚的标准判断哪里越界了。",
+      "whyThisWorksZh": "节目通过多个高反差困境快速比较责任与公平，让抽象的边界问题变成可见、可讨论的具体行为。",
+      "curatorPriority": 4,
+      "alternativeEpisodes": [
+        9,
+        20,
+        14
+      ],
+      "evidenceSummary": "围绕 AirPod、飞机座位、借钱、家人冲突、室友偷吃等 Reddit 式困境作判断，在夸张案例中讨论公平、边界和常识。",
+      "evidenceTimestamps": [
+        "00:00 Introducing today’s subreddit",
+        "00:31 Oscar prediction results",
+        "01:43 ..."
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_14",
+    "episodeNumber": 14,
+    "series": "HEY TABLO",
+    "title": "Friendship issues? Career troubles? Imposter Syndrome? LET ME HELP! | Hey Tab...",
+    "publishedDate": "2026-03-31",
+    "duration": "47:15",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep14",
+    "coreThemeZh": "年龄焦虑、交友、冒充者综合征与人生重启",
+    "summaryZh": "集中回应粉丝提问：多大还可以追星、成年人如何交朋友、是否太晚重来、人文学科不安、冒充者综合征、过度思考和育儿。",
+    "formatType": "life_advice_session",
+    "mainTopics": [
+      "age_anxiety",
+      "fandom",
+      "friendship",
+      "career",
+      "imposter_syndrome",
+      "overthinking",
+      "parenting"
+    ],
+    "bestForSituations": [
+      "fandom_age_anxiety",
+      "adult_friendship",
+      "career_uncertainty",
+      "imposter_syndrome",
+      "starting_over"
+    ],
+    "emotionsBefore": [
+      "insecure",
+      "lonely",
+      "anxious",
+      "confused"
+    ],
+    "desiredEffects": [
+      "advice",
+      "comfort",
+      "validation",
+      "reflection"
+    ],
+    "toneTags": [
+      "warm",
+      "direct",
+      "witty",
+      "supportive"
+    ],
+    "sensitiveTopics": [
+      "career_pressure",
+      "parenting",
+      "self_doubt"
+    ],
+    "contentWarning": "涉及自我怀疑、职业焦虑和家庭议题，但整体语气支持性较强。",
+    "scores": {
+      "funny": 3,
+      "comfort": 5,
+      "reflection": 5,
+      "energy": 3,
+      "attentionRequired": 4,
+      "backgroundFriendly": 2,
+      "emotionalIntensity": 4,
+      "newFanFriendly": 5,
+      "shareCardPotential": 5
+    },
+    "memberOrGuestFocus": "Tablo｜粉丝人生提问",
+    "editorNote": "这是目前最广谱的陪伴型集数之一。尤其适合觉得自己“太老、太晚、不够格”或被同龄比较压住的人。",
+    "recommendationCopy": "喜欢什么、从哪里重新开始，都没有一个必须遵守的年龄表。你不需要先变得够资格，才允许自己生活。",
+    "backupAngle": "若用户主要困惑是未来职业与梦想，备用推荐 EP25。",
+    "sampleQueries": [
+      "我这个年纪还追星正常吗？",
+      "三十岁以后怎么交朋友？",
+      "我有冒充者综合征",
+      "现在重来是不是太晚"
+    ],
+    "shareCardTitle": "年龄不是这道菜的保质期",
+    "shareCardNote": "你喜欢的东西，不需要通过别人的年龄检查。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=nLnLagE5CwE",
+    "curation": {
+      "hiddenQuestionZh": "我是不是太晚、太奇怪、太不够格，所以才无法拥有喜欢的生活？",
+      "coreNeedPrimary": "Need_Validation",
+      "coreNeedSecondary": [
+        "Need_Hope",
+        "Need_SelfAcceptance",
+        "Need_Connection"
+      ],
+      "emotionalValidationZh": "追星、交朋友、重新开始或感到冒充，并没有一个必须在某个年龄前解决的期限；很多成年人都在边走边学。",
+      "primaryOffer": "Offer_Validation",
+      "secondaryOffers": [
+        "Offer_PracticalAdvice",
+        "Offer_Hope",
+        "Offer_Company"
+      ],
+      "emotionalAftertasteZh": "会少一点“只有我落后”的羞耻，更愿意主动尝试一件小事，而不是等自己先变得完全合格。",
+      "transformationBeforeZh": "别人都已经会了，只有我还在原地，说明我不适合。",
+      "transformationAfterZh": "成年生活没有统一进度表；主动、重复出现和继续尝试，能慢慢创造新的关系与方向。",
+      "menuCategory": "Comfort Soup",
+      "menuEmoji": "🥣",
+      "conversationEnergy": 3,
+      "cognitiveLoad": 4,
+      "emotionalIntensity": 3,
+      "bestServedWith": [
+        "生日或年龄焦虑时",
+        "想交新朋友时",
+        "怀疑自己不配追星时",
+        "冒充感很强时"
+      ],
+      "recommendedWhen": [
+        "fandom_age_anxiety",
+        "adult_friendship",
+        "career_uncertainty",
+        "imposter_syndrome",
+        "starting_over",
+        "overthinking"
+      ],
+      "avoidWhen": [
+        "Need_LaughterOnly",
+        "Need_NoAdvice",
+        "Need_LowCognitiveLoad"
+      ],
+      "curatorNoteZh": "这集覆盖的问题很多，但共通的隐藏线索是“我是不是已经错过正确时机”。它用具体建议和生活经验不断拆掉年龄、资格和完美准备的迷思。",
+      "whyTodayZh": "今天推荐它，因为你可能不是缺少能力，而是太久都在等一个“我终于够格了”的时刻。",
+      "whyThisWorksZh": "无论话题是追星年龄、成年人交友还是冒充感，节目都把抽象羞耻转化成可执行的小动作，并强调人生没有统一时钟。",
+      "curatorPriority": 5,
+      "alternativeEpisodes": [
+        25,
+        7,
+        23
+      ],
+      "evidenceSummary": "集中回应粉丝提问：多大还可以追星、成年人如何交朋友、是否太晚重来、人文学科不安、冒充者综合征、过度思考和育儿。",
+      "evidenceTimestamps": [
+        "00:00 How this episode came about",
+        "00:22 The late-lunch issue",
+        "00:54 What a..."
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_15",
+    "episodeNumber": 15,
+    "series": "HEY TABLO",
+    "title": "We asked Tukutz why he dissed our podcast: FULL ENGLISH INTERVIEW | Hey Tablo...",
+    "publishedDate": "2026-04-07",
+    "duration": "46:21",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep15",
+    "coreThemeZh": "Tukutz 的人生、品味、自信与成员互损",
+    "summaryZh": "Hey Tablo 首位嘉宾 Tukutz 接受全英文长访谈，从童年、学 DJ、家庭和成为 YouTuber，聊到电影、书、说唱歌手、K-pop 组合、自己的代表 beat、消费愿望，以及最讨厌 Tablo 的五件事。",
+    "formatType": "member_interview",
+    "mainTopics": [
+      "tukutz",
+      "member_interview",
+      "dj",
+      "music",
+      "movies",
+      "books",
+      "confidence",
+      "epik_high_banter"
+    ],
+    "bestForSituations": [
+      "want_tukutz",
+      "new_fan",
+      "member_content",
+      "casual_watching",
+      "want_banter"
+    ],
+    "emotionsBefore": [
+      "curious",
+      "happy",
+      "bored"
+    ],
+    "desiredEffects": [
+      "laugh",
+      "discover",
+      "company",
+      "fandom_connection"
+    ],
+    "toneTags": [
+      "chaotic",
+      "warm",
+      "banter",
+      "energetic"
+    ],
+    "sensitiveTopics": [],
+    "contentWarning": "",
+    "scores": {
+      "funny": 5,
+      "comfort": 4,
+      "reflection": 3,
+      "energy": 4,
+      "attentionRequired": 3,
+      "backgroundFriendly": 3,
+      "emotionalIntensity": 1,
+      "newFanFriendly": 5,
+      "shareCardPotential": 5
+    },
+    "memberOrGuestFocus": "Tukutz 主角｜Tablo 采访｜Mithra 话题",
+    "editorNote": "完整 transcript 证明这集不仅是成员互损：它实际上是一份 Tukutz 人物档案，既有成长和音乐品味，也有自信来源、家庭和创作分工。",
+    "recommendationCopy": "今天的主菜是 Tukutz：英文、品味、自信，以及对 Tablo 长达一整集的投诉。",
+    "backupAngle": "若用户想了解三人成团与早期历史，备用推荐 EP23。",
+    "sampleQueries": [
+      "今天想看 Tukutz",
+      "新粉怎么认识 Tukutz？",
+      "想看成员全英文互损"
+    ],
+    "shareCardTitle": "Tukutz 全英文特别套餐",
+    "shareCardNote": "自信无限续杯，对 Tablo 的意见同样无限。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=h42-e-zUhlw",
+    "curation": {
+      "hiddenQuestionZh": "Tukutz 到底是怎样的人；长期队友为什么能一边互损，一边这么信任彼此？",
+      "coreNeedPrimary": "Need_Connection",
+      "coreNeedSecondary": [
+        "Need_Belonging",
+        "Need_Curiosity",
+        "Need_Laughter"
+      ],
+      "emotionalValidationZh": "关系里的亲密不一定表现得温柔安静；长久合作也可以通过共同品味、角色分工和毫不客气的玩笑建立安全感。",
+      "primaryOffer": "Offer_Company",
+      "secondaryOffers": [
+        "Offer_Laugh",
+        "Offer_Curiosity",
+        "Offer_FandomConnection"
+      ],
+      "emotionalAftertasteZh": "会感觉更认识 Tukutz，也更能理解三个人为什么能成为同一个团队这么久。",
+      "transformationBeforeZh": "成员形象只是节目里的固定人设和笑话。",
+      "transformationAfterZh": "互损背后有共同历史、审美、家庭经验和对彼此角色的长期理解。",
+      "menuCategory": "Midnight Ramen",
+      "menuEmoji": "🍜",
+      "conversationEnergy": 4,
+      "cognitiveLoad": 2,
+      "emotionalIntensity": 1,
+      "bestServedWith": [
+        "吃饭",
+        "周末",
+        "新粉补课",
+        "想听成员互损时",
+        "需要背景陪伴时"
+      ],
+      "recommendedWhen": [
+        "want_tukutz",
+        "new_fan",
+        "member_content",
+        "want_banter",
+        "casual_watching",
+        "need_company"
+      ],
+      "avoidWhen": [
+        "Need_DeepReflection",
+        "dislike_long_interviews"
+      ],
+      "curatorNoteZh": "这不是普通成员问答，而是一场通过全英文挑战、榜单争论和集中投诉慢慢显出人物层次的长访谈。它让 Tukutz 从梗变成一个有品味、家庭和自信来源的人。",
+      "whyTodayZh": "今天推荐它，因为你可能不需要被安慰，只想坐在三个老朋友旁边，听他们把彼此说得又坏又准确。",
+      "whyThisWorksZh": "长访谈给了人物足够空间，笑点来自熟悉度而不是陌生人的冒犯，因此能同时提供信息、陪伴和成员关系的安全感。",
+      "curatorPriority": 4,
+      "alternativeEpisodes": [
+        23,
+        16,
+        26
+      ],
+      "evidenceSummary": "Hey Tablo 首位嘉宾 Tukutz 接受全英文长访谈，从童年、学 DJ、家庭和成为 YouTuber，聊到电影、书、说唱歌手、K-pop 组合、自...",
+      "evidenceTimestamps": [
+        "00:00 Introducing the first and possibly last guest",
+        "00:12 The guest looks s..."
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_16",
+    "episodeNumber": 16,
+    "series": "HEY TABLO",
+    "title": "Absolutely BIASED Best K-POP Collabs EVER Playlist ft. Secret Backstories | H...",
+    "publishedDate": "2026-04-14",
+    "duration": "43:30",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep16",
+    "coreThemeZh": "K-pop 合作曲幕后与音乐策展",
+    "summaryZh": "Tablo 建立一张“绝对偏心”的合作歌单，分享 Born Hater、Stray Kids、SUGA、Hoshi、CL、Zico、RM、Taeyang 等合作幕后。",
+    "formatType": "playlist_backstory",
+    "mainTopics": [
+      "kpop",
+      "collaboration",
+      "songwriting",
+      "production",
+      "behind_the_scenes",
+      "playlist"
+    ],
+    "bestForSituations": [
+      "kpop_fandom",
+      "music_discovery",
+      "creative_inspiration",
+      "want_backstories"
+    ],
+    "emotionsBefore": [
+      "curious",
+      "excited",
+      "nostalgic"
+    ],
+    "desiredEffects": [
+      "discover",
+      "inspiration",
+      "laugh",
+      "fandom_connection"
+    ],
+    "toneTags": [
+      "enthusiastic",
+      "witty",
+      "insider",
+      "nostalgic"
+    ],
+    "sensitiveTopics": [],
+    "contentWarning": "",
+    "scores": {
+      "funny": 4,
+      "comfort": 4,
+      "reflection": 3,
+      "energy": 4,
+      "attentionRequired": 4,
+      "backgroundFriendly": 2,
+      "emotionalIntensity": 2,
+      "newFanFriendly": 5,
+      "shareCardPotential": 5
+    },
+    "memberOrGuestFocus": "Tablo｜多位 K-pop 合作艺人",
+    "editorNote": "适合喜欢 K-pop 合作曲、制作幕后或想建立歌单的人。粉丝信息密度高，也很容易延伸到听歌。",
+    "recommendationCopy": "今晚不只是选一集，而是顺便拿走一张带幕后故事的歌单。",
+    "backupAngle": "若用户只想听 Epik High 自家歌曲故事，备用推荐 EP26。",
+    "sampleQueries": [
+      "想听 K-pop 合作幕后",
+      "给我推荐一些合作曲",
+      "想知道 Tablo 和 RM/SUGA 的故事"
+    ],
+    "shareCardTitle": "绝对偏心的合作歌单",
+    "shareCardNote": "偏心是主厨的合法调味料。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=jr-s6m3M73c",
+    "curation": {
+      "hiddenQuestionZh": "一首合作曲背后，偶然、关系和反复磨合到底发生了什么？",
+      "coreNeedPrimary": "Need_Curiosity",
+      "coreNeedSecondary": [
+        "Need_CreativeInspiration",
+        "Need_Connection",
+        "Need_Energy"
+      ],
+      "emotionalValidationZh": "好的合作不一定从完美计划开始；误会、偶然邀约和反复修改，也可以成为作品真正的化学反应。",
+      "primaryOffer": "Offer_Curiosity",
+      "secondaryOffers": [
+        "Offer_CreativeInspiration",
+        "Offer_Energy",
+        "Offer_FandomConnection"
+      ],
+      "emotionalAftertasteZh": "会想重新打开这些合作曲，也更能听见歌名和阵容背后的关系与选择。",
+      "transformationBeforeZh": "合作歌曲只是把几个有名的人放在同一首歌里。",
+      "transformationAfterZh": "合作是信任、沟通、时机和创作方向不断协商出来的结果。",
+      "menuCategory": "Chef's Special",
+      "menuEmoji": "🍷",
+      "conversationEnergy": 4,
+      "cognitiveLoad": 3,
+      "emotionalIntensity": 1,
+      "bestServedWith": [
+        "整理歌单",
+        "通勤",
+        "创作时",
+        "想补 K-pop 幕后时",
+        "和粉丝朋友聊天时"
+      ],
+      "recommendedWhen": [
+        "kpop_fandom",
+        "music_discovery",
+        "creative_inspiration",
+        "want_backstories",
+        "playlist_mood",
+        "want_collaboration_lore"
+      ],
+      "avoidWhen": [
+        "Need_DeepComfort",
+        "Need_QuietLowEnergy"
+      ],
+      "curatorNoteZh": "这集把偏心变成策展优势。它不假装客观，而是用当事人的沟通乌龙、方向磨合和合作契机，让用户获得只有创作者视角才能提供的听歌入口。",
+      "whyTodayZh": "今天推荐它，因为你可能不只是想听歌，而是想知道一首歌为什么会遇见这些人。",
+      "whyThisWorksZh": "每首合作曲都连接到一个具体关系或创作决定，用户会在幕后故事中重新建立对熟悉歌曲的好奇心。",
+      "curatorPriority": 4,
+      "alternativeEpisodes": [
+        26,
+        23,
+        27
+      ],
+      "evidenceSummary": "Tablo 建立一张“绝对偏心”的合作歌单，分享 Born Hater、Stray Kids、SUGA、Hoshi、CL、Zico、RM、Taeyang ...",
+      "evidenceTimestamps": [
+        "00:00 Absolutely Biased Best K-pop Collabs Ever",
+        "02:23 Born Hater",
+        "04:02 St..."
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_17",
+    "episodeNumber": 17,
+    "series": "HEY TABLO",
+    "title": "Why can't I stop buying STUPID THINGS? | Hey Tablo Ep. 17",
+    "publishedDate": "2026-04-21",
+    "duration": "45:26",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep17",
+    "coreThemeZh": "冲动购买、数字注意力与物品背后的理想生活",
+    "summaryZh": "Tablo 丢掉 Apple Watch 后开始寻找怀表，继而讨论 dumb phone、Jellycat、纪念日礼物、未来感家电和难以丢弃物品；核心逐渐从“想买什么”转向手机如何吞噬时间，以及物品为何承载身份、记忆和对另一种生活的想象。",
+    "formatType": "consumer_habit_reflection",
+    "mainTopics": [
+      "impulse_buying",
+      "consumerism",
+      "dumb_phone",
+      "doomscrolling",
+      "collecting",
+      "decluttering",
+      "gifts"
+    ],
+    "bestForSituations": [
+      "impulse_shopping",
+      "tech_fatigue",
+      "decluttering",
+      "doomscrolling",
+      "want_relaxed_chat"
+    ],
+    "emotionsBefore": [
+      "restless",
+      "bored",
+      "guilty",
+      "curious"
+    ],
+    "desiredEffects": [
+      "laugh",
+      "reflection",
+      "validation",
+      "distraction"
+    ],
+    "toneTags": [
+      "relatable",
+      "witty",
+      "reflective"
+    ],
+    "sensitiveTopics": [
+      "consumer_anxiety",
+      "screen_time"
+    ],
+    "contentWarning": "涉及消费冲动和屏幕时间焦虑，但不提供财务建议。",
+    "scores": {
+      "funny": 4,
+      "comfort": 4,
+      "reflection": 4,
+      "energy": 3,
+      "attentionRequired": 3,
+      "backgroundFriendly": 3,
+      "emotionalIntensity": 2,
+      "newFanFriendly": 4,
+      "shareCardPotential": 5
+    },
+    "memberOrGuestFocus": "Tablo｜家人｜科技与收藏",
+    "editorNote": "全文让这集从简单购物清单升级成“注意力和理想生活”主题。尤其适合明知东西没用却总想下单，或想降低手机使用的人。",
+    "recommendationCopy": "也许你想买的不是那个东西，而是它看起来承诺给你的时间、身份或另一种生活。",
+    "backupAngle": "若用户只想通过密集笑点减少烦躁，备用推荐 EP11。",
+    "sampleQueries": [
+      "为什么总想买没用的东西？",
+      "手机占了我太多时间",
+      "舍不得扔东西怎么办"
+    ],
+    "shareCardTitle": "购物车里装的是哪一种生活？",
+    "shareCardNote": "先别结账，听听欲望真正想点什么。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=QQugvUh9fpU",
+    "curation": {
+      "hiddenQuestionZh": "我为什么总想买一些并不真正需要的东西；是不是我就是缺乏自制力？",
+      "coreNeedPrimary": "Need_SelfUnderstanding",
+      "coreNeedSecondary": [
+        "Need_SelfAcceptance",
+        "Need_Perspective",
+        "Need_Clarity"
+      ],
+      "emotionalValidationZh": "消费冲动不总是单纯贪心或自制力差；物品常常承载理想中的生活、注意力需求、纪念和关系记忆。",
+      "primaryOffer": "Offer_Reflection",
+      "secondaryOffers": [
+        "Offer_Validation",
+        "Offer_Perspective",
+        "Offer_SelfInsight"
+      ],
+      "emotionalAftertasteZh": "会少一点道德化地责怪自己，也更容易分辨自己想买的是物品，还是它代表的那种生活。",
+      "transformationBeforeZh": "我不断买东西，说明我不够自律、很肤浅。",
+      "transformationAfterZh": "购买欲望可能在替我表达身份想象、情绪补偿或对记忆的依恋；先看见它，才有选择。",
+      "menuCategory": "Slow Brew",
+      "menuEmoji": "☕",
+      "conversationEnergy": 3,
+      "cognitiveLoad": 4,
+      "emotionalIntensity": 2,
+      "bestServedWith": [
+        "清理购物车时",
+        "又想冲动下单时",
+        "整理房间",
+        "想戒刷手机时"
+      ],
+      "recommendedWhen": [
+        "impulse_shopping",
+        "tech_fatigue",
+        "decluttering",
+        "doomscrolling",
+        "object_attachment",
+        "want_relaxed_chat"
+      ],
+      "avoidWhen": [
+        "Need_ImmediateBudgetPlan",
+        "Need_HighEnergyEscape"
+      ],
+      "curatorNoteZh": "这集不把购物欲望变成道德问题。怀表、dumb phone、玩偶和家电不断暴露“我想成为怎样的人”“我舍不得什么”以及屏幕如何争夺注意力。",
+      "whyTodayZh": "今天推荐它，因为你可能不是真的需要再买一件东西，而是想更接近某种想象中的自己。",
+      "whyThisWorksZh": "节目一边自嘲消费合理化，一边把物品与身份、注意力、纪念和关系联系起来，让用户能在不被批判的情况下看见冲动来源。",
+      "curatorPriority": 4,
+      "alternativeEpisodes": [
+        21,
+        5,
+        29
+      ],
+      "evidenceSummary": "Tablo 丢掉 Apple Watch 后开始寻找怀表，继而讨论 dumb phone、Jellycat、纪念日礼物、未来感家电和难以丢弃物品；核心逐渐...",
+      "evidenceTimestamps": [
+        "00:00 I lost my Apple Watch—and it gets worse",
+        "00:56 The dumbest things I wa..."
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_18",
+    "episodeNumber": 18,
+    "series": "HEY TABLO",
+    "title": "POV: You can fly and time travel, but only if you do THIS | Hey Tablo Ep. 18",
+    "publishedDate": "2026-04-28",
+    "duration": "46:49",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep18",
+    "coreThemeZh": "荒诞超能力与高能想象游戏",
+    "summaryZh": "对 Reddit 上极其不实用的超能力进行分级，包括飞行、时间旅行、读心、传送到黑粉身边等，是纯度很高的脑洞喜剧。",
+    "formatType": "tier_list_comedy",
+    "mainTopics": [
+      "superpowers",
+      "reddit",
+      "imagination",
+      "marvel",
+      "absurd_humor"
+    ],
+    "bestForSituations": [
+      "need_laugh",
+      "bored",
+      "commuting",
+      "casual_watching",
+      "want_chaos"
+    ],
+    "emotionsBefore": [
+      "bored",
+      "tired",
+      "restless"
+    ],
+    "desiredEffects": [
+      "laugh",
+      "distraction",
+      "energy",
+      "company"
+    ],
+    "toneTags": [
+      "absurd",
+      "chaotic",
+      "high_energy",
+      "playful"
+    ],
+    "sensitiveTopics": [],
+    "contentWarning": "",
+    "scores": {
+      "funny": 5,
+      "comfort": 3,
+      "reflection": 2,
+      "energy": 5,
+      "attentionRequired": 2,
+      "backgroundFriendly": 4,
+      "emotionalIntensity": 1,
+      "newFanFriendly": 5,
+      "shareCardPotential": 5
+    },
+    "memberOrGuestFocus": "Tablo｜Reddit 脑洞",
+    "editorNote": "适合完全不想谈现实，只想把脑子交给荒诞设定的人。对专注力要求低，笑点密集。",
+    "recommendationCopy": "今天不解决现实问题。今天只判断夹紧屁股两小时后能不能飞。",
+    "backupAngle": "若用户想要稍微温和一点的随机脑洞，备用推荐 EP8。",
+    "sampleQueries": [
+      "给我一集最搞笑的",
+      "今天不想动脑",
+      "想看离谱超能力"
+    ],
+    "shareCardTitle": "今日超能力：暂时忘记现实",
+    "shareCardNote": "本店不保证有用，只保证够离谱。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=3-ZDz4RUS5Q",
+    "curation": {
+      "hiddenQuestionZh": "今天能不能什么都不解决，只玩一场完全没有后果的荒诞游戏？",
+      "coreNeedPrimary": "Need_Escape",
+      "coreNeedSecondary": [
+        "Need_Laughter",
+        "Need_Play",
+        "Need_Energy"
+      ],
+      "emotionalValidationZh": "你不需要把所有空闲时间都变得有意义；低质量超能力和无用想象，也可以是有效的精神休息。",
+      "primaryOffer": "Offer_Laugh",
+      "secondaryOffers": [
+        "Offer_Escape",
+        "Offer_Energy",
+        "Offer_Play"
+      ],
+      "emotionalAftertasteZh": "会像和朋友胡闹了一场，原本黏住脑袋的事情被打断几分钟。",
+      "transformationBeforeZh": "我很无聊、很烦，却连选择内容都觉得累。",
+      "transformationAfterZh": "一套无需现实投入的荒诞规则，能快速把注意力切换到轻松频道。",
+      "menuCategory": "Sweet Dessert",
+      "menuEmoji": "🍰",
+      "conversationEnergy": 5,
+      "cognitiveLoad": 1,
+      "emotionalIntensity": 1,
+      "bestServedWith": [
+        "通勤",
+        "等人",
+        "坏心情刚开始时",
+        "和朋友一起看",
+        "只想笑时"
+      ],
+      "recommendedWhen": [
+        "need_laugh",
+        "bored",
+        "casual_watching",
+        "want_chaos",
+        "low_attention",
+        "need_distraction"
+      ],
+      "avoidWhen": [
+        "Need_QuietComfort",
+        "Need_SeriousAdvice",
+        "sensory_overload"
+      ],
+      "curatorNoteZh": "它是纯娱乐，但不是无价值。对已经没有脑力处理现实的人来说，一连串严格分析“烂超能力”的认真态度，反而提供了最干净的注意力转移。",
+      "whyTodayZh": "今天推荐它，因为你不需要把心情解释清楚；先去评选几个很烂的超能力就好。",
+      "whyThisWorksZh": "荒诞设定持续提供新鲜刺激，却没有现实风险和情绪后果，能快速中断反刍并制造共同笑点。",
+      "curatorPriority": 5,
+      "alternativeEpisodes": [
+        8,
+        11,
+        29
+      ],
+      "evidenceSummary": "对 Reddit 上极其不实用的超能力进行分级，包括飞行、时间旅行、读心、传送到黑粉身边等，是纯度很高的脑洞喜剧。",
+      "evidenceTimestamps": [
+        "00:00 Shitty Superpowers",
+        "00:20 Discovering r/shittysuperpowers",
+        "00:50 Upco..."
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_19",
+    "episodeNumber": 19,
+    "series": "HEY TABLO",
+    "title": "Best Korean Late Night Snacks World Cup | Hey Tablo Ep. 19",
+    "publishedDate": "2026-05-05",
+    "duration": "53:39",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep19",
+    "coreThemeZh": "韩国宵夜文化与食物陪伴",
+    "summaryZh": "用世界杯淘汰赛方式评选韩国最佳宵夜，从炸鸡、披萨、猪蹄、拉面到烤肠和零食，边吃边聊食物记忆。",
+    "formatType": "food_world_cup",
+    "mainTopics": [
+      "korean_food",
+      "late_night_snacks",
+      "world_cup",
+      "culture",
+      "eating"
+    ],
+    "bestForSituations": [
+      "eating_alone",
+      "late_night",
+      "need_company",
+      "food_interest",
+      "casual_watching"
+    ],
+    "emotionsBefore": [
+      "lonely",
+      "tired",
+      "happy",
+      "bored"
+    ],
+    "desiredEffects": [
+      "company",
+      "laugh",
+      "comfort",
+      "discover"
+    ],
+    "toneTags": [
+      "cozy",
+      "energetic",
+      "playful",
+      "sensory"
+    ],
+    "sensitiveTopics": [],
+    "contentWarning": "",
+    "scores": {
+      "funny": 5,
+      "comfort": 5,
+      "reflection": 2,
+      "energy": 4,
+      "attentionRequired": 2,
+      "backgroundFriendly": 5,
+      "emotionalIntensity": 1,
+      "newFanFriendly": 5,
+      "shareCardPotential": 5
+    },
+    "memberOrGuestFocus": "Tablo｜韩国宵夜",
+    "editorNote": "非常适合一个人吃饭、夜宵或做家务时播放。内容不用持续盯屏幕，也有强烈的“有人一起吃”陪伴感。",
+    "recommendationCopy": "今晚一个人吃也没关系，先让这一桌韩国宵夜把房间变热闹。",
+    "backupAngle": "若用户不想被食物勾起饥饿，备用推荐 EP29。",
+    "sampleQueries": [
+      "一个人吃饭看什么？",
+      "想看韩国美食",
+      "晚上需要热闹背景音"
+    ],
+    "shareCardTitle": "今晚的主菜：韩国宵夜世界杯",
+    "shareCardNote": "烦恼先放旁边，炸鸡趁热。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=kj0NoJqWqnQ",
+    "curation": {
+      "hiddenQuestionZh": "一个人吃饭的时候，能不能有人陪我把这顿饭变得热闹一点？",
+      "coreNeedPrimary": "Need_Company",
+      "coreNeedSecondary": [
+        "Need_Comfort",
+        "Need_Connection",
+        "Need_Laughter"
+      ],
+      "emotionalValidationZh": "独自吃饭时想听见别人的声音并不奇怪；食物本来就是人用来分享记忆、争论和陪伴的方式。",
+      "primaryOffer": "Offer_Company",
+      "secondaryOffers": [
+        "Offer_Comfort",
+        "Offer_Laugh",
+        "Offer_Curiosity"
+      ],
+      "emotionalAftertasteZh": "会觉得餐桌没那么空，甚至可能被他们讨论得突然很想吃一顿宵夜。",
+      "transformationBeforeZh": "我只是一个人随便吃点东西，今晚有点安静。",
+      "transformationAfterZh": "一场围绕食物的争论，也能让独处的一餐变成共享时刻。",
+      "menuCategory": "Midnight Ramen",
+      "menuEmoji": "🍜",
+      "conversationEnergy": 4,
+      "cognitiveLoad": 1,
+      "emotionalIntensity": 1,
+      "bestServedWith": [
+        "一个人吃饭",
+        "深夜宵夜",
+        "开车",
+        "做饭",
+        "和朋友一起点外卖"
+      ],
+      "recommendedWhen": [
+        "eating_alone",
+        "late_night",
+        "need_company",
+        "food_interest",
+        "casual_watching",
+        "background_audio"
+      ],
+      "avoidWhen": [
+        "Need_DeepReflection",
+        "do_not_want_food_content"
+      ],
+      "curatorNoteZh": "这是陪饭能力最强的一集。世界杯赛制提供节奏，食物记忆提供温度，用户不需要持续专注也能随时重新加入对话。",
+      "whyTodayZh": "今天推荐它，因为你可能不缺一顿饭，只是希望吃饭的时候房间里有人热闹地说话。",
+      "whyThisWorksZh": "食物是低门槛的共同语言，淘汰赛争论让对话自然起伏，特别适合背景收听和独自用餐。",
+      "curatorPriority": 5,
+      "alternativeEpisodes": [
+        12,
+        15,
+        29
+      ],
+      "evidenceSummary": "用世界杯淘汰赛方式评选韩国最佳宵夜，从炸鸡、披萨、猪蹄、拉面到烤肠和零食，边吃边聊食物记忆。",
+      "evidenceTimestamps": [
+        "00:00 Late-night snacks advanced humanity",
+        "01:00 Korean late-night food cult..."
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_20",
+    "episodeNumber": 20,
+    "series": "HEY TABLO",
+    "title": "The MOST TOXIC Friendships you need to end right away | Hey Tablo Ep. 20",
+    "publishedDate": "2026-05-12",
+    "duration": "36:50",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep20",
+    "coreThemeZh": "有毒友谊、成长变化与关系边界",
+    "summaryZh": "通过粉丝投稿讨论账号被黑、冒充身份、因搬家和成长被指责、被朋友利用及家庭介入等背叛经历；Tablo 强调真正的朋友能够容纳彼此成长，也会在成功和失败时暴露关系的真实质量。",
+    "formatType": "friendship_advice_reaction",
+    "mainTopics": [
+      "toxic_friendship",
+      "boundaries",
+      "manipulation",
+      "friendship_breakup",
+      "growth",
+      "betrayal"
+    ],
+    "bestForSituations": [
+      "friendship_conflict",
+      "one_sided_friendship",
+      "being_used",
+      "friendship_breakup",
+      "growing_apart"
+    ],
+    "emotionsBefore": [
+      "hurt",
+      "confused",
+      "angry",
+      "lonely"
+    ],
+    "desiredEffects": [
+      "advice",
+      "clarity",
+      "validation",
+      "comfort"
+    ],
+    "toneTags": [
+      "direct",
+      "supportive",
+      "reflective",
+      "witty"
+    ],
+    "sensitiveTopics": [
+      "manipulation",
+      "account_hacking",
+      "family_conflict",
+      "physical_discipline"
+    ],
+    "contentWarning": "包含账号入侵、操控、家庭冲突、被打和关系决裂等投稿。",
+    "scores": {
+      "funny": 3,
+      "comfort": 4,
+      "reflection": 5,
+      "energy": 3,
+      "attentionRequired": 4,
+      "backgroundFriendly": 2,
+      "emotionalIntensity": 5,
+      "newFanFriendly": 4,
+      "shareCardPotential": 5
+    },
+    "memberOrGuestFocus": "Tablo｜粉丝友谊投稿｜Epik High 长期友情",
+    "editorNote": "全文比一般“断舍离朋友”内容更细：它区分朋友无法接受你成长、真正操控，以及随着人生自然变化而淡出的关系。",
+    "recommendationCopy": "你不需要为了让别人安心而停止成长。真正的朋友可能会不舍，但不会要求你缩小自己。",
+    "backupAngle": "若用户更需要重新建立成年人友谊，备用推荐 EP14。",
+    "sampleQueries": [
+      "朋友不希望我变好怎么办？",
+      "被朋友利用还要继续吗？",
+      "十几年友情结束是不是失败"
+    ],
+    "shareCardTitle": "不是每段友情都要无限续单",
+    "shareCardNote": "真正的朋友不会要求你停止成长。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=N5D9oBxHJU4",
+    "curation": {
+      "hiddenQuestionZh": "这段友情为什么让我越来越累；结束或疏远它，会不会说明我不够忠诚？",
+      "coreNeedPrimary": "Need_Boundaries",
+      "coreNeedSecondary": [
+        "Need_Validation",
+        "Need_Safety",
+        "Need_Courage"
+      ],
+      "emotionalValidationZh": "被利用、冒充、控制或因为成长而被指责，确实会伤害关系；设立边界并不是对友情的背叛。",
+      "primaryOffer": "Offer_Validation",
+      "secondaryOffers": [
+        "Offer_PracticalAdvice",
+        "Offer_Perspective",
+        "Offer_Courage"
+      ],
+      "emotionalAftertasteZh": "会更愿意相信自己的不适，也更能区分哪些关系值得修复、哪些需要距离或结束。",
+      "transformationBeforeZh": "离开一段友情会让我成为坏朋友，所以我应该继续忍。",
+      "transformationAfterZh": "真正的友情能够容纳成长；保护自己和结束伤害性的关系，也可以是负责任的选择。",
+      "menuCategory": "Comfort Soup",
+      "menuEmoji": "🥣",
+      "conversationEnergy": 2,
+      "cognitiveLoad": 5,
+      "emotionalIntensity": 5,
+      "bestServedWith": [
+        "友情冲突后",
+        "长期被利用时",
+        "想确认边界时",
+        "有可信任的人可以继续讨论时"
+      ],
+      "recommendedWhen": [
+        "friendship_conflict",
+        "one_sided_friendship",
+        "being_used",
+        "friendship_breakup",
+        "growing_apart",
+        "need_boundaries"
+      ],
+      "avoidWhen": [
+        "Need_LaughterOnly",
+        "Need_LightEscape",
+        "avoid_manipulation_or_betrayal_topics",
+        "acute_safety_crisis_without_support"
+      ],
+      "curatorNoteZh": "这集先确认伤害，再讨论修复、疏远与结束，而不是要求用户为了“多年友情”无限忍耐。它的重点是让成长和边界获得正当性。",
+      "whyTodayZh": "今天推荐它，因为你可能已经花太久证明自己是一个好朋友，却没有问这段关系有没有好好对待你。",
+      "whyThisWorksZh": "具体投稿让账号入侵、利用、身份冒充和成长冲突变得可识别，节目再用一致标准区分正常变化与持续伤害。",
+      "curatorPriority": 5,
+      "alternativeEpisodes": [
+        13,
+        14,
+        25
+      ],
+      "evidenceSummary": "通过粉丝投稿讨论账号被黑、冒充身份、因搬家和成长被指责、被朋友利用及家庭介入等背叛经历；Tablo 强调真正的朋友能够容纳彼此成长，也会在成功和失败时暴露...",
+      "evidenceTimestamps": [
+        "00:00 Why are there so many friendship breakups?",
+        "02:36 My friend hacked my ..."
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_21",
+    "episodeNumber": 21,
+    "series": "HEY TABLO",
+    "title": "Revealing the DAILY ROUTINES of SUCCESSFUL people | Hey Tablo Ep. 21",
+    "publishedDate": "2026-05-19",
+    "duration": "49:11",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep21",
+    "coreThemeZh": "效率神话、日常结构与适合自己的节奏",
+    "summaryZh": "比较名人、作家、偶像和 Epik High 成员的每日作息，在吐槽极端自律的同时讨论结构、措辞和现实可持续性。",
+    "formatType": "routine_comparison",
+    "mainTopics": [
+      "productivity",
+      "daily_routine",
+      "discipline",
+      "work_life",
+      "kpop_idol"
+    ],
+    "bestForSituations": [
+      "productivity",
+      "work_stress",
+      "need_structure",
+      "feeling_unproductive"
+    ],
+    "emotionsBefore": [
+      "overwhelmed",
+      "guilty",
+      "curious",
+      "unmotivated"
+    ],
+    "desiredEffects": [
+      "reflection",
+      "motivation",
+      "laugh",
+      "validation"
+    ],
+    "toneTags": [
+      "witty",
+      "practical",
+      "reflective"
+    ],
+    "sensitiveTopics": [],
+    "contentWarning": "",
+    "scores": {
+      "funny": 4,
+      "comfort": 3,
+      "reflection": 4,
+      "energy": 3,
+      "attentionRequired": 3,
+      "backgroundFriendly": 3,
+      "emotionalIntensity": 2,
+      "newFanFriendly": 4,
+      "shareCardPotential": 5
+    },
+    "memberOrGuestFocus": "Tablo｜Mithra｜Tukutz｜名人作息",
+    "editorNote": "适合被“完美晨间 routine”压得喘不过气，或想建立日常结构但不想走极端的人。",
+    "recommendationCopy": "你不需要凌晨两点半起床，才算认真生活。适合你的节奏才是可以长期续杯的节奏。",
+    "backupAngle": "若用户需要更直接的职涯和生活建议，备用推荐 EP25。",
+    "sampleQueries": [
+      "为什么别人都那么自律？",
+      "想建立日常 routine",
+      "我每天都觉得效率很低"
+    ],
+    "shareCardTitle": "自律套餐不含凌晨两点半起床",
+    "shareCardNote": "好的作息应该能吃得下，也能坚持。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=VtspPDHCBMQ",
+    "curation": {
+      "hiddenQuestionZh": "为什么别人的自律像标准答案，而我怎么都做不到；是不是我太懒？",
+      "coreNeedPrimary": "Need_SelfAcceptance",
+      "coreNeedSecondary": [
+        "Need_Structure",
+        "Need_Perspective",
+        "Need_Release"
+      ],
+      "emotionalValidationZh": "模仿名人的极端作息失败，并不证明你懒；真正有用的日常结构应该能被现实长期承受。",
+      "primaryOffer": "Offer_Perspective",
+      "secondaryOffers": [
+        "Offer_PracticalAdvice",
+        "Offer_Validation",
+        "Offer_Laugh"
+      ],
+      "emotionalAftertasteZh": "会少一点效率羞耻，并更愿意设计一套符合自己生活的简单节奏。",
+      "transformationBeforeZh": "只有早起、极端自律和满格日程才算成功。",
+      "transformationAfterZh": "结构的价值在于可持续和减少决策，不在于表演得像某个成功人士。",
+      "menuCategory": "Slow Brew",
+      "menuEmoji": "☕",
+      "conversationEnergy": 3,
+      "cognitiveLoad": 3,
+      "emotionalIntensity": 2,
+      "bestServedWith": [
+        "周日晚上",
+        "计划新一周",
+        "拖延后",
+        "被效率内容刺激后",
+        "工作压力大时"
+      ],
+      "recommendedWhen": [
+        "productivity",
+        "work_stress",
+        "need_structure",
+        "feeling_unproductive",
+        "routine_reset",
+        "productivity_shame"
+      ],
+      "avoidWhen": [
+        "Need_HighEnergyMotivation",
+        "Need_PureEscape"
+      ],
+      "curatorNoteZh": "节目一边拆解夸张的名人作息，一边保留结构本身的价值。它不会让用户复制一张新的完美日程，而是把重点转向措辞、现实条件和可持续性。",
+      "whyTodayZh": "今天推荐它，因为你可能不需要更狠地管理自己，而是需要一套不会让你每天都失败的节奏。",
+      "whyThisWorksZh": "通过比较极端日程与成员真实作息，节目把效率神话拉回生活尺度，并说明语言和结构如何影响行动感受。",
+      "curatorPriority": 4,
+      "alternativeEpisodes": [
+        22,
+        25,
+        17
+      ],
+      "evidenceSummary": "比较名人、作家、偶像和 Epik High 成员的每日作息，在吐槽极端自律的同时讨论结构、措辞和现实可持续性。",
+      "evidenceTimestamps": [
+        "00:00 Famous daily routines",
+        "01:32 Mark Wahlberg’s 2:30 a.m. routine",
+        "04:48..."
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_22",
+    "episodeNumber": 22,
+    "series": "HEY TABLO",
+    "title": "Songs that will make you CRUSH your exams, job interviews, and workouts | Hey...",
+    "publishedDate": "2026-05-26",
+    "duration": "44:09",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep22",
+    "coreThemeZh": "临场信心、音乐能量与允许多种情绪共存",
+    "summaryZh": "Tablo 为考试、面试、演出和运动建立电影原声高能歌单，从《教父》、Rocky、《Skyfall》到 Disney、Queen 等歌曲，说明音乐如何提供自信；同时强调真正的力量不是压掉悲伤，而是把悲伤、孤独和痛苦一起转化成行动能量。",
+    "formatType": "motivational_playlist",
+    "mainTopics": [
+      "motivation",
+      "movie_soundtracks",
+      "exams",
+      "job_interview",
+      "workout",
+      "self_confidence",
+      "playlist"
+    ],
+    "bestForSituations": [
+      "study_stress",
+      "job_interview",
+      "workout",
+      "big_day",
+      "need_confidence",
+      "performance_anxiety"
+    ],
+    "emotionsBefore": [
+      "anxious",
+      "unmotivated",
+      "nervous",
+      "down"
+    ],
+    "desiredEffects": [
+      "motivation",
+      "energy",
+      "confidence",
+      "discover"
+    ],
+    "toneTags": [
+      "energetic",
+      "uplifting",
+      "enthusiastic",
+      "playful"
+    ],
+    "sensitiveTopics": [
+      "performance_pressure",
+      "low_mood"
+    ],
+    "contentWarning": "包含少量关于低落和压力的表达；核心为娱乐性动力歌单。",
+    "scores": {
+      "funny": 4,
+      "comfort": 4,
+      "reflection": 3,
+      "energy": 5,
+      "attentionRequired": 2,
+      "backgroundFriendly": 5,
+      "emotionalIntensity": 2,
+      "newFanFriendly": 5,
+      "shareCardPotential": 5
+    },
+    "memberOrGuestFocus": "Tablo｜Haru｜电影原声歌单",
+    "editorNote": "全文确认它是最适合短期“上场前”需求的一集。它不要求用户先相信自己，而是用音乐、电影角色和夸张仪式感先把身体状态拉起来。",
+    "recommendationCopy": "自信还没到也没关系。先把歌单放大声一点，让身体比焦虑早一步走进考场或会议室。",
+    "backupAngle": "若用户面对的是失败后的长期重建，而非临场紧张，备用推荐 EP2。",
+    "sampleQueries": [
+      "明天考试很紧张",
+      "面试前看什么？",
+      "演出前需要一点自信"
+    ],
+    "shareCardTitle": "上场前的高能加餐",
+    "shareCardNote": "先把音量调高，再把自己送上场。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=2gNxaIb1rdw",
+    "curation": {
+      "hiddenQuestionZh": "在考试、面试或上场之前，我能不能先让自己进入“我做得到”的状态？",
+      "coreNeedPrimary": "Need_Confidence",
+      "coreNeedSecondary": [
+        "Need_Courage",
+        "Need_Energy",
+        "Need_Company"
+      ],
+      "emotionalValidationZh": "临场前需要一点仪式感和外部能量很正常；音乐可以帮助身体进入行动模式，而不是证明你不够自信。",
+      "primaryOffer": "Offer_Energy",
+      "secondaryOffers": [
+        "Offer_Motivation",
+        "Offer_Company",
+        "Offer_Curiosity"
+      ],
+      "emotionalAftertasteZh": "不会解决所有焦虑，但会更像已经穿好装备，可以去做下一件事。",
+      "transformationBeforeZh": "我还没准备好，必须先把焦虑完全消除才能开始。",
+      "transformationAfterZh": "我可以带着紧张上场，用音乐和仪式感先把行动启动。",
+      "menuCategory": "Chef's Special",
+      "menuEmoji": "🍷",
+      "conversationEnergy": 5,
+      "cognitiveLoad": 1,
+      "emotionalIntensity": 2,
+      "bestServedWith": [
+        "考试前",
+        "面试路上",
+        "运动前",
+        "上台前",
+        "需要立刻行动时"
+      ],
+      "recommendedWhen": [
+        "study_stress",
+        "job_interview",
+        "workout",
+        "big_day",
+        "need_confidence",
+        "performance_anxiety"
+      ],
+      "avoidWhen": [
+        "Need_QuietComfort",
+        "Need_DeepProcessing",
+        "sensory_overload"
+      ],
+      "curatorNoteZh": "这集不长篇分析焦虑，而是像赛前朋友一样直接把用户送进行动状态。电影原声和夸张角色代入把抽象鼓励变成身体能感受到的节奏。",
+      "whyTodayZh": "今天推荐它，因为你不需要等到完全不紧张；先给自己一首能够走进场上的歌。",
+      "whyThisWorksZh": "音乐天然能改变唤醒水平，节目又把不同任务配到具体电影情境，让用户更容易建立自己的临场仪式。",
+      "curatorPriority": 5,
+      "alternativeEpisodes": [
+        2,
+        16,
+        21
+      ],
+      "evidenceSummary": "Tablo 为考试、面试、演出和运动建立电影原声高能歌单，从《教父》、Rocky、《Skyfall》到 Disney、Queen 等歌曲，说明音乐如何提供...",
+      "evidenceTimestamps": [
+        "00:00 Movie soundtrack bangers that make you crush it",
+        "00:40 Why movie sound..."
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_23",
+    "episodeNumber": 23,
+    "series": "HEY TABLO",
+    "title": "POV: you're a celebrity and need to fix your own wikipedia page | Hey Tablo E...",
+    "publishedDate": "2026-06-02",
+    "duration": "47:56",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep23",
+    "coreThemeZh": "Epik High 成团史、成员初见与身份纠错",
+    "summaryZh": "Tablo 逐条修正 Wikipedia 中的 Epik High 信息，并延伸出与 Mithra、Tukutz 初见、成团、制作分工和早年奋斗的故事。",
+    "formatType": "history_factcheck",
+    "mainTopics": [
+      "epik_high_history",
+      "members",
+      "formation",
+      "production",
+      "wikipedia",
+      "fandom_lore"
+    ],
+    "bestForSituations": [
+      "new_fan",
+      "epik_high_history",
+      "want_member_stories",
+      "nostalgia"
+    ],
+    "emotionsBefore": [
+      "curious",
+      "nostalgic",
+      "happy"
+    ],
+    "desiredEffects": [
+      "discover",
+      "laugh",
+      "fandom_connection",
+      "company"
+    ],
+    "toneTags": [
+      "candid",
+      "chaotic",
+      "nostalgic",
+      "banter"
+    ],
+    "sensitiveTopics": [],
+    "contentWarning": "",
+    "scores": {
+      "funny": 5,
+      "comfort": 4,
+      "reflection": 3,
+      "energy": 4,
+      "attentionRequired": 4,
+      "backgroundFriendly": 3,
+      "emotionalIntensity": 2,
+      "newFanFriendly": 5,
+      "shareCardPotential": 5
+    },
+    "memberOrGuestFocus": "Tablo｜Mithra｜Tukutz｜成团历史",
+    "editorNote": "新粉入门和老粉补 lore 都非常合适。事实信息密集，同时保留成员互损和早期荒唐故事。",
+    "recommendationCopy": "今天不只是看节目，是把 Epik High 的起源故事重新端上桌。",
+    "backupAngle": "若用户更关心歌曲制作故事，备用推荐 EP26。",
+    "sampleQueries": [
+      "Epik High 怎么组成的？",
+      "想听成员第一次见面的故事",
+      "新粉从哪一集开始"
+    ],
+    "shareCardTitle": "Epik High 起源菜单",
+    "shareCardNote": "三个人是怎么误打误撞坐到同一桌的。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=eDLxvdPd98k",
+    "curation": {
+      "hiddenQuestionZh": "Epik High 三个人最初到底怎么成为一个团队；真实故事为什么和百科不一样？",
+      "coreNeedPrimary": "Need_Connection",
+      "coreNeedSecondary": [
+        "Need_Belonging",
+        "Need_Curiosity",
+        "Need_Nostalgia"
+      ],
+      "emotionalValidationZh": "一个长期团队并不一定从完美契合开始；误解、角色摸索和共同熬过早期混乱，也能慢慢形成归属。",
+      "primaryOffer": "Offer_FandomConnection",
+      "secondaryOffers": [
+        "Offer_Curiosity",
+        "Offer_Company",
+        "Offer_Laugh"
+      ],
+      "emotionalAftertasteZh": "会感觉自己像翻完一本带注释的老相册，更靠近成员和团队历史。",
+      "transformationBeforeZh": "成团史只是几个日期和百科事实。",
+      "transformationAfterZh": "团队是由初见误解、具体分工、早年困难和长期共同记忆长出来的关系。",
+      "menuCategory": "Midnight Ramen",
+      "menuEmoji": "🍜",
+      "conversationEnergy": 4,
+      "cognitiveLoad": 3,
+      "emotionalIntensity": 1,
+      "bestServedWith": [
+        "新粉补课",
+        "整理旧照片",
+        "周末",
+        "想听成员故事时",
+        "和粉丝朋友一起看"
+      ],
+      "recommendedWhen": [
+        "new_fan",
+        "epik_high_history",
+        "want_member_stories",
+        "nostalgia",
+        "fandom_connection",
+        "want_banter"
+      ],
+      "avoidWhen": [
+        "Need_DeepEmotionalSupport",
+        "not_interested_in_group_history"
+      ],
+      "curatorNoteZh": "Wikipedia 纠错只是结构，真正的内容是三个人初见、成团和分工如何在混乱中形成。它把公开履历重新变回有误会、有笑点的人类故事。",
+      "whyTodayZh": "今天推荐它，因为你可能不是想记住更多资料，而是想知道这三个人为什么会一直走在一起。",
+      "whyThisWorksZh": "百科的冷事实和成员记忆之间不断出现落差，用户因此获得比时间线更有温度的团队理解。",
+      "curatorPriority": 4,
+      "alternativeEpisodes": [
+        15,
+        26,
+        1
+      ],
+      "evidenceSummary": "Tablo 逐条修正 Wikipedia 中的 Epik High 信息，并延伸出与 Mithra、Tukutz 初见、成团、制作分工和早年奋斗的故事。",
+      "evidenceTimestamps": [
+        "00:00 Wikipedia got Epik High wrong",
+        "01:14 When Epik High was actually forme..."
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_24",
+    "episodeNumber": 24,
+    "series": "HEY TABLO",
+    "title": "Top 10 Movies To Watch BEFORE You Get Old ft. Tablo’s Letterboxd | Hey Tablo ...",
+    "publishedDate": "2026-06-09",
+    "duration": "53:01",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep24",
+    "coreThemeZh": "电影作为成长、心碎与人生选择的间接答案",
+    "summaryZh": "Tablo 根据 Letterboxd 清单挑选“变老前值得看”的电影，以《千与千寻》谈不理想环境中的投入，以《美丽心灵的永恒阳光》谈心碎与失去，再延伸到工作、家庭、野心、卓越、AI 和为重要的人坚持。",
+    "formatType": "movie_recommendation_reflection",
+    "mainTopics": [
+      "movies",
+      "heartbreak",
+      "work_ethic",
+      "ambition",
+      "family",
+      "growth",
+      "letterboxd"
+    ],
+    "bestForSituations": [
+      "movie_night",
+      "heartbreak",
+      "creative_ambition",
+      "need_reflection",
+      "feeling_lost"
+    ],
+    "emotionsBefore": [
+      "sad",
+      "curious",
+      "nostalgic",
+      "confused"
+    ],
+    "desiredEffects": [
+      "discover",
+      "reflection",
+      "comfort",
+      "inspiration"
+    ],
+    "toneTags": [
+      "thoughtful",
+      "warm",
+      "opinionated",
+      "witty"
+    ],
+    "sensitiveTopics": [
+      "heartbreak",
+      "homelessness_in_film",
+      "family_pressure"
+    ],
+    "contentWarning": "讨论心碎、失去、家庭压力及部分电影中的沉重情节；推荐可能包含剧情提示。",
+    "scores": {
+      "funny": 4,
+      "comfort": 4,
+      "reflection": 5,
+      "energy": 3,
+      "attentionRequired": 4,
+      "backgroundFriendly": 2,
+      "emotionalIntensity": 4,
+      "newFanFriendly": 5,
+      "shareCardPotential": 5
+    },
+    "memberOrGuestFocus": "Tablo｜电影片单｜Haru｜Mithra/Tukutz",
+    "editorNote": "全文显示它不只是一份 Top 10：每部电影都被重新解释成某种人生问题的入口，特别适合不想直接接受建议、但愿意通过故事整理情绪的人。",
+    "recommendationCopy": "有些问题不需要正面回答。先看一部电影，让它替你把心碎、野心或成长演出来。",
+    "backupAngle": "若用户需要直接约会判断，备用推荐 EP9；需要综合人生建议则推荐 EP25。",
+    "sampleQueries": [
+      "失恋后看什么电影？",
+      "变老前应该看哪些电影？",
+      "想通过电影整理人生"
+    ],
+    "shareCardTitle": "有些答案藏在片尾字幕之后",
+    "shareCardNote": "今晚先让电影替你说。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=5K8bVTnZXQQ",
+    "curation": {
+      "hiddenQuestionZh": "我不想直接谈自己的问题，能不能先借电影里的别人，绕路理解自己？",
+      "coreNeedPrimary": "Need_Perspective",
+      "coreNeedSecondary": [
+        "Need_Reflection",
+        "Need_SafeDistance",
+        "Need_Inspiration"
+      ],
+      "emotionalValidationZh": "暂时不想正面分析自己的心碎、工作或梦想，不代表你在逃避；故事可以提供一段安全距离，让情绪更容易被看见。",
+      "primaryOffer": "Offer_Perspective",
+      "secondaryOffers": [
+        "Offer_Reflection",
+        "Offer_Curiosity",
+        "Offer_Comfort"
+      ],
+      "emotionalAftertasteZh": "会想重新打开几部电影，也可能在别人的故事里找到一种描述自己处境的新语言。",
+      "transformationBeforeZh": "我现在无法直接面对自己的故事，也不知道该怎么整理。",
+      "transformationAfterZh": "我可以先借角色和电影建立距离，再慢慢理解自己的失去、选择和愿望。",
+      "menuCategory": "Slow Brew",
+      "menuEmoji": "☕",
+      "conversationEnergy": 2,
+      "cognitiveLoad": 4,
+      "emotionalIntensity": 3,
+      "bestServedWith": [
+        "周日下午",
+        "看完电影后",
+        "心碎但不想被直接分析时",
+        "创作低潮",
+        "一个人散步"
+      ],
+      "recommendedWhen": [
+        "movie_night",
+        "heartbreak",
+        "creative_ambition",
+        "feeling_lost",
+        "need_reflection",
+        "need_safe_distance"
+      ],
+      "avoidWhen": [
+        "Need_LaughterOnly",
+        "Need_LowCognitiveLoad",
+        "avoid_movie_spoilers"
+      ],
+      "curatorNoteZh": "这集最独特的是“间接疗愈”。它不要求用户说出自己的故事，而是通过电影中的不理想环境、失去和梦想，提供可以借用的视角。",
+      "whyTodayZh": "今天推荐它，因为你可能还不想谈自己；先借一部电影，把自己的问题放远一点看。",
+      "whyThisWorksZh": "故事和角色提供了情绪距离，用户能先讨论别人的选择，再安全地把新的理解带回自己身上。",
+      "curatorPriority": 5,
+      "alternativeEpisodes": [
+        3,
+        4,
+        25
+      ],
+      "evidenceSummary": "Tablo 根据 Letterboxd 清单挑选“变老前值得看”的电影，以《千与千寻》谈不理想环境中的投入，以《美丽心灵的永恒阳光》谈心碎与失去，再延伸到...",
+      "evidenceTimestamps": [
+        "00:00 Building the ultimate movie list",
+        "02:39 Spirited Away and unexpected w..."
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_25",
+    "episodeNumber": 25,
+    "series": "HEY TABLO",
+    "title": "Help! I don't know what to do with my life | Hey Tablo Ep. 25",
+    "publishedDate": "2026-06-16",
+    "duration": "53:52",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep25",
+    "coreThemeZh": "未来迷茫、职业选择、家庭与创造力",
+    "summaryZh": "广泛的人生建议集，涵盖不知道梦想和职业、青少年育儿、英语学习、职场同事、订婚、年龄、婚姻和 hustle culture 中的创造力。",
+    "formatType": "life_advice_session",
+    "mainTopics": [
+      "career",
+      "future",
+      "parenting",
+      "english_learning",
+      "workplace",
+      "marriage",
+      "aging",
+      "creativity"
+    ],
+    "bestForSituations": [
+      "career_uncertainty",
+      "feeling_lost",
+      "workplace_conflict",
+      "turning_30",
+      "creative_burnout"
+    ],
+    "emotionsBefore": [
+      "confused",
+      "anxious",
+      "overwhelmed",
+      "insecure"
+    ],
+    "desiredEffects": [
+      "advice",
+      "comfort",
+      "reflection",
+      "motivation"
+    ],
+    "toneTags": [
+      "warm",
+      "practical",
+      "candid",
+      "supportive"
+    ],
+    "sensitiveTopics": [
+      "career_pressure",
+      "family",
+      "parenting",
+      "relationship_decisions"
+    ],
+    "contentWarning": "包含职业、家庭、育儿和婚姻议题；建议为个人经验而非专业意见。",
+    "scores": {
+      "funny": 3,
+      "comfort": 5,
+      "reflection": 5,
+      "energy": 3,
+      "attentionRequired": 4,
+      "backgroundFriendly": 2,
+      "emotionalIntensity": 4,
+      "newFanFriendly": 5,
+      "shareCardPotential": 5
+    },
+    "memberOrGuestFocus": "Tablo｜粉丝人生提问",
+    "editorNote": "最适合“我不知道人生下一步做什么”的主推荐。议题广，但核心一致：不用提前知道全部答案，可以通过尝试先排除不适合的路。",
+    "recommendationCopy": "不知道未来要做什么，不代表你没有未来。先试一点、排除一点，方向会慢慢出现。",
+    "backupAngle": "若用户的核心是年龄与追星羞耻，备用推荐 EP14。",
+    "sampleQueries": [
+      "我不知道以后做什么",
+      "感觉别人都在前进",
+      "三十岁很害怕",
+      "工作同事让我崩溃"
+    ],
+    "shareCardTitle": "人生没有固定套餐",
+    "shareCardNote": "先试一道不确定的菜，也比饿着等完美答案好。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=sHS1z9Pr4v8",
+    "curation": {
+      "hiddenQuestionZh": "我还不知道梦想、职业和人生方向，是不是已经落后了？",
+      "coreNeedPrimary": "Need_Clarity",
+      "coreNeedSecondary": [
+        "Need_Hope",
+        "Need_SelfAcceptance",
+        "Need_PracticalDirection"
+      ],
+      "emotionalValidationZh": "不知道梦想并不罕见，也不代表人生已经失败；方向常常来自尝试、排除和允许自己改变。",
+      "primaryOffer": "Offer_PracticalAdvice",
+      "secondaryOffers": [
+        "Offer_Perspective",
+        "Offer_Hope",
+        "Offer_Validation"
+      ],
+      "emotionalAftertasteZh": "不会突然得到唯一答案，但会更愿意通过下一次尝试收集关于自己的证据。",
+      "transformationBeforeZh": "我必须先想清楚终极目标，才能开始走正确的人生。",
+      "transformationAfterZh": "方向可以在行动中逐渐出现；年龄不是进度条，排除不适合的路也是前进。",
+      "menuCategory": "Chef's Special",
+      "menuEmoji": "🍷",
+      "conversationEnergy": 3,
+      "cognitiveLoad": 5,
+      "emotionalIntensity": 3,
+      "bestServedWith": [
+        "毕业或转职期",
+        "三十岁焦虑",
+        "创意倦怠",
+        "做人生计划时",
+        "愿意认真听建议时"
+      ],
+      "recommendedWhen": [
+        "career_uncertainty",
+        "feeling_lost",
+        "turning_30",
+        "creative_burnout",
+        "workplace_conflict",
+        "do_not_know_dream"
+      ],
+      "avoidWhen": [
+        "Need_LaughterOnly",
+        "Need_NoAdvice",
+        "Need_LowCognitiveLoad"
+      ],
+      "curatorNoteZh": "它不提供一条“找到梦想”的公式，而是允许不知道，并用多类人生问题不断强调：行动、试错和留出空间，比对统一进度表更有用。",
+      "whyTodayZh": "今天推荐它，因为你不必先知道一生要去哪里；先用下一次尝试，排除一条不适合的路。",
+      "whyThisWorksZh": "节目把宏大的“人生方向”拆成职业尝试、年龄、关系和创造力等具体问题，降低必须一次想清楚全部人生的压力。",
+      "curatorPriority": 5,
+      "alternativeEpisodes": [
+        14,
+        6,
+        21
+      ],
+      "evidenceSummary": "广泛的人生建议集，涵盖不知道梦想和职业、青少年育儿、英语学习、职场同事、订婚、年龄、婚姻和 hustle culture 中的创造力。",
+      "evidenceTimestamps": [
+        "00:00 Life-advice questions begin",
+        "01:20 What if I do not know my dream or f..."
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_26",
+    "episodeNumber": 26,
+    "series": "HEY TABLO",
+    "title": "Tablo reveals SECRET LORE behind Epik High's biggest hits ft. Jensen Huang | ...",
+    "publishedDate": "2026-06-23",
+    "duration": "1:02:43",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep26",
+    "coreThemeZh": "Epik High 代表作的风险、坚持与隐藏制作故事",
+    "summaryZh": "以 Jensen Huang 写下“Love Love Love”的新闻开场，Tablo 选择十首有未公开故事、且曾证明质疑者错误的 Epik High 代表作；从《Fan》的跑步舞、《Peace Day》的零预算与擅自换主打，到其他经典歌曲，串联创作风险、团队分歧和职业转折。",
+    "formatType": "song_lore_retrospective",
+    "mainTopics": [
+      "epik_high_songs",
+      "songwriting",
+      "production",
+      "creative_risk",
+      "career_history",
+      "behind_the_scenes"
+    ],
+    "bestForSituations": [
+      "epik_high_fandom",
+      "music_discovery",
+      "creative_inspiration",
+      "want_song_lore",
+      "new_fan"
+    ],
+    "emotionsBefore": [
+      "curious",
+      "nostalgic",
+      "excited",
+      "inspired"
+    ],
+    "desiredEffects": [
+      "discover",
+      "inspiration",
+      "fandom_connection",
+      "reflection"
+    ],
+    "toneTags": [
+      "insider",
+      "nostalgic",
+      "witty",
+      "reflective"
+    ],
+    "sensitiveTopics": [
+      "career_failure",
+      "industry_conflict"
+    ],
+    "contentWarning": "涉及早期事业失败、公司分歧和创作压力，整体为鼓舞型幕后故事。",
+    "scores": {
+      "funny": 5,
+      "comfort": 4,
+      "reflection": 5,
+      "energy": 4,
+      "attentionRequired": 4,
+      "backgroundFriendly": 2,
+      "emotionalIntensity": 3,
+      "newFanFriendly": 5,
+      "shareCardPotential": 5
+    },
+    "memberOrGuestFocus": "Tablo｜Mithra｜Tukutz｜Epik High 代表作",
+    "editorNote": "完整 transcript 让它成为 Hey Tablo 内容库里最强的 Epik High 核心集之一。每首歌不仅有 lore，还对应一次冒险、分歧或“差点做错但最终坚持”的职业选择。",
+    "recommendationCopy": "今晚听的不只是十首熟悉的歌，而是它们差一点没有成为现在样子的那些瞬间。",
+    "backupAngle": "若用户想听跨团合作幕后，备用推荐 EP16；想先了解成团历史则推荐 EP23。",
+    "sampleQueries": [
+      "想听 Epik High 歌曲幕后",
+      "Fan 跑步舞怎么来的？",
+      "Peace Day 为什么差点不是主打"
+    ],
+    "shareCardTitle": "十道招牌菜，十个差点没发生的故事",
+    "shareCardNote": "熟悉的味道，第一次公开的配方。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=i6uDmcRx6Wk",
+    "curation": {
+      "hiddenQuestionZh": "当别人都不理解甚至嘲笑我的创作选择时，我还该相信自己的判断吗？",
+      "coreNeedPrimary": "Need_CreativeCourage",
+      "coreNeedSecondary": [
+        "Need_CreativeInspiration",
+        "Need_Validation",
+        "Need_Perspective"
+      ],
+      "emotionalValidationZh": "有些后来成为代表作的决定，在当时并没有获得理解；面对质疑并不自动说明你的判断错误。",
+      "primaryOffer": "Offer_CreativeInspiration",
+      "secondaryOffers": [
+        "Offer_Perspective",
+        "Offer_Curiosity",
+        "Offer_FandomConnection"
+      ],
+      "emotionalAftertasteZh": "会重新相信创作判断和限制条件都可能成为风格的一部分，也更想回去听那些歌。",
+      "transformationBeforeZh": "如果身边的人都不看好，说明我最好选择更安全的答案。",
+      "transformationAfterZh": "创作突破常常需要先承担不确定性；限制、嘲笑和分歧也可能迫使能力与身份成形。",
+      "menuCategory": "Chef's Special",
+      "menuEmoji": "🍷",
+      "conversationEnergy": 4,
+      "cognitiveLoad": 4,
+      "emotionalIntensity": 2,
+      "bestServedWith": [
+        "创作被否定后",
+        "整理歌单",
+        "想了解歌曲幕后时",
+        "做高风险选择前"
+      ],
+      "recommendedWhen": [
+        "creative_inspiration",
+        "want_song_lore",
+        "epik_high_fandom",
+        "music_discovery",
+        "self_doubt",
+        "creative_risk"
+      ],
+      "avoidWhen": [
+        "Need_LowCognitiveLoad",
+        "Need_PureEscape"
+      ],
+      "curatorNoteZh": "这是歌曲 lore，也是关于创作风险的一集。预算不足、成员分歧和外界质疑没有被包装成传奇，而是展示团队如何在不确定中建立自己的能力。",
+      "whyTodayZh": "今天推荐它，因为你可能需要的不是所有人同意，而是重新记得自己为什么做出那个选择。",
+      "whyThisWorksZh": "每首歌的幕后故事都把成果连接到一个当时并不安全的决定，用户因此能从具体创作史中获得可相信的勇气。",
+      "curatorPriority": 5,
+      "alternativeEpisodes": [
+        6,
+        16,
+        23
+      ],
+      "evidenceSummary": "以 Jensen Huang 写下“Love Love Love”的新闻开场，Tablo 选择十首有未公开故事、且曾证明质疑者错误的 Epik High ...",
+      "evidenceTimestamps": [
+        "00:00 Jensen Huang, KBBQ, and the “Love Love Love” mystery",
+        "01:59 Tablo’s to..."
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_27",
+    "episodeNumber": 27,
+    "series": "HEY TABLO",
+    "title": "POV: You predicted her Oscar and CHASE INFINITI shows up w/ ATEEZ?! | Hey Tab...",
+    "publishedDate": "2026-06-30",
+    "duration": "1:06:25",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep27",
+    "coreThemeZh": "粉丝身份、跨界合作与年轻创作者成长",
+    "summaryZh": "Chase Infiniti 与 ATEEZ 成员 Hongjoong、Mingi 同场，聊合作 MV、长期粉丝经历、表演、试镜、练习生故事、焦虑和职业成长。",
+    "formatType": "guest_interview",
+    "mainTopics": [
+      "ateez",
+      "acting",
+      "fandom",
+      "dance",
+      "career",
+      "collaboration",
+      "guest"
+    ],
+    "bestForSituations": [
+      "ateez_fandom",
+      "creative_career",
+      "new_opportunity",
+      "want_guest_chemistry"
+    ],
+    "emotionsBefore": [
+      "excited",
+      "curious",
+      "nervous",
+      "inspired"
+    ],
+    "desiredEffects": [
+      "inspiration",
+      "discover",
+      "company",
+      "laugh"
+    ],
+    "toneTags": [
+      "warm",
+      "energetic",
+      "supportive",
+      "fan_culture"
+    ],
+    "sensitiveTopics": [],
+    "contentWarning": "",
+    "scores": {
+      "funny": 4,
+      "comfort": 4,
+      "reflection": 4,
+      "energy": 4,
+      "attentionRequired": 4,
+      "backgroundFriendly": 2,
+      "emotionalIntensity": 2,
+      "newFanFriendly": 5,
+      "shareCardPotential": 5
+    },
+    "memberOrGuestFocus": "Chase Infiniti｜Hongjoong｜Mingi｜Tablo",
+    "editorNote": "适合 ATEEZ 粉丝、演员或创作者，也适合想看“粉丝成为合作伙伴”的实现感。嘉宾化学反应和职业故事兼具。",
+    "recommendationCopy": "有时候你排队买票的那一天，会在很久以后变成你坐在合作现场的一天。",
+    "backupAngle": "若用户更需要个人职业迷茫建议，备用推荐 EP25。",
+    "sampleQueries": [
+      "想看 ATEEZ 嘉宾",
+      "粉丝真的能进入行业吗？",
+      "面对大机会很紧张怎么办"
+    ],
+    "shareCardTitle": "从观众席到合作桌",
+    "shareCardNote": "曾经追过的光，也可能照进自己的工作。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=FZqFR6YLaV8",
+    "curation": {
+      "hiddenQuestionZh": "我喜欢了很久的东西，真的可能和未来的能力、工作与机会连起来吗？",
+      "coreNeedPrimary": "Need_Hope",
+      "coreNeedSecondary": [
+        "Need_Inspiration",
+        "Need_Belonging",
+        "Need_Courage"
+      ],
+      "emotionalValidationZh": "长期做粉丝、反复练习或走过不直线的职业路径，并不一定是绕路；兴趣积累也可能成为你与机会相遇时的能力。",
+      "primaryOffer": "Offer_Hope",
+      "secondaryOffers": [
+        "Offer_CreativeInspiration",
+        "Offer_Company",
+        "Offer_FandomConnection"
+      ],
+      "emotionalAftertasteZh": "会觉得梦想不再只是远处的身份，而是由已经投入的兴趣、练习和关系一点点组成。",
+      "transformationBeforeZh": "我的喜欢只是爱好，和真正的职业机会之间隔得太远。",
+      "transformationAfterZh": "长期兴趣能够转化成语言、判断和能力；机会出现时，过去的喜欢可能已经在为我准备。",
+      "menuCategory": "Chef's Special",
+      "menuEmoji": "🍷",
+      "conversationEnergy": 4,
+      "cognitiveLoad": 3,
+      "emotionalIntensity": 2,
+      "bestServedWith": [
+        "等待机会时",
+        "试镜或申请后",
+        "粉丝身份焦虑时",
+        "想看嘉宾化学反应时"
+      ],
+      "recommendedWhen": [
+        "ateez_fandom",
+        "creative_career",
+        "new_opportunity",
+        "long_term_fandom",
+        "want_guest_chemistry",
+        "career_hope"
+      ],
+      "avoidWhen": [
+        "Need_QuietLowEnergy",
+        "not_interested_in_guests_or_kpop"
+      ],
+      "curatorNoteZh": "嘉宾阵容提供新鲜感，但情感核心是“喜欢如何变成能力”。长期粉丝经历、表演与职业成长互相连接，让非线性的机会显得具体而可信。",
+      "whyTodayZh": "今天推荐它，因为你过去认真喜欢过的东西，可能不是旁枝，而是未来机会能够认出你的方式。",
+      "whyThisWorksZh": "嘉宾亲身经历把粉丝、练习、试镜和合作串成同一条路径，能让用户看到兴趣积累如何在意外时刻转化为职业资源。",
+      "curatorPriority": 4,
+      "alternativeEpisodes": [
+        16,
+        22,
+        26
+      ],
+      "evidenceSummary": "Chase Infiniti 与 ATEEZ 成员 Hongjoong、Mingi 同场，聊合作 MV、长期粉丝经历、表演、试镜、练习生故事、焦虑和职业成长。",
+      "evidenceTimestamps": [
+        "00:00 Chase Infiniti and ATEEZ join Hey Tablo",
+        "00:48 The collaboration we di..."
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_28",
+    "episodeNumber": 28,
+    "series": "HEY TABLO",
+    "title": "K-pop SMASH HITS that feature GHOSTS?! (KPDH Golden, BTS Wings) | Hey Tablo E...",
+    "publishedDate": "2026-07-07",
+    "duration": "42:50",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep28",
+    "coreThemeZh": "K-pop 鬼故事、录音室都市传说与幽默惊吓",
+    "summaryZh": "收集 K-pop 录音和 MV 中的鬼故事，从 Golden、BTS Wings、BIGBANG 到 Epik High 亲历，以轻喜剧方式讲悬疑和灵异。",
+    "formatType": "themed_story_collection",
+    "mainTopics": [
+      "kpop",
+      "ghost_stories",
+      "recording_studio",
+      "urban_legend",
+      "playlist"
+    ],
+    "bestForSituations": [
+      "want_spooky_fun",
+      "kpop_fandom",
+      "halloween",
+      "casual_watching"
+    ],
+    "emotionsBefore": [
+      "curious",
+      "excited",
+      "bored"
+    ],
+    "desiredEffects": [
+      "laugh",
+      "discover",
+      "thrill",
+      "company"
+    ],
+    "toneTags": [
+      "spooky",
+      "witty",
+      "playful",
+      "storytelling"
+    ],
+    "sensitiveTopics": [
+      "paranormal",
+      "ghost_stories",
+      "sleep_paralysis"
+    ],
+    "contentWarning": "包含鬼故事、睡眠瘫痪和悬疑描述；害怕灵异内容时不建议主推。",
+    "scores": {
+      "funny": 4,
+      "comfort": 3,
+      "reflection": 3,
+      "energy": 4,
+      "attentionRequired": 4,
+      "backgroundFriendly": 2,
+      "emotionalIntensity": 3,
+      "newFanFriendly": 5,
+      "shareCardPotential": 5
+    },
+    "memberOrGuestFocus": "Tablo｜K-pop 都市传说｜Epik High 经历",
+    "editorNote": "适合喜欢灵异但不想太恐怖的人。重点是音乐幕后和故事感，惊吓被大量笑点中和。",
+    "recommendationCopy": "今晚来一道微辣鬼故事：会起鸡皮疙瘩，但主厨保证继续讲笑话。",
+    "backupAngle": "若用户怕灵异题材，备用推荐 EP18。",
+    "sampleQueries": [
+      "想听 K-pop 鬼故事",
+      "想看不太恐怖的灵异内容",
+      "录音室有什么都市传说"
+    ],
+    "shareCardTitle": "K-pop 鬼故事微辣套餐",
+    "shareCardNote": "有一点阴森，配很多笑声。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=zCrkXjPLfN0",
+    "curation": {
+      "hiddenQuestionZh": "我想听一点刺激和灵异故事，但又不想真的被吓到失去安全感。",
+      "coreNeedPrimary": "Need_Thrill",
+      "coreNeedSecondary": [
+        "Need_Curiosity",
+        "Need_Laughter",
+        "Need_Company"
+      ],
+      "emotionalValidationZh": "想靠近一点恐怖感、又需要笑点把自己拉回来，是很正常的娱乐偏好；刺激不一定要一直沉重。",
+      "primaryOffer": "Offer_Curiosity",
+      "secondaryOffers": [
+        "Offer_Laugh",
+        "Offer_Escape",
+        "Offer_FandomConnection"
+      ],
+      "emotionalAftertasteZh": "会留下刚刚好的毛骨悚然和很多 K-pop 录音室故事，而不是持续性的压迫。",
+      "transformationBeforeZh": "我有点无聊，想找刺激，但又担心太可怕。",
+      "transformationAfterZh": "幽默和成员故事能把灵异内容维持在可玩的距离。",
+      "menuCategory": "Sweet Dessert",
+      "menuEmoji": "🍰",
+      "conversationEnergy": 4,
+      "cognitiveLoad": 2,
+      "emotionalIntensity": 3,
+      "bestServedWith": [
+        "万圣节",
+        "白天",
+        "和朋友一起",
+        "想听 K-pop 都市传说时"
+      ],
+      "recommendedWhen": [
+        "want_spooky_fun",
+        "kpop_fandom",
+        "halloween",
+        "casual_watching",
+        "ghost_story_interest"
+      ],
+      "avoidWhen": [
+        "fear_of_ghosts",
+        "before_sleep",
+        "Need_QuietComfort",
+        "panic_prone_to_spooky_content"
+      ],
+      "curatorNoteZh": "它把录音室鬼故事、MV 都市传说和成员亲历放进轻喜剧框架，让恐怖感始终有出口。适合主动想要“好玩地被吓一下”的用户，不适合睡前或明确怕鬼的人。",
+      "whyTodayZh": "今天推荐它，因为你想要的不是纯恐怖，而是一群人边讲鬼故事、边随时把气氛笑回来的感觉。",
+      "whyThisWorksZh": "悬疑故事提供刺激，Tablo 的怀疑、自嘲和成员插话不断调节张力，使内容停留在娱乐而非压迫。",
+      "curatorPriority": 3,
+      "alternativeEpisodes": [
+        16,
+        18,
+        8
+      ],
+      "evidenceSummary": "收集 K-pop 录音和 MV 中的鬼故事，从 Golden、BTS Wings、BIGBANG 到 Epik High 亲历，以轻喜剧方式讲悬疑和灵异。",
+      "evidenceTimestamps": [
+        "00:00 K-pop ghost stories",
+        "00:31 The legend of haunted hit songs",
+        "02:35 EJa..."
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  },
+  {
+    "id": "hey_tablo_29",
+    "episodeNumber": 29,
+    "series": "HEY TABLO",
+    "title": "13 Everyday Struggles That We NEVER Talk About | Hey Tablo Ep. 29",
+    "publishedDate": "2026-07-14",
+    "duration": "31:09",
+    "sourceUrl": "https://shows.acast.com/heytablo/episodes/heytablo-ep29",
+    "coreThemeZh": "人人经历却很少说的日常小尴尬",
+    "summaryZh": "讨论撞到麻筋、听不清对话、约会前等待模式、科技操作、独自吃饭和忘记进房间目的等共同的小型崩溃。",
+    "formatType": "relatable_listicle",
+    "mainTopics": [
+      "everyday_struggles",
+      "relatable_humor",
+      "waiting_mode",
+      "technology",
+      "social_anxiety"
+    ],
+    "bestForSituations": [
+      "bad_day",
+      "work_stress",
+      "eating_alone",
+      "need_background",
+      "casual_watching"
+    ],
+    "emotionsBefore": [
+      "tired",
+      "bored",
+      "awkward",
+      "lonely"
+    ],
+    "desiredEffects": [
+      "laugh",
+      "validation",
+      "company",
+      "relax"
+    ],
+    "toneTags": [
+      "relatable",
+      "warm",
+      "witty",
+      "light"
+    ],
+    "sensitiveTopics": [],
+    "contentWarning": "",
+    "scores": {
+      "funny": 5,
+      "comfort": 4,
+      "reflection": 3,
+      "energy": 4,
+      "attentionRequired": 2,
+      "backgroundFriendly": 5,
+      "emotionalIntensity": 1,
+      "newFanFriendly": 5,
+      "shareCardPotential": 5
+    },
+    "memberOrGuestFocus": "Tablo｜日常共同体验｜Tukutz 客串",
+    "editorNote": "MVP 中最稳妥的通用轻松推荐之一。没有沉重门槛，用户很容易在某个小烦恼里找到“原来不只我这样”的感觉。",
+    "recommendationCopy": "今天可能不是发生了大事，只是被很多小事消耗了。这集会让你发现：真的不只你一个人。",
+    "backupAngle": "若用户想要更高能、更荒诞的笑点，备用推荐 EP18。",
+    "sampleQueries": [
+      "今天只是莫名其妙很累",
+      "想看最有共鸣的一集",
+      "一个人吃饭想放背景"
+    ],
+    "shareCardTitle": "那些没人说的小型崩溃",
+    "shareCardNote": "不是大问题，也值得被端上桌。",
+    "confidence": "High",
+    "youtubeUrl": "https://www.youtube.com/watch?v=DukZfvY2s7Q",
+    "curation": {
+      "hiddenQuestionZh": "为什么这些看起来很小的事就能把我耗光；是不是只有我这么脆弱？",
+      "coreNeedPrimary": "Need_Validation",
+      "coreNeedSecondary": [
+        "Need_Company",
+        "Need_Laughter",
+        "Need_SelfAcceptance"
+      ],
+      "emotionalValidationZh": "微小摩擦真的会累积成疲惫；因为听不清、等待、科技操作或独自吃饭而崩溃，并不代表你太脆弱。",
+      "primaryOffer": "Offer_Validation",
+      "secondaryOffers": [
+        "Offer_Company",
+        "Offer_Laugh",
+        "Offer_Escape"
+      ],
+      "emotionalAftertasteZh": "会有一种“原来大家都这样”的轻松感，今天那些说不出口的小麻烦也没那么孤单。",
+      "transformationBeforeZh": "这些都是小事，我不该被它们影响，更不该拿出来说。",
+      "transformationAfterZh": "小型崩溃也是共同的人类经验；被说出来以后，它们会变轻一点。",
+      "menuCategory": "Midnight Ramen",
+      "menuEmoji": "🍜",
+      "conversationEnergy": 3,
+      "cognitiveLoad": 1,
+      "emotionalIntensity": 1,
+      "bestServedWith": [
+        "下班后",
+        "一个人吃饭",
+        "做家务",
+        "通勤",
+        "完全没有精力解决问题时"
+      ],
+      "recommendedWhen": [
+        "bad_day",
+        "work_stress",
+        "eating_alone",
+        "need_background",
+        "casual_watching",
+        "low_energy",
+        "feeling_alone_in_small_struggles"
+      ],
+      "avoidWhen": [
+        "Need_DeepAdvice",
+        "Need_SpecificTopicExpertise"
+      ],
+      "curatorNoteZh": "这是最稳妥的低门槛陪伴集。它不把小麻烦升级成人生问题，也不要求用户振作，只是通过高度共有的经历让人确认：原来大家也会被这些东西耗掉。",
+      "whyTodayZh": "今天推荐它，因为你可能已经没有力气解决问题；这一集只陪你承认，生活里的小事真的也会让人累。",
+      "whyThisWorksZh": "每个例子都极其日常且容易代入，共同经验迅速降低羞耻与孤独，同时笑点让情绪保持轻量。",
+      "curatorPriority": 5,
+      "alternativeEpisodes": [
+        11,
+        19,
+        8
+      ],
+      "evidenceSummary": "讨论撞到麻筋、听不清对话、约会前等待模式、科技操作、独自吃饭和忘记进房间目的等共同的小型崩溃。",
+      "evidenceTimestamps": [
+        "00:00 People start sending Tablo podcast topics",
+        "00:43 BuzzFeed’s list of un..."
+      ],
+      "confidence": "High",
+      "reviewStatus": "Draft"
+    }
+  }
+]

@@ -10,46 +10,6 @@
   </main>
 
   <Teleport to="body">
-    <transition :css="false" @enter="heytabloEnter" @leave="heytabloLeave">
-      <section v-if="isHeyTabloOpen" class="fixed inset-0 z-[100] bg-[#f3f3f3] flex flex-col">
-        <header class="relative z-10 h-14 shrink-0 px-4 sm:px-6 flex items-center justify-between border-b border-black/10 bg-white/90 backdrop-blur-xl">
-          <div class="flex items-center gap-3 min-w-0">
-            <button
-              type="button"
-              class="h-9 px-3 rounded-full border border-black/10 bg-white hover:bg-black hover:text-white transition-colors text-xs uppercase tracking-[0.18em]"
-              @click="closeHeyTablo"
-            >
-              Back
-            </button>
-            <div class="min-w-0">
-              <div class="font-editorial text-lg leading-none truncate">Hey Tablo</div>
-              <div class="mt-1 text-[9px] uppercase tracking-[0.24em] opacity-45">Rubato Project 01</div>
-            </div>
-          </div>
-
-          <button
-            type="button"
-            class="w-9 h-9 flex items-center justify-center rounded-full border border-black/10 bg-white hover:bg-black hover:text-white transition-colors"
-            aria-label="Close Hey Tablo"
-            @click="closeHeyTablo"
-          >
-            <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-              <path d="M13 1L1 13M1 1L13 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-            </svg>
-          </button>
-        </header>
-
-        <iframe
-          class="block w-full flex-1 border-0 bg-[#f3f3f3]"
-          :src="heytabloUrl"
-          title="Hey Tablo project"
-          allow="fullscreen"
-        ></iframe>
-      </section>
-    </transition>
-  </Teleport>
-
-  <Teleport to="body">
     <svg
       v-if="flow.isActive"
       :key="flow.key"
@@ -358,7 +318,7 @@ type NoteClickPayload = { index: number; anchor: { x: number; y: number } }
 
 const notesData = [
   {
-    title: 'Hey Tablo',
+    title: 'Inspiration',
     content:
       '<p>A collection of fleeting thoughts, visual bookmarks, and cognitive fragments. Here lies the raw material that fuels the creative engine.</p><br><p>Observation is the first act of creation. By curating what we consume, we shape what we produce.</p>',
   },
@@ -368,7 +328,7 @@ const notesData = [
       '<p>Experiments at the intersection of human intuition and machine intelligence. Exploring latent spaces, prompt engineering, and algorithmic serendipity.</p><br><p>The machine is not a replacement, but a collaborator—a mirror reflecting our own complexities back at us.</p>',
   },
   {
-    title: 'RM Archive',
+    title: 'Projects',
     content:
       '<p>Structured endeavors and shipped products. From concept to execution, a timeline of digital artifacts built with intention and precision.</p><br><p>Every project is a hypothesis tested against reality.</p>',
   },
@@ -394,9 +354,6 @@ const scoreNoteTitles = notesData.map((note, index) => {
 
 const isPanelOpen = ref(false)
 const currentIndex = ref(0)
-const isHeyTabloOpen = ref(false)
-const heytabloUrl = `${import.meta.env.BASE_URL}heytablo.html`
-const rmArchiveUrl = 'https://rm-archive-museum.vxbhp492t8.chatgpt.site'
 
 const currentTitle = computed(() => notesData[currentIndex.value].title)
 const currentContent = computed(() => notesData[currentIndex.value].content)
@@ -960,33 +917,11 @@ const receiptSheetLeave = (el: Element, done: () => void) => {
 }
 
 const onKeydown = (ev: KeyboardEvent) => {
-  if (ev.key === 'Escape' && isHeyTabloOpen.value) return closeHeyTablo()
   if (ev.key === 'Escape' && isDetailOpen.value) closeDetail()
-}
-
-const closeHeyTablo = () => {
-  isHeyTabloOpen.value = false
-}
-
-const heytabloEnter = (el: Element, done: () => void) => {
-  gsap.fromTo(el, { opacity: 0, scale: 0.985 }, { opacity: 1, scale: 1, duration: 0.55, ease: 'power3.out', onComplete: done })
-}
-
-const heytabloLeave = (el: Element, done: () => void) => {
-  gsap.to(el, { opacity: 0, scale: 0.99, duration: 0.4, ease: 'power3.in', onComplete: done })
 }
 
 const handleNoteClick = (payload: NoteClickPayload) => {
   const index = payload.index
-  if (index === 0) {
-    isPanelOpen.value = false
-    isHeyTabloOpen.value = true
-    return
-  }
-  if (index === 2) {
-    window.location.assign(rmArchiveUrl)
-    return
-  }
   if (index === exhibitionsNoteIndex) return openDrawer('exhibitions', payload.anchor)
   if (index === readingNoteIndex) return openDrawer('reading', payload.anchor)
 
