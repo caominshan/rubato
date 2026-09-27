@@ -10,6 +10,34 @@
   </main>
 
   <Teleport to="body">
+    <transition :css="false" @enter="heytabloEnter" @leave="heytabloLeave">
+      <section v-if="isHeyTabloOpen" class="fixed inset-0 z-[100] bg-[#f5f3ed] flex flex-col">
+        <header class="relative z-10 h-14 shrink-0 px-4 sm:px-6 flex items-center justify-between border-b border-black/10 bg-[#f5f3ed]/90 backdrop-blur-xl">
+          <div class="flex items-center gap-3 min-w-0">
+            <button type="button" class="h-9 px-3 rounded-full border border-black/10 bg-white/70 hover:bg-black hover:text-white transition-colors text-xs uppercase tracking-[0.18em]" @click="closeHeyTablo">Back</button>
+            <div class="min-w-0">
+              <div class="font-editorial text-lg leading-none truncate">Hey Tablo</div>
+              <div class="mt-1 text-[9px] uppercase tracking-[0.24em] opacity-45">Listening Agent</div>
+            </div>
+          </div>
+          <button type="button" class="w-9 h-9 flex items-center justify-center rounded-full border border-black/10 bg-white/70 hover:bg-black hover:text-white transition-colors" aria-label="Close Hey Tablo" @click="closeHeyTablo">
+            <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M13 1L1 13M1 1L13 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg>
+          </button>
+        </header>
+        <iframe class="block w-full flex-1 border-0 bg-[#f5f3ed]" :src="heytabloUrl" title="Hey Tablo listening agent" allow="fullscreen"></iframe>
+      </section>
+    </transition>
+  </Teleport>
+
+  <Teleport to="body">
+    <transition :css="false" @enter="rmArchiveEnter" @leave="rmArchiveLeave">
+      <section v-if="isRmArchiveOpen" class="fixed inset-0 z-[100] bg-[#ece8df] flex flex-col">
+        <iframe class="block w-full flex-1 border-0 bg-[#ece8df]" :src="rmArchiveUrl" title="RM Archive digital museum" allow="fullscreen"></iframe>
+      </section>
+    </transition>
+  </Teleport>
+
+  <Teleport to="body">
     <svg
       v-if="flow.isActive"
       :key="flow.key"
@@ -316,49 +344,30 @@ type RubatoItem = {
 
 type NoteClickPayload = { index: number; anchor: { x: number; y: number } }
 
-const notesData = [
-  {
-    title: 'Inspiration',
-    content:
-      '<p>A collection of fleeting thoughts, visual bookmarks, and cognitive fragments. Here lies the raw material that fuels the creative engine.</p><br><p>Observation is the first act of creation. By curating what we consume, we shape what we produce.</p>',
-  },
-  {
-    title: 'AI Notes',
-    content:
-      '<p>Experiments at the intersection of human intuition and machine intelligence. Exploring latent spaces, prompt engineering, and algorithmic serendipity.</p><br><p>The machine is not a replacement, but a collaborator—a mirror reflecting our own complexities back at us.</p>',
-  },
-  {
-    title: 'Projects',
-    content:
-      '<p>Structured endeavors and shipped products. From concept to execution, a timeline of digital artifacts built with intention and precision.</p><br><p>Every project is a hypothesis tested against reality.</p>',
-  },
-  {
-    title: 'Learning',
-    content:
-      '<p>The continuous process of unlearning and relearning. Technical deep dives, architectural patterns, and philosophical inquiries into software design.</p><br><p>Mastery is an asymptote. We can approach it, but never truly reach it.</p>',
-  },
-  {
-    title: 'Exhibition Archive',
-    content:
-      '<p>A curated gallery of past works, failed experiments, and deprecated prototypes. Preserving the digital footprint of a constantly evolving mind.</p><br><p>Even in obsolescence, there is beauty. The archive is a testament to growth.</p>',
-  },
+const scoreNoteTitles = [
+  '播客个性化内容推荐 Agent',
+  'RM Archive',
+  'Exhibition',
+  'Reading List',
+  'Coming Soon',
+  'Coming Soon',
+  'Coming Soon',
+  'Coming Soon',
+  'Coming Soon',
+  'Coming Soon',
 ] as const
-
-// Panels 1 and 4 open collection drawers, so their visible note labels should
-// describe the content users actually get after clicking them.
-const scoreNoteTitles = notesData.map((note, index) => {
-  if (index === 1) return 'Exhibitions'
-  if (index === 4) return 'Reading List'
-  return note.title
-})
 
 const isPanelOpen = ref(false)
 const currentIndex = ref(0)
+const isHeyTabloOpen = ref(false)
+const heytabloUrl = `${import.meta.env.BASE_URL}hey-tablo/index.html`
+const isRmArchiveOpen = ref(false)
+const rmArchiveUrl = `${import.meta.env.BASE_URL}rm-archive/index.html`
 
-const currentTitle = computed(() => notesData[currentIndex.value].title)
-const currentContent = computed(() => notesData[currentIndex.value].content)
-const exhibitionsNoteIndex = 1
-const readingNoteIndex = 4
+const currentTitle = computed(() => scoreNoteTitles[currentIndex.value] ?? 'Coming Soon')
+const currentContent = computed(() => '<p>This part of the archive is still taking shape.</p><br><p>Coming soon.</p>')
+const exhibitionsNoteIndex = 2
+const readingNoteIndex = 3
 
 const items = ref<RubatoItem[]>([])
 const statusFilter = ref<'all' | ItemStatus>('all')
@@ -917,11 +926,51 @@ const receiptSheetLeave = (el: Element, done: () => void) => {
 }
 
 const onKeydown = (ev: KeyboardEvent) => {
+  if (ev.key === 'Escape' && isRmArchiveOpen.value) return closeRmArchive()
+  if (ev.key === 'Escape' && isHeyTabloOpen.value) return closeHeyTablo()
   if (ev.key === 'Escape' && isDetailOpen.value) closeDetail()
+}
+
+const closeHeyTablo = () => {
+  isHeyTabloOpen.value = false
+}
+
+const heytabloEnter = (el: Element, done: () => void) => {
+  gsap.fromTo(el, { opacity: 0, scale: 0.985 }, { opacity: 1, scale: 1, duration: 0.55, ease: 'power3.out', onComplete: done })
+}
+
+const heytabloLeave = (el: Element, done: () => void) => {
+  gsap.to(el, { opacity: 0, scale: 0.99, duration: 0.4, ease: 'power3.in', onComplete: done })
+}
+
+const closeRmArchive = () => {
+  isRmArchiveOpen.value = false
+}
+
+const onProjectMessage = (event: MessageEvent) => {
+  if (event.origin === window.location.origin && event.data?.type === 'rubato:close-rm-archive') closeRmArchive()
+}
+
+const rmArchiveEnter = (el: Element, done: () => void) => {
+  gsap.fromTo(el, { opacity: 0, scale: 0.985 }, { opacity: 1, scale: 1, duration: 0.55, ease: 'power3.out', onComplete: done })
+}
+
+const rmArchiveLeave = (el: Element, done: () => void) => {
+  gsap.to(el, { opacity: 0, scale: 0.99, duration: 0.4, ease: 'power3.in', onComplete: done })
 }
 
 const handleNoteClick = (payload: NoteClickPayload) => {
   const index = payload.index
+  if (index === 0) {
+    isPanelOpen.value = false
+    isHeyTabloOpen.value = true
+    return
+  }
+  if (index === 1) {
+    isPanelOpen.value = false
+    isRmArchiveOpen.value = true
+    return
+  }
   if (index === exhibitionsNoteIndex) return openDrawer('exhibitions', payload.anchor)
   if (index === readingNoteIndex) return openDrawer('reading', payload.anchor)
 
@@ -934,11 +983,13 @@ onMounted(() => {
   gsap.to(svgContainer.value, { opacity: 1, duration: 1.6, ease: 'power2.out' })
   void initItems()
   window.addEventListener('keydown', onKeydown)
+  window.addEventListener('message', onProjectMessage)
 })
 
 
 onUnmounted(() => {
   window.removeEventListener('keydown', onKeydown)
+  window.removeEventListener('message', onProjectMessage)
   stopReceiptCarousel()
 })
 

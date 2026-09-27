@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://rm-archive-museum.vxbhp492t8.chatgpt.site"),
   title: "RM Archive — Kim Namjoon Digital Museum",
   description: "以自然生长的七枝档案树，连接艺术、文化、音乐、采访与展览的非官方数字档案馆。",
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },

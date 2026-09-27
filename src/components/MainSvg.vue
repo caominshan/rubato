@@ -62,7 +62,7 @@
       >
         <path :id="label.id" :d="label.path" />
         <text>
-          <textPath :href="`#${label.id}`" startOffset="5%">
+          <textPath :href="`#${label.id}`" startOffset="50%" text-anchor="middle">
             {{ label.title }}
           </textPath>
         </text>
@@ -157,15 +157,16 @@ const hoverNote = (target: EventTarget | null, isHover: boolean) => {
 
 const handleNoteClick = (target: EventTarget | null) => {
   const el = target as (SVGGraphicsElement & { dataset?: DOMStringMap }) | null;
-  const panelRaw = el?.dataset?.panel;
-  if (!panelRaw) return;
+  if (!el) return;
+  const slotRaw = el?.dataset?.slot;
+  if (slotRaw === undefined) return;
 
-  const panelIndex = Number(panelRaw);
-  if (!Number.isFinite(panelIndex)) return;
+  const slotIndex = Number(slotRaw);
+  if (!Number.isFinite(slotIndex)) return;
 
   const rect = el.getBoundingClientRect();
   emit('note-click', {
-    index: panelIndex,
+    index: slotIndex,
     anchor: {
       x: rect.left + rect.width / 2,
       y: rect.top + rect.height / 2,
@@ -174,35 +175,36 @@ const handleNoteClick = (target: EventTarget | null) => {
 };
 
 const edgePath = (box: DOMRect) => {
-  const padding = Math.max(13, Math.min(28, Math.min(box.width, box.height) * 0.18));
-  const x = box.x - padding;
-  const y = box.y - padding;
-  const width = box.width + padding * 2;
-  const height = box.height + padding * 2;
-  const radius = Math.min(30, width / 4, height / 4);
-
-  return [
-    `M ${x + radius} ${y}`,
-    `H ${x + width - radius}`,
-    `Q ${x + width} ${y} ${x + width} ${y + radius}`,
-    `V ${y + height - radius}`,
-    `Q ${x + width} ${y + height} ${x + width - radius} ${y + height}`,
-    `H ${x + radius}`,
-    `Q ${x} ${y + height} ${x} ${y + height - radius}`,
-    `V ${y + radius}`,
-    `Q ${x} ${y} ${x + radius} ${y}`,
-  ].join(' ');
+  const centerX = box.x + box.width / 2;
+  const span = Math.max(150, box.width + 56);
+  const startX = centerX - span / 2;
+  const endX = centerX + span / 2;
+  const y = box.y - 12;
+  const lift = Math.max(8, Math.min(14, span * 0.065));
+  return `M ${startX} ${y} Q ${centerX} ${y - lift} ${endX} ${y}`;
 };
 
 onMounted(async () => {
   const notes = Array.from(document.querySelectorAll<SVGGraphicsElement>('.interactive-note'));
 
+  // The source SVG repeats panel ids. Rank the actual visible notes by their
+  // horizontal position so labels and click behavior follow what users see.
+  [...notes]
+    .sort((a, b) => {
+      const aBox = a.getBBox();
+      const bBox = b.getBBox();
+      return aBox.x + aBox.width / 2 - (bBox.x + bBox.width / 2);
+    })
+    .forEach((note, slotIndex) => {
+      note.dataset.slot = String(slotIndex);
+    });
+
   noteLabels.value = notes.map((note, noteIndex) => {
-    const panelIndex = Number(note.dataset.panel ?? 0);
+    const slotIndex = Number(note.dataset.slot ?? 0);
     return {
       id: `note-edge-${noteIndex}`,
       noteIndex,
-      title: props.titles[panelIndex] ?? '',
+      title: props.titles[slotIndex] ?? 'Coming Soon',
       path: edgePath(note.getBBox()),
     };
   });

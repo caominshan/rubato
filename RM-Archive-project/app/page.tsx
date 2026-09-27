@@ -168,21 +168,31 @@ export default function Home() {
     setActive(id); setMenu(false); setQuery(""); window.setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 0);
   };
 
+  const closeArchive = () => {
+    if (window.parent !== window) {
+      window.parent.postMessage({ type: "rubato:close-rm-archive" }, window.location.origin);
+      return;
+    }
+    if (window.history.length > 1) window.history.back();
+  };
+
   return <main id="content">
     <a className="skip" href="#content">跳至主要内容</a>
     <header className="topbar">
+      <button className="site-exit site-exit-back" onClick={closeArchive} aria-label="返回个人网站">← <span>BACK</span></button>
       <button className="brand" onClick={() => go("home")} aria-label="返回首页"><span>RM</span><b>ARCHIVE</b></button>
       <nav className={menu ? "nav open" : "nav"} aria-label="一级模块">
         {modules.map(m => <button key={m.id} onClick={() => go(m.id)} className={active === m.id ? "active" : ""}><small>{m.no}</small>{m.en}</button>)}
       </nav>
       <div className="tools"><button onClick={() => setActive("search")} aria-label="打开搜索">⌕</button><button className="lang" aria-label="切换语言">中 / EN</button><button className="menubtn" onClick={() => setMenu(!menu)} aria-label="打开导航">{menu ? "×" : "☰"}</button></div>
+      <button className="site-exit site-exit-close" onClick={closeArchive} aria-label="关闭 RM Archive">×</button>
     </header>
 
     {active === "home" && <section className="hero tree-hero">
       <div className="tree-noise" aria-hidden="true"></div>
       <div className="tree-title"><div className="eyebrow">KIM NAMJOON / DIGITAL ARCHIVE / 2026</div><h1><span>RM</span><i>ARCHIVE</i></h1></div>
       <div className="tree-stage" aria-label="七个档案模块的树形导航">
-        <img src="/archive-tree.png" alt="实验拼贴风格的档案树" />
+        <img src="./archive-tree.png" alt="实验拼贴风格的档案树" />
         {modules.map((m,i)=><button key={m.id} className={`branch-label branch-${i+1}`} onClick={()=>go(m.id)}><span>{m.no}</span><b>{m.title}</b><small>{m.en}</small></button>)}
         <div className="tree-stamp" aria-hidden="true">07 /<br/>SECTIONS</div>
       </div>
@@ -259,8 +269,8 @@ function WatchShelf({eyebrow,title,intro,entries}:{eyebrow:string;title:string;i
   return <section className="watch-shelf"><header><div><small>{eyebrow}</small><h3>{title}</h3></div><p>{intro}</p></header><div className="watch-list">{entries.map((entry,index)=><a key={`${entry.year}-${entry.title}`} href={bilibiliSearch(entry.query)} target="_blank" rel="noreferrer"><span className="watch-index">{String(index+1).padStart(2,"0")}</span><div className="watch-copy"><div><time>{entry.year}</time><small>{entry.kind}</small></div><h4>{entry.title}</h4><p>{entry.description}</p></div><b>在 B 站查找 ↗</b></a>)}</div></section>;
 }
 
-function ArchiveGrid({data,onSelect}:{data:ArchiveItem[];onSelect:(i:ArchiveItem)=>void}) { return <div className="archive-grid">{data.map(item=><article key={item.id} className="archive-card" onClick={()=>onSelect(item)}><div className="thumb"><span aria-hidden="true">{item.image}</span><img src={`/illustrations/${item.id}.webp`} alt={`${item.title}的原创线稿配图`} loading="lazy" onError={event=>{event.currentTarget.style.display="none"}}/></div><div className="archive-meta"><span>{item.type}</span><time>{item.year}</time></div><h3>{item.title}</h3><p className="original">{item.original || "RM ARCHIVE COLLECTION"}</p><p>{item.summary}</p><div className="tagrow">{item.tags.map(t=><span key={t}>#{t}</span>)}</div><button>查看内容 <b>↗</b></button></article>)}</div> }
+function ArchiveGrid({data,onSelect}:{data:ArchiveItem[];onSelect:(i:ArchiveItem)=>void}) { return <div className="archive-grid">{data.map(item=><article key={item.id} className="archive-card" onClick={()=>onSelect(item)}><div className="thumb"><span aria-hidden="true">{item.image}</span><img src={`./illustrations/${item.id}.webp`} alt={`${item.title}的原创线稿配图`} loading="lazy" onError={event=>{event.currentTarget.style.display="none"}}/></div><div className="archive-meta"><span>{item.type}</span><time>{item.year}</time></div><h3>{item.title}</h3><p className="original">{item.original || "RM ARCHIVE COLLECTION"}</p><p>{item.summary}</p><div className="tagrow">{item.tags.map(t=><span key={t}>#{t}</span>)}</div><button>查看内容 <b>↗</b></button></article>)}</div> }
 
 function MapPanel({data,onSelect}:{data:ArchiveItem[];onSelect:(i:ArchiveItem)=>void}) { return <div className="map-panel"><div className="map-lines" aria-hidden="true"></div><div className="map-label l1">SEOUL</div><div className="map-label l2">USA</div><div className="map-label l3">BUSAN</div>{data.map((item,i)=><button key={item.id} className={`pin p${i+1}`} onClick={()=>onSelect(item)} aria-label={`查看${item.title}`}><span>{i+1}</span><b>{item.place}</b></button>)}</div> }
 
-function Detail({item,onClose}:{item:ArchiveItem;onClose:()=>void}) { return <div className="overlay" role="dialog" aria-modal="true" aria-labelledby="detail-title" onClick={onClose}><div className="detail" onClick={e=>e.stopPropagation()}><button className="close" onClick={onClose} aria-label="关闭">×</button><div className="detail-visual"><span aria-hidden="true">{item.image}</span><img src={`/illustrations/${item.id}.webp`} alt={`${item.title}的原创线稿配图`} onError={event=>{event.currentTarget.style.display="none"}}/><small>ARCHIVE ILLUSTRATION · {item.year}</small></div><div className="detail-body"><div className="detail-kicker">{item.type}</div><h2 id="detail-title">{item.title}</h2><p className="detail-original">{item.original}</p><p className="detail-summary">{item.summary}</p><dl><div><dt>时间</dt><dd>{item.year}</dd></div><div><dt>地区</dt><dd>{item.place || "—"}</dd></div><div><dt>关键词</dt><dd>{item.tags.join(" · ")}</dd></div></dl>{item.sourceUrl && <a className="story-link" href={item.sourceUrl} target="_blank" rel="noreferrer">延伸阅读 ↗</a>}</div></div></div> }
+function Detail({item,onClose}:{item:ArchiveItem;onClose:()=>void}) { return <div className="overlay" role="dialog" aria-modal="true" aria-labelledby="detail-title" onClick={onClose}><div className="detail" onClick={e=>e.stopPropagation()}><button className="close" onClick={onClose} aria-label="关闭">×</button><div className="detail-visual"><span aria-hidden="true">{item.image}</span><img src={`./illustrations/${item.id}.webp`} alt={`${item.title}的原创线稿配图`} onError={event=>{event.currentTarget.style.display="none"}}/><small>ARCHIVE ILLUSTRATION · {item.year}</small></div><div className="detail-body"><div className="detail-kicker">{item.type}</div><h2 id="detail-title">{item.title}</h2><p className="detail-original">{item.original}</p><p className="detail-summary">{item.summary}</p><dl><div><dt>时间</dt><dd>{item.year}</dd></div><div><dt>地区</dt><dd>{item.place || "—"}</dd></div><div><dt>关键词</dt><dd>{item.tags.join(" · ")}</dd></div></dl>{item.sourceUrl && <a className="story-link" href={item.sourceUrl} target="_blank" rel="noreferrer">延伸阅读 ↗</a>}</div></div></div> }

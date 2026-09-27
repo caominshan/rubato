@@ -101,6 +101,14 @@ footer{padding:8rem 6vw 4rem;background:#171717;color:#f4f4f1;border:0}footer bu
 .detail-visual{position:relative;background:#f5f2e9;overflow:hidden}.detail-visual>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}.detail-visual>span{position:absolute;left:1.4rem;bottom:1.2rem;z-index:2;font:400 .6rem/1 var(--mono);letter-spacing:.1em;color:#555;background:rgba(246,246,243,.9);border-bottom:1px solid;padding:.3rem .15rem}
 @media(max-width:650px){.thumb>span{left:.65rem;bottom:.55rem}.detail-visual>span{left:1rem;bottom:.8rem}}
 
+/* Rubato integration: project controls share RM Archive's own navigation bar. */
+.site-exit{flex:0 0 auto;border:1px solid rgba(23,23,23,.28);background:rgba(255,255,255,.58);height:34px;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;font:400 .52rem/1 var(--mono);letter-spacing:.14em;transition:background .18s,color .18s}
+.site-exit:hover,.site-exit:focus-visible{background:#171717;color:#fff;outline:0}
+.site-exit-back{min-width:72px;padding:0 .75rem;gap:.4rem;border-radius:999px}
+.site-exit-close{width:34px;padding:0;border-radius:50%;font-size:1rem;letter-spacing:0}
+@media(max-width:1050px){.topbar{gap:.8rem}.brand{margin-right:auto}}
+@media(max-width:650px){.site-exit{height:32px}.site-exit-back{min-width:32px;width:32px;padding:0}.site-exit-back span{display:none}.site-exit-close{width:32px}.topbar{gap:.55rem}}
+
 /* V2.3 — quiet sage accents */
 :root{--sage:#cbd2bd;--sage-soft:#e8eadf;--sage-deep:#78816d}
 .tree-stage:after{background:linear-gradient(90deg,rgba(232,234,223,.22),transparent 38%),linear-gradient(180deg,rgba(248,248,246,.04),transparent 70%,rgba(203,210,189,.18))}
